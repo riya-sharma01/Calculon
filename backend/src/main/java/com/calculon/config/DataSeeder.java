@@ -1,5 +1,5 @@
 package com.calculon.config;
-
+import jakarta.persistence.EntityManager;
 import com.calculon.entity.*;
 import com.calculon.repository.*;
 import org.springframework.boot.CommandLineRunner;
@@ -11,32 +11,43 @@ import java.util.Locale;
 @Component
 public class DataSeeder implements CommandLineRunner {
 
-    private final MathDomainRepository domainRepository;
-    private final LessonRepository lessonRepository;
-    private final QuestionRepository questionRepository;
-    private final AchievementRepository achievementRepository;
+        private final MathDomainRepository domainRepository;
+        private final LessonRepository lessonRepository;
+        private final QuestionRepository questionRepository;
+        private final AchievementRepository achievementRepository;
+        private final UserLessonProgressRepository userLessonProgressRepository;
+        private final UserAchievementRepository userAchievementRepository;
+        private final EntityManager entityManager;
 
-    public DataSeeder(MathDomainRepository domainRepository, LessonRepository lessonRepository,
-                       QuestionRepository questionRepository, AchievementRepository achievementRepository) {
+    public DataSeeder(
+        MathDomainRepository domainRepository,
+        LessonRepository lessonRepository,
+        QuestionRepository questionRepository,
+        AchievementRepository achievementRepository,
+        UserLessonProgressRepository userLessonProgressRepository,
+        UserAchievementRepository userAchievementRepository,
+EntityManager entityManager) {
+
         this.domainRepository = domainRepository;
         this.lessonRepository = lessonRepository;
         this.questionRepository = questionRepository;
         this.achievementRepository = achievementRepository;
-    }
+        this.userLessonProgressRepository = userLessonProgressRepository;
+        this.userAchievementRepository = userAchievementRepository;
+        this.entityManager = entityManager;
+        }
 
-    @Override
-    public void run(String... args) {
-        if (domainRepository.count() > 0) return;
+        @Override
+        public void run(String... args) {
 
         seedCalculus();
         seedTrigonometry();
         seedLinearAlgebra();
         seedProbability();
         seedNumberTheory();
-        seedAchievements();
-    }
+        }
 
-    // ---------------------------------------------------------------- Calculus
+             // ---------------------------------------------------------------- Calculus
 
     private void seedCalculus() {
         MathDomain calculus = domain("Calculus", "calculus", "Limits, derivatives, and integrals.", "function-grapher");
@@ -1235,18 +1246,26 @@ public class DataSeeder implements CommandLineRunner {
 
     // ---------------------------------------------------------------- Helpers
 
-    private MathDomain domain(String name, String slug, String desc, String vizType) {
-        MathDomain d = new MathDomain();
+    private MathDomain domain(String name, String slug, String description, String visualizationType) {
+
+        MathDomain d = domainRepository.findBySlug(slug)
+                .orElseGet(MathDomain::new);
+
         d.setName(name);
         d.setSlug(slug);
-        d.setDescription(desc);
-        d.setVisualizationType(vizType);
-        return domainRepository.save(d);
-    }
+        d.setDescription(description);
+        d.setVisualizationType(visualizationType);
 
-    private Lesson lesson(MathDomain domain, String title, String summary, String content,
-                           Lesson.Difficulty difficulty, int order, int xp) {
-        Lesson l = new Lesson();
+        return domainRepository.save(d);
+        }
+
+        private Lesson lesson(MathDomain domain, String title, String summary, String content,
+                      Lesson.Difficulty difficulty, int order, int xp) {
+
+        Lesson l = lessonRepository
+                .findByDomainIdAndTitle(domain.getId(), title)
+                .orElseGet(Lesson::new);
+
         l.setDomain(domain);
         l.setTitle(title);
         l.setSummary(summary);
@@ -1254,8 +1273,9 @@ public class DataSeeder implements CommandLineRunner {
         l.setDifficulty(difficulty);
         l.setSequenceOrder(order);
         l.setBaseXpReward(xp);
+
         return lessonRepository.save(l);
-    }
+        }
 
     private void question(Lesson lesson, String prompt, Question.QuestionType type, String correctAnswer,
                            String explanation, int xp, QuestionOption... options) {

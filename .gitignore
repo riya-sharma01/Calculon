@@ -1,0 +1,21 @@
+# Maven
+backend/target/
+
+# Local environment/configuration
+backend/src/main/resources/application-local.properties
+
+# Environment files
+.env
+*.env
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

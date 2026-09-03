@@ -28,6 +28,7 @@ public class Lesson {
 
     /** Markdown/HTML body content for the lesson explanation. */
     @Lob
+    @Column(columnDefinition = "LONGTEXT")
     private String content;
 
     @Enumerated(EnumType.STRING)
