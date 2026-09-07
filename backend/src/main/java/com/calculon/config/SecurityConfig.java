@@ -68,6 +68,8 @@ public class SecurityConfig {
                     "/api/lessons/**"
                 ).permitAll()
 
+                .requestMatchers("/api/leaderboard/**").permitAll()
+
                 // H2 console for local development
                 .requestMatchers(
                     "/h2-console/**"
