@@ -1,3 +1,4 @@
+```java
 package com.calculon.config;
 
 import com.calculon.security.JwtAuthFilter;
@@ -13,7 +14,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.cors.CorsConfigurationSource;
-import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 @Configuration
 @EnableWebSecurity
@@ -22,7 +22,9 @@ public class SecurityConfig {
     private final JwtAuthFilter jwtAuthFilter;
     private final CorsConfigurationSource corsConfigurationSource;
 
-    public SecurityConfig(JwtAuthFilter jwtAuthFilter, CorsConfigurationSource corsConfigurationSource) {
+    public SecurityConfig(
+            JwtAuthFilter jwtAuthFilter,
+            CorsConfigurationSource corsConfigurationSource) {
         this.jwtAuthFilter = jwtAuthFilter;
         this.corsConfigurationSource = corsConfigurationSource;
     }
@@ -33,25 +35,62 @@ public class SecurityConfig {
     }
 
     @Bean
-    public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
+    public AuthenticationManager authenticationManager(
+            AuthenticationConfiguration config) throws Exception {
         return config.getAuthenticationManager();
     }
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+
         http
+            // REST API: disable CSRF
             .csrf(csrf -> csrf.disable())
+
+            // Enable CORS
             .cors(cors -> cors.configurationSource(corsConfigurationSource))
-            .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+
+            // JWT authentication -> no server-side sessions
+            .sessionManagement(session ->
+                session.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+            )
+
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/api/auth/**").permitAll()
-                .requestMatchers("/api/domains/**", "/api/lessons/**").permitAll()
-                .requestMatchers("/h2-console/**").permitAll()
+
+                // Authentication endpoints must be accessible
+                // without an existing JWT.
+                .requestMatchers(
+                    "/api/auth/**"
+                ).permitAll()
+
+                // Public Calculon content
+                .requestMatchers(
+                    "/api/domains/**",
+                    "/api/lessons/**"
+                ).permitAll()
+
+                // H2 console for local development
+                .requestMatchers(
+                    "/h2-console/**"
+                ).permitAll()
+
+                // Everything else requires authentication
                 .anyRequest().authenticated()
             )
-            .headers(headers -> headers.frameOptions(frame -> frame.disable())) // needed for h2-console
-            .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
+
+            // Required for H2 console
+            .headers(headers ->
+                headers.frameOptions(frame -> frame.disable())
+            )
+
+            // Run JWT authentication before Spring's
+            // username/password authentication filter.
+            .addFilterBefore(
+                jwtAuthFilter,
+                UsernamePasswordAuthenticationFilter.class
+            );
 
         return http.build();
     }
 }
+```
