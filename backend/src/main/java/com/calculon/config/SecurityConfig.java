@@ -1,4 +1,3 @@
-```java
 package com.calculon.config;
 
 import com.calculon.security.JwtAuthFilter;
