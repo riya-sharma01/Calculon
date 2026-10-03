@@ -1,0 +1,1408 @@
+{
+  "domain": "Coordinate Geometry",
+  "levels": [
+    {
+      "level": 1,
+      "levelName": "Foundation",
+      "questions": [
+        {
+          "id": "cg2-f-01",
+          "type": "NUMERIC",
+          "topic": "Straight Lines",
+          "prompt": "The distance between A(2,3) and B(5,7) is d. Find d².",
+          "answer": "25",
+          "explanation": "d²=(5-2)²+(7-3)²=9+16=25.",
+          "xp": 8
+        },
+        {
+          "id": "cg2-f-02",
+          "type": "NUMERIC",
+          "topic": "Straight Lines",
+          "prompt": "Find k if (2k,k-1) lies on the line through (1,2) and (4,5).",
+          "answer": "-2",
+          "explanation": "The line is y=x+1; k-1=2k+1 gives k=-2.",
+          "xp": 10
+        },
+        {
+          "id": "cg2-f-03",
+          "type": "EXPRESSION",
+          "topic": "Straight Lines",
+          "prompt": "Find the slope of the line through (3,-2) and (-1,4). (enter as a reduced fraction)",
+          "answer": "-3/2",
+          "explanation": "m=(4-(-2))/(-1-3)=6/-4=-3/2.",
+          "xp": 10
+        },
+        {
+          "id": "cg2-f-04",
+          "type": "NUMERIC",
+          "topic": "Straight Lines",
+          "prompt": "Find tanθ where θ is the angle between y=2x+3 and y=-x+5.",
+          "answer": "3",
+          "explanation": "tanθ=|(2-(-1))/(1+2(-1))|=|3/-1|=3.",
+          "xp": 10
+        },
+        {
+          "id": "cg2-f-05",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Straight Lines",
+          "prompt": "Find the line through (2,3) making 45° with the positive x-axis.",
+          "options": [
+            {
+              "text": "y=x+1",
+              "correct": true
+            },
+            {
+              "text": "y=x+3",
+              "correct": false
+            },
+            {
+              "text": "y=x-1",
+              "correct": false
+            },
+            {
+              "text": "y=x+2",
+              "correct": false
+            }
+          ],
+          "explanation": "Slope=1: y-3=1(x-2) gives y=x+1.",
+          "xp": 10
+        },
+        {
+          "id": "cg2-f-06",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Straight Lines",
+          "prompt": "A line has intercepts 3 and -4 on the axes. Find its equation.",
+          "options": [
+            {
+              "text": "4x-3y=12",
+              "correct": true
+            },
+            {
+              "text": "4x+3y=12",
+              "correct": false
+            },
+            {
+              "text": "3x-4y=12",
+              "correct": false
+            },
+            {
+              "text": "3x+4y=12",
+              "correct": false
+            }
+          ],
+          "explanation": "x/3+y/(-4)=1 gives 4x-3y=12.",
+          "xp": 12
+        },
+        {
+          "id": "cg2-f-07",
+          "type": "EXPRESSION",
+          "topic": "Straight Lines",
+          "prompt": "Find the distance of (2,3) from 3x+4y-12=0. (enter as a reduced fraction)",
+          "answer": "6/5",
+          "explanation": "|3(2)+4(3)-12|/5=6/5.",
+          "xp": 10
+        },
+        {
+          "id": "cg2-f-08",
+          "type": "EXPRESSION",
+          "topic": "Straight Lines",
+          "prompt": "Find the area of the triangle formed by x=0, y=0, x+y=5. (enter as a reduced fraction)",
+          "answer": "25/2",
+          "explanation": "Legs of length 5,5: area=(1/2)(5)(5)=25/2.",
+          "xp": 10
+        },
+        {
+          "id": "cg2-f-09",
+          "type": "NUMERIC",
+          "topic": "Straight Lines",
+          "prompt": "A(1,2), B(3,4), C(5,6) are collinear. Find the common slope.",
+          "answer": "1",
+          "explanation": "Slope of AB = slope of BC = 1.",
+          "xp": 8
+        },
+        {
+          "id": "cg2-f-10",
+          "type": "EXPRESSION",
+          "topic": "Straight Lines",
+          "prompt": "Find p if 2x+3y=5, x-y=1, px+2y=3 are concurrent. (enter as a reduced fraction)",
+          "answer": "9/8",
+          "explanation": "Intersection of the first two lines is (8/5,3/5); substituting gives p=9/8.",
+          "xp": 14
+        },
+        {
+          "id": "cg2-f-11",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Circles",
+          "prompt": "Find the equation of the circle with center (2,-3) and radius 5.",
+          "options": [
+            {
+              "text": "x²+y²-4x+6y-12=0",
+              "correct": true
+            },
+            {
+              "text": "x²+y²+4x-6y-12=0",
+              "correct": false
+            },
+            {
+              "text": "x²+y²-4x-6y-12=0",
+              "correct": false
+            },
+            {
+              "text": "x²+y²+4x+6y-12=0",
+              "correct": false
+            }
+          ],
+          "explanation": "(x-2)²+(y+3)²=25 expands to this form.",
+          "xp": 12
+        },
+        {
+          "id": "cg2-f-12",
+          "type": "NUMERIC",
+          "topic": "Circles",
+          "prompt": "The center of x²+y²-6x+8y-9=0 is (h,k). Find h+k.",
+          "answer": "-1",
+          "explanation": "Completing the square gives center (3,-4), so h+k=-1.",
+          "xp": 10
+        },
+        {
+          "id": "cg2-f-13",
+          "type": "NUMERIC",
+          "topic": "Circles",
+          "prompt": "Find the length of the tangent from (1,2) to x²+y²=4.",
+          "answer": "1",
+          "explanation": "Tangent length = sqrt(1²+2²-4)=sqrt(1)=1.",
+          "xp": 10
+        },
+        {
+          "id": "cg2-f-14",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Circles",
+          "prompt": "Find the circle with diameter endpoints A(1,2) and B(5,6).",
+          "options": [
+            {
+              "text": "x²+y²-6x-8y+17=0",
+              "correct": true
+            },
+            {
+              "text": "x²+y²+6x+8y+17=0",
+              "correct": false
+            },
+            {
+              "text": "x²+y²-6x-8y-17=0",
+              "correct": false
+            },
+            {
+              "text": "x²+y²+6x+8y-17=0",
+              "correct": false
+            }
+          ],
+          "explanation": "Center (3,4), radius²=8: (x-3)²+(y-4)²=8.",
+          "xp": 14
+        },
+        {
+          "id": "cg2-f-15",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Conic Sections",
+          "prompt": "Find the parabola with focus (2,0) and directrix x=-2.",
+          "options": [
+            {
+              "text": "y²=8x",
+              "correct": true
+            },
+            {
+              "text": "y²=4x",
+              "correct": false
+            },
+            {
+              "text": "y²=6x",
+              "correct": false
+            },
+            {
+              "text": "y²=2x",
+              "correct": false
+            }
+          ],
+          "explanation": "a=2, so y²=4ax=8x.",
+          "xp": 12
+        },
+        {
+          "id": "cg2-f-16",
+          "type": "NUMERIC",
+          "topic": "Conic Sections",
+          "prompt": "Find the length of the latus rectum of y²=12x.",
+          "answer": "12",
+          "explanation": "Latus rectum=4a=12.",
+          "xp": 8
+        },
+        {
+          "id": "cg2-f-17",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Conic Sections",
+          "prompt": "Find the vertex of x²=-16y.",
+          "options": [
+            {
+              "text": "(0,0)",
+              "correct": true
+            },
+            {
+              "text": "(0,4)",
+              "correct": false
+            },
+            {
+              "text": "(0,-4)",
+              "correct": false
+            },
+            {
+              "text": "(4,0)",
+              "correct": false
+            }
+          ],
+          "explanation": "The standard form x²=-4ay has its vertex at the origin.",
+          "xp": 10
+        },
+        {
+          "id": "cg2-f-18",
+          "type": "EXPRESSION",
+          "topic": "Conic Sections",
+          "prompt": "Find the eccentricity of x²/25+y²/9=1. (enter as a reduced fraction)",
+          "answer": "4/5",
+          "explanation": "e=sqrt(1-9/25)=4/5.",
+          "xp": 12
+        },
+        {
+          "id": "cg2-f-19",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Conic Sections",
+          "prompt": "Find the foci of x²/16+y²/7=1.",
+          "options": [
+            {
+              "text": "(±3,0)",
+              "correct": true
+            },
+            {
+              "text": "(0,±3)",
+              "correct": false
+            },
+            {
+              "text": "(±4,0)",
+              "correct": false
+            },
+            {
+              "text": "(±√7,0)",
+              "correct": false
+            }
+          ],
+          "explanation": "a=4,b=√7,e=sqrt(1-7/16)=3/4, giving foci at (±3,0).",
+          "xp": 14
+        },
+        {
+          "id": "cg2-f-20",
+          "type": "EXPRESSION",
+          "topic": "Conic Sections",
+          "prompt": "Find the latus rectum of x²/9+y²/4=1. (enter as a reduced fraction)",
+          "answer": "8/3",
+          "explanation": "a=3,b=2, LR=2b²/a=8/3.",
+          "xp": 12
+        },
+        {
+          "id": "cg2-f-21",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Conic Sections",
+          "prompt": "Find the hyperbola with foci (±5,0) and vertices (±3,0).",
+          "options": [
+            {
+              "text": "x²/9-y²/16=1",
+              "correct": true
+            },
+            {
+              "text": "x²/16-y²/9=1",
+              "correct": false
+            },
+            {
+              "text": "x²/9-y²/25=1",
+              "correct": false
+            },
+            {
+              "text": "x²/25-y²/9=1",
+              "correct": false
+            }
+          ],
+          "explanation": "a=3,c=5, so b²=25-9=16.",
+          "xp": 14
+        },
+        {
+          "id": "cg2-f-22",
+          "type": "EXPRESSION",
+          "topic": "Conic Sections",
+          "prompt": "Find the eccentricity of x²/9-y²/16=1. (enter as a reduced fraction)",
+          "answer": "5/3",
+          "explanation": "e=sqrt(1+16/9)=5/3.",
+          "xp": 12
+        },
+        {
+          "id": "cg2-f-23",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Conic Sections",
+          "prompt": "Find the asymptotes of x²/4-y²/9=1.",
+          "options": [
+            {
+              "text": "y=±3x/2",
+              "correct": true
+            },
+            {
+              "text": "y=±2x/3",
+              "correct": false
+            },
+            {
+              "text": "y=±9x/4",
+              "correct": false
+            },
+            {
+              "text": "y=±4x/9",
+              "correct": false
+            }
+          ],
+          "explanation": "a=2,b=3, asymptotes y=±(b/a)x=±3x/2.",
+          "xp": 12
+        },
+        {
+          "id": "cg2-f-24",
+          "type": "EXPRESSION",
+          "topic": "Conic Sections",
+          "prompt": "Find the latus rectum of x²/16-y²/9=1. (enter as a reduced fraction)",
+          "answer": "9/2",
+          "explanation": "a=4,b=3, LR=2b²/a=9/2.",
+          "xp": 12
+        },
+        {
+          "id": "cg2-f-25",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Circles",
+          "prompt": "Find the center of x²+y²+4x-6y=12.",
+          "options": [
+            {
+              "text": "(-2,3)",
+              "correct": true
+            },
+            {
+              "text": "(2,-3)",
+              "correct": false
+            },
+            {
+              "text": "(-2,-3)",
+              "correct": false
+            },
+            {
+              "text": "(2,3)",
+              "correct": false
+            }
+          ],
+          "explanation": "Completing squares: (x+2)²+(y-3)²=25, center (-2,3).",
+          "xp": 12
+        },
+        {
+          "id": "cg2-f-26",
+          "type": "EXPRESSION",
+          "topic": "Straight Lines",
+          "prompt": "Find the slope of 2x-3y=6. (enter as a reduced fraction)",
+          "answer": "2/3",
+          "explanation": "y=(2/3)x-2.",
+          "xp": 8
+        },
+        {
+          "id": "cg2-f-27",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Straight Lines",
+          "prompt": "Find the line parallel to 3x-4y=7 through (1,2).",
+          "options": [
+            {
+              "text": "3x-4y+5=0",
+              "correct": true
+            },
+            {
+              "text": "3x-4y-5=0",
+              "correct": false
+            },
+            {
+              "text": "3x+4y-5=0",
+              "correct": false
+            },
+            {
+              "text": "3x+4y+5=0",
+              "correct": false
+            }
+          ],
+          "explanation": "3x-4y+c=0 through (1,2): 3-8+c=0 gives c=5.",
+          "xp": 12
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "levelName": "Standard",
+      "questions": [
+        {
+          "id": "cg2-s-01",
+          "type": "NUMERIC",
+          "topic": "Straight Lines",
+          "prompt": "P(2,3) is the midpoint of A(a,0) and B(0,b). Find a+b.",
+          "answer": "10",
+          "explanation": "a/2=2 gives a=4; b/2=3 gives b=6; a+b=10.",
+          "xp": 12
+        },
+        {
+          "id": "cg2-s-02",
+          "type": "NUMERIC",
+          "topic": "Straight Lines",
+          "prompt": "The line through (1,2),(3,4) is perpendicular to the line through (2,3),(k,5). Find k.",
+          "answer": "0",
+          "explanation": "First slope=1, so the perpendicular slope is -1: (5-3)/(k-2)=-1 gives k=0.",
+          "xp": 14
+        },
+        {
+          "id": "cg2-s-03",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Straight Lines",
+          "prompt": "Find the line through the intersection of 2x+y=5 and x+3y=8, parallel to x-2y=4.",
+          "options": [
+            {
+              "text": "x-2y+3=0",
+              "correct": true
+            },
+            {
+              "text": "x-2y-1=0",
+              "correct": false
+            },
+            {
+              "text": "2x-y+1=0",
+              "correct": false
+            },
+            {
+              "text": "2x-y-1=0",
+              "correct": false
+            }
+          ],
+          "explanation": "Intersection is (7/5,11/5). Substituting into x-2y+k=0 gives k=3.",
+          "xp": 16
+        },
+        {
+          "id": "cg2-s-04",
+          "type": "NUMERIC",
+          "topic": "Straight Lines",
+          "prompt": "Find the distance between the parallel lines 3x+4y=7 and 3x+4y=12.",
+          "answer": "1",
+          "explanation": "|12-7|/sqrt(9+16)=5/5=1.",
+          "xp": 12
+        },
+        {
+          "id": "cg2-s-05",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Circles",
+          "prompt": "Find the circle through (1,0),(0,1),(0,0).",
+          "options": [
+            {
+              "text": "x²+y²-x-y=0",
+              "correct": true
+            },
+            {
+              "text": "x²+y²+x+y=0",
+              "correct": false
+            },
+            {
+              "text": "x²+y²-x+y=0",
+              "correct": false
+            },
+            {
+              "text": "x²+y²+x-y=0",
+              "correct": false
+            }
+          ],
+          "explanation": "Using x²+y²+Dx+Ey=0 and the three points gives D=-1,E=-1.",
+          "xp": 14
+        },
+        {
+          "id": "cg2-s-06",
+          "type": "NUMERIC",
+          "topic": "Circles",
+          "prompt": "Find the length of the chord cut by 3x+4y=15 on x²+y²=25.",
+          "answer": "8",
+          "explanation": "Distance from origin to the line is 3. Chord=2sqrt(25-9)=8.",
+          "xp": 14
+        },
+        {
+          "id": "cg2-s-07",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Circles",
+          "prompt": "Find the condition for y=mx+c to be tangent to x²+y²=a².",
+          "options": [
+            {
+              "text": "c²=a²(1+m²)",
+              "correct": true
+            },
+            {
+              "text": "c=a√(1+m²)",
+              "correct": false
+            },
+            {
+              "text": "c²=a²(1-m²)",
+              "correct": false
+            },
+            {
+              "text": "c=a(1+m²)",
+              "correct": false
+            }
+          ],
+          "explanation": "Distance from center to line equals a: |c|/sqrt(1+m²)=a.",
+          "xp": 14
+        },
+        {
+          "id": "cg2-s-08",
+          "type": "NUMERIC",
+          "topic": "Circles",
+          "prompt": "x²+y²+2gx+2fy+c=0 passes through the origin and has center (3,4). Find c.",
+          "answer": "0",
+          "explanation": "Center (-g,-f)=(3,4) gives g=-3,f=-4. Passing through the origin forces c=0.",
+          "xp": 14
+        },
+        {
+          "id": "cg2-s-09",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Conic Sections",
+          "prompt": "Find the tangent to y²=8x at (2,4).",
+          "options": [
+            {
+              "text": "y=x+2",
+              "correct": true
+            },
+            {
+              "text": "y=2x+4",
+              "correct": false
+            },
+            {
+              "text": "y=x+4",
+              "correct": false
+            },
+            {
+              "text": "y=2x-4",
+              "correct": false
+            }
+          ],
+          "explanation": "a=2. Tangent: yy₁=2a(x+x₁) gives 4y=4(x+2), i.e. y=x+2.",
+          "xp": 14
+        },
+        {
+          "id": "cg2-s-10",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Conic Sections",
+          "prompt": "The tangent to y²=4ax at t=1 meets the axis at A. Find the distance from A to the focus.",
+          "options": [
+            {
+              "text": "2a",
+              "correct": true
+            },
+            {
+              "text": "a",
+              "correct": false
+            },
+            {
+              "text": "4a",
+              "correct": false
+            },
+            {
+              "text": "3a",
+              "correct": false
+            }
+          ],
+          "explanation": "Tangent: y=x+a. At y=0, A=(-a,0). Focus=(a,0). Distance=2a.",
+          "xp": 16
+        },
+        {
+          "id": "cg2-s-11",
+          "type": "EXPRESSION",
+          "topic": "Conic Sections",
+          "prompt": "Find the latus rectum of x²/16+y²/9=1. (enter as a reduced fraction)",
+          "answer": "9/2",
+          "explanation": "a=4,b=3, LR=2b²/a=9/2.",
+          "xp": 12
+        },
+        {
+          "id": "cg2-s-12",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Conic Sections",
+          "prompt": "Find the tangent to x²/25+y²/9=1 at (5/√2,3/√2).",
+          "options": [
+            {
+              "text": "3x+5y=15√2",
+              "correct": true
+            },
+            {
+              "text": "x+y=√2",
+              "correct": false
+            },
+            {
+              "text": "x+y=5√2",
+              "correct": false
+            },
+            {
+              "text": "x+y=8",
+              "correct": false
+            }
+          ],
+          "explanation": "Tangent: x(5/√2)/25+y(3/√2)/9=1 simplifies to 3x+5y=15√2.",
+          "xp": 16
+        },
+        {
+          "id": "cg2-s-13",
+          "type": "EXPRESSION",
+          "topic": "Conic Sections",
+          "prompt": "Find the latus rectum of x²/9-y²/16=1. (enter as a reduced fraction)",
+          "answer": "32/3",
+          "explanation": "a=3,b=4, LR=2b²/a=32/3.",
+          "xp": 12
+        },
+        {
+          "id": "cg2-s-14",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Conic Sections",
+          "prompt": "Find the tangent to x²/4-y²/9=1 at (4,3√3).",
+          "options": [
+            {
+              "text": "x-√3y/3=1",
+              "correct": true
+            },
+            {
+              "text": "x/4-y/(3√3)=1",
+              "correct": false
+            },
+            {
+              "text": "x/2-y/3=1",
+              "correct": false
+            },
+            {
+              "text": "x-y=1",
+              "correct": false
+            }
+          ],
+          "explanation": "Tangent: 4x/4-3√3y/9=1 simplifies to x-√3y/3=1.",
+          "xp": 16
+        },
+        {
+          "id": "cg2-s-15",
+          "type": "NUMERIC",
+          "topic": "Conic Sections",
+          "prompt": "An ellipse has eccentricity 3/5 and latus rectum 32/5. Find a².",
+          "answer": "25",
+          "explanation": "b²=a²(1-9/25)=16a²/25. LR=2b²/a=32a/25=32/5 gives a=5, so a²=25.",
+          "xp": 16
+        },
+        {
+          "id": "cg2-s-16",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Conic Sections",
+          "prompt": "Find the directrix of y²=16x.",
+          "options": [
+            {
+              "text": "x=-4",
+              "correct": true
+            },
+            {
+              "text": "x=4",
+              "correct": false
+            },
+            {
+              "text": "y=-4",
+              "correct": false
+            },
+            {
+              "text": "y=4",
+              "correct": false
+            }
+          ],
+          "explanation": "a=4, directrix x=-a=-4.",
+          "xp": 10
+        },
+        {
+          "id": "cg2-s-17",
+          "type": "EXPRESSION",
+          "topic": "Circles",
+          "prompt": "Find the length of the chord of x²+y²=4 cut by y=x+1. (no spaces)",
+          "answer": "√14",
+          "explanation": "Distance from origin=1/√2. Chord=2sqrt(4-1/2)=√14.",
+          "xp": 16
+        },
+        {
+          "id": "cg2-s-18",
+          "type": "EXPRESSION",
+          "topic": "Conic Sections",
+          "prompt": "Find |slope| of the tangent to x²/16+y²/9=1 at x=2 (y>0). (no spaces)",
+          "answer": "√3/4",
+          "explanation": "At x=2, y=3√3/2. y'=-9x/(16y)=-√3/4.",
+          "xp": 16
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "levelName": "Intermediate",
+      "questions": [
+        {
+          "id": "cg2-i-01",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Straight Lines",
+          "prompt": "A line through A(2,1) meets the axes at B,C. If the centroid of triangle OBC is (1,1), find the line's equation.",
+          "options": [
+            {
+              "text": "x+y=3",
+              "correct": true
+            },
+            {
+              "text": "x+2y=4",
+              "correct": false
+            },
+            {
+              "text": "2x+y=5",
+              "correct": false
+            },
+            {
+              "text": "2x+3y=7",
+              "correct": false
+            }
+          ],
+          "explanation": "Centroid (a/3,b/3)=(1,1) gives a=b=3. Through (2,1): x/3+y/3=1 gives x+y=3.",
+          "xp": 16
+        },
+        {
+          "id": "cg2-i-02",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Straight Lines",
+          "prompt": "Find the locus of a point whose distance from (2,3) is twice its distance from (-1,1).",
+          "options": [
+            {
+              "text": "3x²+3y²+12x-2y-5=0",
+              "correct": true
+            },
+            {
+              "text": "3x²+3y²-12x+2y+5=0",
+              "correct": false
+            },
+            {
+              "text": "3x²+3y²+12x+2y-5=0",
+              "correct": false
+            },
+            {
+              "text": "3x²+3y²-12x-2y+5=0",
+              "correct": false
+            }
+          ],
+          "explanation": "Squaring (x-2)²+(y-3)²=4[(x+1)²+(y-1)²] and simplifying gives this equation.",
+          "xp": 18
+        },
+        {
+          "id": "cg2-i-03",
+          "type": "NUMERIC",
+          "topic": "Circles",
+          "prompt": "Lines y=mx and y=-mx are both tangent to x²+y²-2x-2y+1=0. Find m².",
+          "answer": "0",
+          "explanation": "The circle has center (1,1), radius 1. Setting the two tangency conditions equal forces m=0.",
+          "xp": 16
+        },
+        {
+          "id": "cg2-i-04",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Circles",
+          "prompt": "Find the chord of x²+y²=25 whose midpoint is (3,4).",
+          "options": [
+            {
+              "text": "3x+4y=25",
+              "correct": true
+            },
+            {
+              "text": "3x+4y=-25",
+              "correct": false
+            },
+            {
+              "text": "3x-4y=25",
+              "correct": false
+            },
+            {
+              "text": "4x+3y=25",
+              "correct": false
+            }
+          ],
+          "explanation": "For a circle centered at the origin, the chord with midpoint (x₁,y₁) is xx₁+yy₁=x₁²+y₁².",
+          "xp": 16
+        },
+        {
+          "id": "cg2-i-05",
+          "type": "NUMERIC",
+          "topic": "Conic Sections",
+          "prompt": "Find the length of the latus rectum of y²=4ax, in terms of a (enter the coefficient of a).",
+          "answer": "4",
+          "explanation": "The latus rectum — the focal chord perpendicular to the axis — always has length 4a.",
+          "xp": 14
+        },
+        {
+          "id": "cg2-i-06",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Conic Sections",
+          "prompt": "Find the condition for y=mx+c to be tangent to y²=4ax.",
+          "options": [
+            {
+              "text": "c=a/m",
+              "correct": true
+            },
+            {
+              "text": "c=am",
+              "correct": false
+            },
+            {
+              "text": "c=a/m²",
+              "correct": false
+            },
+            {
+              "text": "c=am²",
+              "correct": false
+            }
+          ],
+          "explanation": "Substituting and setting the discriminant to zero: (2mc-4a)²-4m²c²=0 gives c=a/m.",
+          "xp": 16
+        },
+        {
+          "id": "cg2-i-07",
+          "type": "NUMERIC",
+          "topic": "Conic Sections",
+          "prompt": "The tangent at P(2,4) to y²=8x meets the directrix at Q. Find the area of triangle PQS, where S is the focus.",
+          "answer": "8",
+          "explanation": "a=2, S=(2,0), directrix x=-2. Tangent: y=x+2, meeting the directrix at Q=(-2,0). Base SQ=4, height=4, area=8.",
+          "xp": 18
+        },
+        {
+          "id": "cg2-i-08",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Conic Sections",
+          "prompt": "Find the locus of midpoints of chords of x²/25+y²/9=1 parallel to y=2x.",
+          "options": [
+            {
+              "text": "9x+50y=0",
+              "correct": true
+            },
+            {
+              "text": "25x+9y=0",
+              "correct": false
+            },
+            {
+              "text": "9x-25y=0",
+              "correct": false
+            },
+            {
+              "text": "25x-9y=0",
+              "correct": false
+            }
+          ],
+          "explanation": "The diameter conjugate to slope m is y=-(b²/a²m)x; with a²=25,b²=9,m=2 this gives 9x+50y=0.",
+          "xp": 18
+        },
+        {
+          "id": "cg2-i-09",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Conic Sections",
+          "prompt": "Find the normal to x²/16+y²/9=1 at (4cosθ,3sinθ).",
+          "options": [
+            {
+              "text": "4x·secθ-3y·cscθ=7",
+              "correct": true
+            },
+            {
+              "text": "3x·secθ-4y·cscθ=7",
+              "correct": false
+            },
+            {
+              "text": "4x·secθ+3y·cscθ=7",
+              "correct": false
+            },
+            {
+              "text": "3x·secθ+4y·cscθ=7",
+              "correct": false
+            }
+          ],
+          "explanation": "Normal: ax/cosθ-by/sinθ=a²-b²; with a=4,b=3 this gives 4x·secθ-3y·cscθ=7.",
+          "xp": 18
+        },
+        {
+          "id": "cg2-i-10",
+          "type": "EXPRESSION",
+          "topic": "Conic Sections",
+          "prompt": "For the ellipse x²+4y²=4, the tangent and normal at P meet the major axis at T,N. Show that OT·ON is the same for every eccentric angle θ, and state that constant value. (enter a single number)",
+          "answer": "4",
+          "explanation": "T=(2secθ,0), N=(2cosθ,0). OT·ON=4secθcosθ=4 for every θ, since secθcosθ=1 always.",
+          "xp": 18
+        },
+        {
+          "id": "cg2-i-11",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Conic Sections",
+          "prompt": "Find the chord of x²/16-y²/9=1 with midpoint (2,3).",
+          "options": [
+            {
+              "text": "3x-8y+18=0",
+              "correct": true
+            },
+            {
+              "text": "3x+4y=18",
+              "correct": false
+            },
+            {
+              "text": "4x-3y=-1",
+              "correct": false
+            },
+            {
+              "text": "4x+3y=17",
+              "correct": false
+            }
+          ],
+          "explanation": "Using T=S₁ for the hyperbola: x/8-y/3=-3/4, which clears to 3x-8y+18=0.",
+          "xp": 18
+        },
+        {
+          "id": "cg2-i-12",
+          "type": "EXPRESSION",
+          "topic": "Conic Sections",
+          "prompt": "A hyperbola x²/16-y²/9=1 has asymptotes y=±(3/4)x. Does the point (4,3) lie on this hyperbola? (a short phrase)",
+          "answer": "No — it lies on the asymptote itself",
+          "explanation": "Substituting (4,3): 16/16-9/9=1-1=0≠1. In fact (4,3) satisfies y=(3/4)x exactly, so it lies on the asymptote — a hyperbola can never pass through a point on its own asymptote.",
+          "xp": 20
+        },
+        {
+          "id": "cg2-i-13",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Conic Sections",
+          "prompt": "Find the locus of the intersection of perpendicular tangents to y²=4ax.",
+          "options": [
+            {
+              "text": "x+a=0",
+              "correct": true
+            },
+            {
+              "text": "x-a=0",
+              "correct": false
+            },
+            {
+              "text": "y+a=0",
+              "correct": false
+            },
+            {
+              "text": "y-a=0",
+              "correct": false
+            }
+          ],
+          "explanation": "This locus is always the parabola's directrix, x=-a.",
+          "xp": 16
+        },
+        {
+          "id": "cg2-i-14",
+          "type": "EXPRESSION",
+          "topic": "Circles & Parabola",
+          "prompt": "A circle x²+y²+2gx+2fy+c=0 passes through the two points of y²=4ax at parameters t=1 and t=2 — i.e. through (a,2a) and (4a,4a). Find c in terms of a,g,f. (no spaces)",
+          "answer": "-5a^2-2ga-4fa",
+          "explanation": "Substituting both points and subtracting the resulting equations gives 27a+6g+4f=0, and back-substituting into either equation gives c=-5a²-2ga-4fa.",
+          "xp": 22
+        },
+        {
+          "id": "cg2-i-15",
+          "type": "EXPRESSION",
+          "topic": "Conic Sections",
+          "prompt": "Find the length of the chord of x²/9+y²/4=1 with slope 1, passing through the center. (no spaces)",
+          "answer": "12√26/13",
+          "explanation": "Substituting y=x: x²(1/9+1/4)=1 gives x²=36/13. The two intersection points are (±6/√13,±6/√13); their distance is 2√(2·36/13)=12√26/13.",
+          "xp": 20
+        },
+        {
+          "id": "cg2-i-16",
+          "type": "NUMERIC",
+          "topic": "Conic Sections",
+          "prompt": "A hyperbola x²/a²-y²/b²=1 has eccentricity √3 and distance between foci 6. Find a²+b².",
+          "answer": "9",
+          "explanation": "e=√3, 2c=6 gives c=3. From e²=1+b²/a²=3: b²=2a². From c=ae=a√3=3: a=√3, so a²=3, b²=6, and a²+b²=9.",
+          "xp": 20
+        },
+        {
+          "id": "cg2-i-17",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Circles",
+          "prompt": "Find the common chord of x²+y²=16 and x²+y²-8x-6y+24=0.",
+          "options": [
+            {
+              "text": "4x+3y=10",
+              "correct": false
+            },
+            {
+              "text": "4x+3y=20",
+              "correct": true
+            },
+            {
+              "text": "4x+3y=5",
+              "correct": false
+            },
+            {
+              "text": "4x+3y=15",
+              "correct": false
+            }
+          ],
+          "explanation": "Subtracting the equations gives -8x-6y+40=0, i.e. 4x+3y=20.",
+          "xp": 18
+        },
+        {
+          "id": "cg2-i-18",
+          "type": "EXPRESSION",
+          "topic": "Circles & Parabola",
+          "prompt": "A line y=mx+c is tangent to both x²+y²=1 and y²=4x, with c>0. Find c. (no spaces)",
+          "answer": "√(2+2√5)/2",
+          "explanation": "Tangent to the circle: c²=1+m². Tangent to the parabola: c=1/m. Combining gives m⁴+m²-1=0, so m²=(√5-1)/2, and c²=1+m²=(1+√5)/2 (the golden ratio). Taking the positive root gives c=√(2+2√5)/2.",
+          "xp": 24
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "levelName": "Hard",
+      "questions": [
+        {
+          "id": "cg-h-01",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Circles",
+          "prompt": "A variable line through P(2,1) meets the axes at A and B. Find the locus of the foot of the perpendicular from the origin O to AB.",
+          "options": [
+            {
+              "text": "x²+y²−2x−y=0",
+              "correct": true
+            },
+            {
+              "text": "x²+y²+2x+y=0",
+              "correct": false
+            },
+            {
+              "text": "x²+y²−2x+y=0",
+              "correct": false
+            },
+            {
+              "text": "x²+y²+2x−y=0",
+              "correct": false
+            }
+          ],
+          "explanation": "Writing the line as x/a+y/b=1 through P gives 2/a+1/b=1. The foot of perpendicular from O to this line, expressed via a,b and then eliminating a,b using the constraint, gives x²+y²−2x−y=0.",
+          "xp": 20
+        },
+        {
+          "id": "cg-h-02",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Straight Lines",
+          "prompt": "Find the minimum value of the sum of the intercepts made on the axes by a line passing through (4,3).",
+          "options": [
+            {
+              "text": "7+4√3",
+              "correct": true
+            },
+            {
+              "text": "7+2√3",
+              "correct": false
+            },
+            {
+              "text": "7+3√3",
+              "correct": false
+            },
+            {
+              "text": "7+√3",
+              "correct": false
+            }
+          ],
+          "explanation": "With intercepts a,b>0 and 4/a+3/b=1, the Cauchy-Schwarz inequality gives (4/a+3/b)(a+b) ≥ (√4+√3)², so a+b ≥ (2+√3)² = 7+4√3.",
+          "xp": 20
+        },
+        {
+          "id": "cg-h-03",
+          "type": "EXPRESSION",
+          "topic": "Circles",
+          "prompt": "Circle x²+y²=4 is tangent to the line y=x+c. Find all possible values of c. (format: ±2√2, no spaces)",
+          "answer": "±2√2",
+          "explanation": "Distance from the origin to x−y+c=0 must equal the radius 2: |c|/√2=2, so |c|=2√2.",
+          "xp": 16
+        },
+        {
+          "id": "cg-h-04",
+          "type": "EXPRESSION",
+          "topic": "Circles",
+          "prompt": "Find the circle orthogonal to x²+y²=1 that passes through (2,0) and (0,2). (format: no spaces)",
+          "answer": "2x^2+2y^2-5x-5y+2=0",
+          "explanation": "For a circle x²+y²+Dx+Ey+F=0 orthogonal to x²+y²=1 (where g₂=f₂=0, c₂=−1), the orthogonality condition gives F=1. Substituting the two given points: D=E=−5/2. So the circle is x²+y²−(5/2)x−(5/2)y+1=0, or cleared of fractions: 2x²+2y²−5x−5y+2=0.",
+          "xp": 22
+        },
+        {
+          "id": "cg-h-05",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Circles",
+          "prompt": "The chord of contact from point P to the circle x²+y²=25 is tangent to the circle x²+y²=9. Find the locus of P.",
+          "options": [
+            {
+              "text": "x²+y²=625/9",
+              "correct": true
+            },
+            {
+              "text": "x²+y²=225/9",
+              "correct": false
+            },
+            {
+              "text": "x²+y²=125/3",
+              "correct": false
+            },
+            {
+              "text": "x²+y²=25/3",
+              "correct": false
+            }
+          ],
+          "explanation": "For P(x₁,y₁), the chord of contact is xx₁+yy₁=25. This must be tangent to the smaller circle, so 25/√(x₁²+y₁²)=3, giving x₁²+y₁²=625/9.",
+          "xp": 20
+        },
+        {
+          "id": "cg-h-06",
+          "type": "NUMERIC",
+          "topic": "Circles & Parabola",
+          "prompt": "The line y=x+c is a common tangent to the circle x²+y²=1/2 and the parabola y²=4x, with c>0. Find c.",
+          "answer": "1",
+          "explanation": "Any line y=mx+a/m is tangent to y²=4ax. With a=1, m=1: c=1. Checking tangency to the circle: distance from origin to x−y+1=0 is 1/√2, matching the circle's radius √(1/2)=1/√2. Confirmed c=1.",
+          "xp": 22
+        },
+        {
+          "id": "cg-h-07",
+          "type": "EXPRESSION",
+          "topic": "Parabola",
+          "prompt": "The tangent at the vertex of y²=4ax is the line x=0. The tangent at point P(at²,2at) meets this vertex tangent at point Q. Find Q in terms of a and t. (format: (0,at), no spaces)",
+          "answer": "(0,at)",
+          "explanation": "The tangent at P(at²,2at) is ty=x+at². Setting x=0 (the vertex tangent) gives ty=at², so y=at. Thus Q=(0,at).",
+          "xp": 18
+        },
+        {
+          "id": "cg-h-08",
+          "type": "EXPRESSION",
+          "topic": "Ellipse",
+          "prompt": "Find the locus of the midpoint of a focal chord of the ellipse x²/a²+y²/b²=1, where the focus is (ae,0). (format: no spaces)",
+          "answer": "x^2/a^2+y^2/b^2=ex/a",
+          "explanation": "For a chord with midpoint (h,k), the equation is hx/a²+ky/b²=h²/a²+k²/b² (the T=S₁ form). Since this chord passes through the focus (ae,0): he/a=h²/a²+k²/b². Replacing (h,k) with (x,y) gives x²/a²+y²/b²=ex/a.",
+          "xp": 22
+        },
+        {
+          "id": "cg-h-09",
+          "type": "NUMERIC",
+          "topic": "Ellipse",
+          "prompt": "The tangent to x²/16+y²/9=1 at point P meets the coordinate axes at A and B. Find the minimum possible area of triangle OAB.",
+          "answer": "12",
+          "explanation": "Tangent at (4cosθ,3sinθ): (x cosθ)/4+(y sinθ)/3=1. Intercepts: A=(4/cosθ,0), B=(0,3/sinθ). Area = (1/2)(4/cosθ)(3/sinθ) = 6/(sinθcosθ) = 12/sin(2θ). This is minimized when sin(2θ)=1, giving minimum area 12.",
+          "xp": 24
+        },
+        {
+          "id": "cg-h-10",
+          "type": "NUMERIC",
+          "topic": "Ellipse",
+          "prompt": "An ellipse's latus rectum equals half its minor axis. Find e² (the square of the eccentricity).",
+          "answer": "0.75",
+          "explanation": "Latus rectum = 2b²/a; minor axis = 2b. Setting 2b²/a = (1/2)(2b) = b gives 2b=a, so b²/a²=1/4. Then e²=1−b²/a²=1−1/4=3/4.",
+          "xp": 22
+        },
+        {
+          "id": "cg-h-11",
+          "type": "NUMERIC",
+          "topic": "Hyperbola",
+          "prompt": "For the hyperbola x²/4−y²/9=1, the tangent at parameter t=1 (using P=(a·sec t, b·tan t)) cuts the two asymptotes at L and M. Find the area of triangle OLM.",
+          "answer": "6",
+          "explanation": "For any hyperbola, the tangent at any point cuts the asymptotes at L,M such that the area of triangle OLM is always ab, regardless of the point chosen. Here ab=2×3=6.",
+          "xp": 20
+        },
+        {
+          "id": "cg-h-12",
+          "type": "NUMERIC",
+          "topic": "Hyperbola",
+          "prompt": "The tangent to the rectangular hyperbola xy=c² at the point (ct, c/t) meets the coordinate axes at A and B. Find the area of triangle OAB in terms of c.",
+          "answer": "2c^2",
+          "explanation": "The tangent at (ct,c/t) is x/t+ty=2c, giving intercepts A=(2ct,0) and B=(0,2c/t). Area = (1/2)(2ct)(2c/t) = 2c².",
+          "xp": 20
+        },
+        {
+          "id": "cg-h-13",
+          "type": "NUMERIC",
+          "topic": "Circles & Parabola",
+          "prompt": "Find the equation of the circle whose diameter is the latus rectum of the parabola y²=8x.",
+          "answer": "x^2+y^2-4x-12=0",
+          "explanation": "For y²=8x, a=2, so the latus rectum endpoints are (2,4) and (2,−4). The circle has center (2,0) and radius 4: (x−2)²+y²=16, which expands to x²+y²−4x−12=0.",
+          "xp": 20
+        },
+        {
+          "id": "cg-h-14",
+          "type": "NUMERIC",
+          "topic": "Circles",
+          "prompt": "Find the length of the common chord of the circles x²+y²=10 and x²+y²−2x−2y−2=0.",
+          "answer": "2.83",
+          "explanation": "Subtracting the equations gives the radical axis: 2x+2y−8=0, i.e. x+y−4=0. The first circle has center (0,0) and radius √10. Distance from center to this line is 4/√2=2√2, so half the chord length is √(10−8)=√2, giving a full chord length of 2√2 ≈ 2.83.",
+          "xp": 20
+        },
+        {
+          "id": "cg-h-15",
+          "type": "EXPRESSION",
+          "topic": "Circles",
+          "prompt": "A variable circle passes through A(2,3) and cuts the circle x²+y²=4 orthogonally. Find the locus of its center. (enter as an equation, no spaces)",
+          "answer": "2x+3y=17/2",
+          "explanation": "For center (h,k) and radius r, orthogonality with x²+y²=4 gives r²=h²+k²−4. Since the circle passes through A(2,3): (2−h)²+(3−k)²=r²=h²+k²−4. Expanding and simplifying gives 4h+6k=17, i.e. 2x+3y=17/2.",
+          "xp": 22
+        },
+        {
+          "id": "cg-h-16",
+          "type": "EXPRESSION",
+          "topic": "Parabola",
+          "prompt": "The line y=mx is a chord of the parabola y²=4ax. If (p,q) is the midpoint of this chord, find the relation between p and q. (format: no spaces)",
+          "answer": "q^2=2ap",
+          "explanation": "Substituting y=mx into y²=4ax gives x=0 or x=4a/m². The midpoint is (2a/m², 2a/m). Eliminating m: from q=2a/m, m=2a/q, so p=2a/m²=q²/(2a), giving q²=2ap.",
+          "xp": 20
+        },
+        {
+          "id": "cg-h-17",
+          "type": "NUMERIC",
+          "topic": "Conic Sections",
+          "prompt": "Find the eccentricity of the conic 9x²−16y²−36x+32y−124=0.",
+          "answer": "1.25",
+          "explanation": "Completing the square: 9(x−2)²−16(y−1)²=144, giving (x−2)²/16−(y−1)²/9=1. This is a hyperbola with a²=16, b²=9, so e²=1+b²/a²=1+9/16=25/16, giving e=5/4=1.25.",
+          "xp": 22
+        },
+        {
+          "id": "cg-h-18",
+          "type": "NUMERIC",
+          "topic": "Conic Sections",
+          "prompt": "A line xcosα+ysinα=p is tangent to both the ellipse x²/a²+y²/b²=1 and the hyperbola x²/a²−y²/b²=1 (same a,b). Find p²/a².",
+          "answer": "1",
+          "explanation": "Tangency to the ellipse requires p²=a²cos²α+b²sin²α; tangency to the hyperbola requires p²=a²cos²α−b²sin²α. Equating both forces sinα=0, which gives p²=a². So p²/a²=1.",
+          "xp": 24
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "levelName": "Advanced",
+      "questions": [
+        {
+          "id": "cg-a-01",
+          "type": "NUMERIC",
+          "topic": "Parabola",
+          "prompt": "Find the x-coordinate of every point from which two perpendicular tangents can be drawn to the parabola y²=8x. (This locus is a vertical line — give its x-value.)",
+          "answer": "-2",
+          "explanation": "The locus of points from which perpendicular tangents can be drawn to a parabola is always its directrix. For y²=8x (so a=2), the directrix is x=−a=−2.",
+          "xp": 24
+        },
+        {
+          "id": "cg-a-02",
+          "type": "NUMERIC",
+          "topic": "Ellipse",
+          "prompt": "Find the radius of the director circle of the ellipse x²/16+y²/9=1 (the locus of points from which perpendicular tangents can be drawn to the ellipse).",
+          "answer": "5",
+          "explanation": "The director circle of an ellipse is x²+y²=a²+b². Here a²+b²=16+9=25, so the radius is √25=5.",
+          "xp": 22
+        },
+        {
+          "id": "cg-a-03",
+          "type": "EXPRESSION",
+          "topic": "Ellipse",
+          "prompt": "A variable chord of the ellipse x²/a²+y²/b²=1 subtends a right angle at the center. Find the distance from the center to this chord, in terms of a and b. (format: no spaces)",
+          "answer": "ab/√(a²+b²)",
+          "explanation": "This is a standard result: any chord subtending a right angle at the center of the ellipse stays at a constant distance ab/√(a²+b²) from the center.",
+          "xp": 24
+        },
+        {
+          "id": "cg-a-04",
+          "type": "NUMERIC",
+          "topic": "Ellipse",
+          "prompt": "For the ellipse x²/a²+y²/b²=1, the tangent and normal at point P meet the major axis at T and N. If OT·ON = a²/2, find e² (the square of the eccentricity).",
+          "answer": "0.5",
+          "explanation": "The tangent at (a cosθ,b sinθ) meets the x-axis at T=(a/cosθ,0). The normal meets it at N=((a²−b²)cosθ/a,0). Their product OT·ON simplifies to a²−b²=a²e², independent of θ. Setting a²e²=a²/2 gives e²=1/2.",
+          "xp": 24
+        },
+        {
+          "id": "cg-a-05",
+          "type": "NUMERIC",
+          "topic": "Hyperbola",
+          "prompt": "Find y²−x² for the director circle of the hyperbola x²/9−y²/16=1 (the locus of points from which perpendicular tangents can be drawn).",
+          "answer": "7",
+          "explanation": "The director circle of a hyperbola is x²−y²=a²−b². Here a²−b²=9−16=−7, so y²−x²=7.",
+          "xp": 22
+        },
+        {
+          "id": "cg-a-06",
+          "type": "NUMERIC",
+          "topic": "Parabola",
+          "prompt": "Find the minimum distance from a point on the parabola y²=4x to the line x+y+3=0, rounded to 2 decimal places.",
+          "answer": "1.41",
+          "explanation": "A point on the parabola is (t²,2t). Its distance to the line is |t²+2t+3|/√2. Minimizing t²+2t+3 (always positive) gives its minimum at t=−1, value 2, so minimum distance = 2/√2 = √2 ≈ 1.41.",
+          "xp": 24
+        },
+        {
+          "id": "cg-a-07",
+          "type": "EXPRESSION",
+          "topic": "Hyperbola",
+          "prompt": "For a hyperbola, the conjugate axis equals half the distance between the foci. Find the eccentricity e. (format: 2/√3, no spaces)",
+          "answer": "2/√3",
+          "explanation": "Conjugate axis = 2b; distance between foci = 2ae. Setting 2b = (1/2)(2ae) = ae gives b² = a²e²/4. Since b²=a²(e²−1): a²(e²−1)=a²e²/4, giving (3/4)e²=1, so e²=4/3 and e=2/√3.",
+          "xp": 24
+        },
+        {
+          "id": "cg-a-08",
+          "type": "EXPRESSION",
+          "topic": "Hyperbola",
+          "prompt": "Find the length of the latus rectum of the hyperbola 9x²−16y²=144. (enter as a reduced fraction)",
+          "answer": "9/2",
+          "explanation": "Dividing by 144 gives the standard form x²/16−y²/9=1, so a=4, b=3. The latus rectum length is 2b²/a = 18/4 = 9/2.",
+          "xp": 20
+        },
+        {
+          "id": "cg-a-09",
+          "type": "EXPRESSION",
+          "topic": "Parabola",
+          "prompt": "A chord of the parabola y²=4ax subtends a right angle at the vertex. Find the locus of the chord's midpoint. (format: no spaces)",
+          "answer": "y^2=2a(x-4a)",
+          "explanation": "For points P(at₁²,2at₁), Q(at₂²,2at₂) with OP⊥OQ, the condition works out to t₁t₂=−4. Writing the midpoint as (h,k) and eliminating t₁,t₂ using t₁t₂=−4 and t₁+t₂=k/a gives the locus y²=2a(x−4a).",
+          "xp": 26
+        },
+        {
+          "id": "cg-a-10",
+          "type": "EXPRESSION",
+          "topic": "Hyperbola",
+          "prompt": "If e₁ and e₂ are the eccentricities of a hyperbola and its conjugate hyperbola, they satisfy 1/e₁²+1/e₂²=1. If e₁=2, find e₂. (format: 2/√3, no spaces)",
+          "answer": "2/√3",
+          "explanation": "1/4+1/e₂²=1 gives 1/e₂²=3/4, so e₂²=4/3 and e₂=2/√3.",
+          "xp": 22
+        },
+        {
+          "id": "cg-a-11",
+          "type": "EXPRESSION",
+          "topic": "Ellipse",
+          "prompt": "An ellipse's latus rectum equals the distance between its foci. Find e² + e (where e is the eccentricity), given e²+e−1=0. (enter as a single number)",
+          "answer": "1",
+          "explanation": "Latus rectum = 2b²/a; distance between foci = 2ae. Setting these equal: b²=a²e. Since b²=a²(1−e²): 1−e²=e, giving e²+e−1=0 — and by that equation, e²+e simply equals 1 directly. (Solving further, e=(√5−1)/2, the reciprocal of the golden ratio.)",
+          "xp": 26
+        },
+        {
+          "id": "cg-a-12",
+          "type": "EXPRESSION",
+          "topic": "Ellipse",
+          "prompt": "Tangents are drawn from the point (4,3) to the ellipse x²/16+y²/9=1. Find the equation of the chord of contact. (format: no spaces)",
+          "answer": "3x+4y=12",
+          "explanation": "First confirm (4,3) is outside the ellipse: 16/16+9/9=2>1, so tangents exist. The chord of contact from (x₁,y₁) is xx₁/a²+yy₁/b²=1. Substituting: 4x/16+3y/9=1, i.e. x/4+y/3=1, which clears to 3x+4y=12.",
+          "xp": 22
+        },
+        {
+          "id": "cg-a-13",
+          "type": "EXPRESSION",
+          "topic": "Parabola",
+          "prompt": "Tangents to the parabola y²=4ax at parameters t₁ and t₂ meet at point P. If the chord joining t₁ and t₂ passes through the focus (a,0), find the locus of P (a vertical line — give its equation). (format: x=-a, no spaces)",
+          "answer": "x=-a",
+          "explanation": "Tangents at t₁,t₂ meet at (at₁t₂, a(t₁+t₂)). A focal chord requires t₁t₂=−1. Substituting into the x-coordinate: x=a(−1)=−a for all such P, so the locus is the line x=−a.",
+          "xp": 24
+        }
+      ]
+    }
+  ]
+}

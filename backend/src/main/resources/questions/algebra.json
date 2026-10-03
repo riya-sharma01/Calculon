@@ -1,0 +1,3669 @@
+{
+ "domain": "Algebra",
+ "levels": [
+  {
+   "level": 1,
+   "levelName": "Foundation",
+   "questions": [
+    {
+     "id": "alg3-f-set-01",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Sets",
+     "prompt": "If A = {1,2,3,4} and B = {3,4,5,6}, find A \u2229 B.",
+     "options": [
+      {
+       "text": "{1,2}",
+       "correct": false
+      },
+      {
+       "text": "{3,4}",
+       "correct": true
+      },
+      {
+       "text": "{5,6}",
+       "correct": false
+      },
+      {
+       "text": "{1,2,3,4,5,6}",
+       "correct": false
+      }
+     ],
+     "explanation": "A \u2229 B contains elements common to both sets: 3 and 4.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-set-02",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Sets",
+     "prompt": "If A = {1,2,3} and B = {2,3,4}, find A \u222a B.",
+     "options": [
+      {
+       "text": "{2,3}",
+       "correct": false
+      },
+      {
+       "text": "{1,2,3,4}",
+       "correct": true
+      },
+      {
+       "text": "{1,4}",
+       "correct": false
+      },
+      {
+       "text": "{1,2,3}",
+       "correct": false
+      }
+     ],
+     "explanation": "The union contains all elements from both sets without repetition: {1,2,3,4}.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-set-03",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Sets",
+     "prompt": "How many subsets does a set with 5 elements have?",
+     "options": [
+      {
+       "text": "10",
+       "correct": false
+      },
+      {
+       "text": "16",
+       "correct": false
+      },
+      {
+       "text": "25",
+       "correct": false
+      },
+      {
+       "text": "32",
+       "correct": true
+      }
+     ],
+     "explanation": "A set with n elements has 2^n subsets. Here 2^5 = 32.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-set-04",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Sets",
+     "prompt": "If A = {1,2,3} and B = {4,5}, find n(A \u00d7 B).",
+     "options": [
+      {
+       "text": "5",
+       "correct": false
+      },
+      {
+       "text": "6",
+       "correct": true
+      },
+      {
+       "text": "7",
+       "correct": false
+      },
+      {
+       "text": "8",
+       "correct": false
+      }
+     ],
+     "explanation": "n(A \u00d7 B) = n(A) \u00d7 n(B) = 3 \u00d7 2 = 6.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-set-05",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Sets",
+     "prompt": "If U = {1,2,...,10} and A = {2,4,6,8,10}, find A\u2032 (complement of A in U).",
+     "options": [
+      {
+       "text": "{1,3,5,7,9}",
+       "correct": true
+      },
+      {
+       "text": "{2,4,6,8,10}",
+       "correct": false
+      },
+      {
+       "text": "{1,2,3,4,5}",
+       "correct": false
+      },
+      {
+       "text": "{}",
+       "correct": false
+      }
+     ],
+     "explanation": "A\u2032 consists of all elements of U not in A, i.e. the odd numbers 1 to 9.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-set-06",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Sets",
+     "prompt": "Which of the following is the empty set?",
+     "options": [
+      {
+       "text": "{0}",
+       "correct": false
+      },
+      {
+       "text": "{x : x is a real number and x\u00b2 = -1}",
+       "correct": false
+      },
+      {
+       "text": "{x : x is a natural number less than 1}",
+       "correct": false
+      },
+      {
+       "text": "Both (ii) and (iii)",
+       "correct": true
+      }
+     ],
+     "explanation": "No real number squares to -1, and no natural number is less than 1, so both sets described are empty.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-rf-01",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Relations & Functions",
+     "prompt": "If f(x) = 2x + 3, find f(4).",
+     "options": [
+      {
+       "text": "7",
+       "correct": false
+      },
+      {
+       "text": "9",
+       "correct": false
+      },
+      {
+       "text": "11",
+       "correct": true
+      },
+      {
+       "text": "14",
+       "correct": false
+      }
+     ],
+     "explanation": "f(4) = 2(4) + 3 = 8 + 3 = 11.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-rf-02",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Relations & Functions",
+     "prompt": "Find the domain of f(x) = 1/(x - 3).",
+     "options": [
+      {
+       "text": "All real numbers",
+       "correct": false
+      },
+      {
+       "text": "All real numbers except 3",
+       "correct": true
+      },
+      {
+       "text": "All real numbers except 0",
+       "correct": false
+      },
+      {
+       "text": "x > 3 only",
+       "correct": false
+      }
+     ],
+     "explanation": "The function is undefined when the denominator is zero, i.e. x = 3, so the domain excludes 3.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-rf-03",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Relations & Functions",
+     "prompt": "If A = {1,2,3} and B = {4,5}, how many relations can be defined from A to B?",
+     "options": [
+      {
+       "text": "2^6",
+       "correct": true
+      },
+      {
+       "text": "2^5",
+       "correct": false
+      },
+      {
+       "text": "6",
+       "correct": false
+      },
+      {
+       "text": "64",
+       "correct": false
+      }
+     ],
+     "explanation": "A relation from A to B is a subset of A \u00d7 B, and n(A\u00d7B) = 3\u00d72 = 6, so the number of relations is 2^6 = 64.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-rf-04",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Relations & Functions",
+     "prompt": "Which of the following relations on {1,2,3} is reflexive?",
+     "options": [
+      {
+       "text": "{(1,1),(2,2)}",
+       "correct": false
+      },
+      {
+       "text": "{(1,1),(2,2),(3,3)}",
+       "correct": true
+      },
+      {
+       "text": "{(1,2),(2,3)}",
+       "correct": false
+      },
+      {
+       "text": "{(1,1),(2,3)}",
+       "correct": false
+      }
+     ],
+     "explanation": "A reflexive relation must contain (a,a) for every element a. Only {(1,1),(2,2),(3,3)} satisfies this for all of 1, 2, 3.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-rf-05",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Relations & Functions",
+     "prompt": "If f(x) = x\u00b2 and g(x) = x + 1, find (f\u2218g)(2).",
+     "options": [
+      {
+       "text": "5",
+       "correct": false
+      },
+      {
+       "text": "7",
+       "correct": false
+      },
+      {
+       "text": "9",
+       "correct": true
+      },
+      {
+       "text": "4",
+       "correct": false
+      }
+     ],
+     "explanation": "(f\u2218g)(2) = f(g(2)) = f(3) = 3\u00b2 = 9.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-rf-06",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Relations & Functions",
+     "prompt": "Is the function f: R \u2192 R, f(x) = 3x - 5 one-one (injective)?",
+     "options": [
+      {
+       "text": "Yes, since it is strictly increasing",
+       "correct": true
+      },
+      {
+       "text": "No, since it is linear",
+       "correct": false
+      },
+      {
+       "text": "No, since it is not onto",
+       "correct": false
+      },
+      {
+       "text": "Cannot be determined",
+       "correct": false
+      }
+     ],
+     "explanation": "f is strictly increasing (slope 3 > 0), so distinct inputs always give distinct outputs, making it injective.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-ind-01",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Mathematical Induction",
+     "prompt": "In the principle of mathematical induction, what is the first step called?",
+     "options": [
+      {
+       "text": "Inductive step",
+       "correct": false
+      },
+      {
+       "text": "Base case",
+       "correct": true
+      },
+      {
+       "text": "Hypothesis",
+       "correct": false
+      },
+      {
+       "text": "Conclusion",
+       "correct": false
+      }
+     ],
+     "explanation": "The base case (or basis step) verifies the statement for the smallest value, typically n = 1.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-ind-02",
+     "type": "NUMERIC",
+     "topic": "Mathematical Induction",
+     "prompt": "Using P(n): 1 + 2 + 3 + ... + n = n(n+1)/2, verify P(n) for n = 4. What is the sum 1+2+3+4?",
+     "answer": "10",
+     "explanation": "1+2+3+4 = 10, and n(n+1)/2 = 4(5)/2 = 10, confirming the formula for n=4.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-ind-03",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Mathematical Induction",
+     "prompt": "To prove P(n) true for all n \u2265 1 by induction, after the base case, we assume P(k) is true and must show:",
+     "options": [
+      {
+       "text": "P(1) is true",
+       "correct": false
+      },
+      {
+       "text": "P(k) is false",
+       "correct": false
+      },
+      {
+       "text": "P(k+1) is true",
+       "correct": true
+      },
+      {
+       "text": "P(k-1) is true",
+       "correct": false
+      }
+     ],
+     "explanation": "The inductive step assumes P(k) holds (inductive hypothesis) and proves P(k+1) also holds.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-ind-04",
+     "type": "NUMERIC",
+     "topic": "Mathematical Induction",
+     "prompt": "If P(n): n\u00b3 - n is divisible by 6, check P(3): what is 3\u00b3 - 3?",
+     "answer": "24",
+     "explanation": "3\u00b3 - 3 = 27 - 3 = 24, and 24/6 = 4, so it is divisible by 6.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-ind-05",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Mathematical Induction",
+     "prompt": "Which statement correctly describes mathematical induction?",
+     "options": [
+      {
+       "text": "A method to prove a statement for exactly one value of n",
+       "correct": false
+      },
+      {
+       "text": "A method to prove a statement for all natural numbers n \u2265 a base value",
+       "correct": true
+      },
+      {
+       "text": "A method used only in geometry",
+       "correct": false
+      },
+      {
+       "text": "A method that works without checking a base case",
+       "correct": false
+      }
+     ],
+     "explanation": "Mathematical induction proves a statement holds for all natural numbers starting from a base value by verifying the base case and the inductive step.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-ind-06",
+     "type": "NUMERIC",
+     "topic": "Mathematical Induction",
+     "prompt": "Using P(n): sum of first n odd numbers = n\u00b2. Find the sum of the first 5 odd numbers.",
+     "answer": "25",
+     "explanation": "1+3+5+7+9 = 25 = 5\u00b2.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-cn-01",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Complex Numbers",
+     "prompt": "Simplify i\u00b2 + i\u00b3.",
+     "options": [
+      {
+       "text": "0",
+       "correct": false
+      },
+      {
+       "text": "-1 - i",
+       "correct": true
+      },
+      {
+       "text": "1 + i",
+       "correct": false
+      },
+      {
+       "text": "-i - 1",
+       "correct": false
+      }
+     ],
+     "explanation": "i\u00b2 = -1 and i\u00b3 = -i, so i\u00b2 + i\u00b3 = -1 - i.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-cn-02",
+     "type": "NUMERIC",
+     "topic": "Complex Numbers",
+     "prompt": "Find the real part of the complex number z = 5 - 2i.",
+     "answer": "5",
+     "explanation": "The real part of a + bi is a, so Re(z) = 5.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-cn-03",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Complex Numbers",
+     "prompt": "If z = 3 + 4i, find |z| (the modulus).",
+     "options": [
+      {
+       "text": "5",
+       "correct": true
+      },
+      {
+       "text": "7",
+       "correct": false
+      },
+      {
+       "text": "25",
+       "correct": false
+      },
+      {
+       "text": "3",
+       "correct": false
+      }
+     ],
+     "explanation": "|z| = \u221a(3\u00b2 + 4\u00b2) = \u221a(9+16) = \u221a25 = 5.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-cn-04",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Complex Numbers",
+     "prompt": "Find the value of i^20.",
+     "options": [
+      {
+       "text": "1",
+       "correct": true
+      },
+      {
+       "text": "-1",
+       "correct": false
+      },
+      {
+       "text": "i",
+       "correct": false
+      },
+      {
+       "text": "-i",
+       "correct": false
+      }
+     ],
+     "explanation": "i has period 4, and 20 is divisible by 4, so i^20 = (i^4)^5 = 1^5 = 1.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-cn-05",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Complex Numbers",
+     "prompt": "What is the conjugate of z = -2 + 7i?",
+     "options": [
+      {
+       "text": "2 - 7i",
+       "correct": false
+      },
+      {
+       "text": "-2 - 7i",
+       "correct": true
+      },
+      {
+       "text": "2 + 7i",
+       "correct": false
+      },
+      {
+       "text": "-7i - 2",
+       "correct": false
+      }
+     ],
+     "explanation": "The conjugate of a + bi is a - bi, so the conjugate of -2 + 7i is -2 - 7i.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-cn-06",
+     "type": "NUMERIC",
+     "topic": "Complex Numbers",
+     "prompt": "If z1 = 2 + 3i and z2 = 1 - i, find the real part of z1 + z2.",
+     "answer": "3",
+     "explanation": "z1 + z2 = (2+1) + (3-1)i = 3 + 2i, so the real part is 3.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-qe-01",
+     "type": "NUMERIC",
+     "topic": "Quadratic Equations",
+     "prompt": "Find the sum of the roots of x\u00b2 - 7x + 12 = 0.",
+     "answer": "7",
+     "explanation": "For ax\u00b2+bx+c=0, sum of roots = -b/a = 7/1 = 7.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-qe-02",
+     "type": "NUMERIC",
+     "topic": "Quadratic Equations",
+     "prompt": "Find the product of the roots of x\u00b2 - 5x + 6 = 0.",
+     "answer": "6",
+     "explanation": "Product of roots = c/a = 6/1 = 6.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-qe-03",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Quadratic Equations",
+     "prompt": "Solve x\u00b2 - 9 = 0.",
+     "options": [
+      {
+       "text": "x = 3 only",
+       "correct": false
+      },
+      {
+       "text": "x = -3 only",
+       "correct": false
+      },
+      {
+       "text": "x = \u00b13",
+       "correct": true
+      },
+      {
+       "text": "x = \u00b19",
+       "correct": false
+      }
+     ],
+     "explanation": "x\u00b2 = 9 gives x = 3 or x = -3, i.e. x = \u00b13.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-qe-04",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Quadratic Equations",
+     "prompt": "Find the discriminant of 2x\u00b2 - 4x + 1 = 0.",
+     "options": [
+      {
+       "text": "8",
+       "correct": true
+      },
+      {
+       "text": "16",
+       "correct": false
+      },
+      {
+       "text": "-8",
+       "correct": false
+      },
+      {
+       "text": "24",
+       "correct": false
+      }
+     ],
+     "explanation": "Discriminant D = b\u00b2 - 4ac = (-4)\u00b2 - 4(2)(1) = 16 - 8 = 8.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-qe-05",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Quadratic Equations",
+     "prompt": "For what nature of roots is the discriminant D = 0?",
+     "options": [
+      {
+       "text": "Two distinct real roots",
+       "correct": false
+      },
+      {
+       "text": "No real roots",
+       "correct": false
+      },
+      {
+       "text": "Two equal real roots",
+       "correct": true
+      },
+      {
+       "text": "Three real roots",
+       "correct": false
+      }
+     ],
+     "explanation": "When D = 0, the quadratic has exactly one repeated real root, i.e. two equal real roots.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-qe-06",
+     "type": "NUMERIC",
+     "topic": "Quadratic Equations",
+     "prompt": "Solve for the positive root of x\u00b2 - 2x - 15 = 0.",
+     "answer": "5",
+     "explanation": "Factoring: (x-5)(x+3)=0, so x = 5 or x = -3. The positive root is 5.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-li-01",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Linear Inequalities",
+     "prompt": "Solve 2x + 3 > 7 for x.",
+     "options": [
+      {
+       "text": "x > 2",
+       "correct": true
+      },
+      {
+       "text": "x < 2",
+       "correct": false
+      },
+      {
+       "text": "x > 5",
+       "correct": false
+      },
+      {
+       "text": "x \u2265 2",
+       "correct": false
+      }
+     ],
+     "explanation": "2x + 3 > 7 \u21d2 2x > 4 \u21d2 x > 2.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-li-02",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Linear Inequalities",
+     "prompt": "Solve -3x > 9 for x.",
+     "options": [
+      {
+       "text": "x > -3",
+       "correct": false
+      },
+      {
+       "text": "x < -3",
+       "correct": true
+      },
+      {
+       "text": "x > 3",
+       "correct": false
+      },
+      {
+       "text": "x < 3",
+       "correct": false
+      }
+     ],
+     "explanation": "Dividing by a negative number reverses the inequality: -3x > 9 \u21d2 x < -3.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-li-03",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Linear Inequalities",
+     "prompt": "Which graph region represents x \u2265 4 on a number line?",
+     "options": [
+      {
+       "text": "All points to the left of 4, excluding 4",
+       "correct": false
+      },
+      {
+       "text": "All points to the right of 4, including 4",
+       "correct": true
+      },
+      {
+       "text": "Only the point 4",
+       "correct": false
+      },
+      {
+       "text": "All points to the left of 4, including 4",
+       "correct": false
+      }
+     ],
+     "explanation": "x \u2265 4 includes 4 and everything greater, i.e. all points to the right of 4 including 4 itself.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-li-04",
+     "type": "NUMERIC",
+     "topic": "Linear Inequalities",
+     "prompt": "How many positive integers satisfy 2x - 1 < 9?",
+     "answer": "4",
+     "explanation": "2x - 1 < 9 \u21d2 x < 5. Positive integers less than 5 are 1,2,3,4 \u2014 that's 4 values.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-li-05",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Linear Inequalities",
+     "prompt": "Solve the compound inequality -2 \u2264 x - 1 \u2264 3.",
+     "options": [
+      {
+       "text": "-1 \u2264 x \u2264 4",
+       "correct": true
+      },
+      {
+       "text": "-3 \u2264 x \u2264 2",
+       "correct": false
+      },
+      {
+       "text": "1 \u2264 x \u2264 4",
+       "correct": false
+      },
+      {
+       "text": "-1 \u2264 x \u2264 2",
+       "correct": false
+      }
+     ],
+     "explanation": "Add 1 to all parts: -2+1 \u2264 x \u2264 3+1 \u21d2 -1 \u2264 x \u2264 4.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-li-06",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Linear Inequalities",
+     "prompt": "If x and y are real numbers with x > y, which is always true?",
+     "options": [
+      {
+       "text": "x + 3 > y + 3",
+       "correct": true
+      },
+      {
+       "text": "x - 3 < y - 3",
+       "correct": false
+      },
+      {
+       "text": "-x > -y",
+       "correct": false
+      },
+      {
+       "text": "x\u00b2 > y\u00b2",
+       "correct": false
+      }
+     ],
+     "explanation": "Adding the same constant to both sides of an inequality preserves it, so x + 3 > y + 3 is always true.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-pc-01",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "Evaluate 5!.",
+     "answer": "120",
+     "explanation": "5! = 5\u00d74\u00d73\u00d72\u00d71 = 120.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-pc-02",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "Evaluate 6P2 (permutations of 6 things taken 2 at a time).",
+     "answer": "30",
+     "explanation": "6P2 = 6!/(6-2)! = 6\u00d75 = 30.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-pc-03",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "Evaluate 7C3.",
+     "answer": "35",
+     "explanation": "7C3 = 7!/(3!4!) = 35.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-pc-04",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "How many ways can 4 different books be arranged on a shelf?",
+     "answer": "24",
+     "explanation": "The number of arrangements of 4 distinct items is 4! = 24.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-pc-05",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "In how many ways can a committee of 3 be chosen from 5 people (order doesn't matter)?",
+     "answer": "10",
+     "explanation": "This is 5C3 = 5!/(3!2!) = 10.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-pc-06",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Permutations & Combinations",
+     "prompt": "What is the value of 0! ?",
+     "options": [
+      {
+       "text": "0",
+       "correct": false
+      },
+      {
+       "text": "1",
+       "correct": true
+      },
+      {
+       "text": "undefined",
+       "correct": false
+      },
+      {
+       "text": "-1",
+       "correct": false
+      }
+     ],
+     "explanation": "By definition, 0! = 1.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-pc-07",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "How many 3-letter words (with repetition allowed) can be formed from 4 distinct letters?",
+     "answer": "64",
+     "explanation": "Each of the 3 positions has 4 choices independently: 4\u00d74\u00d74 = 64.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-pc-08",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "In how many ways can 3 people be seated in a row of 3 chairs?",
+     "answer": "6",
+     "explanation": "The number of arrangements of 3 distinct people is 3! = 6.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-pc-09",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "How many diagonals does a hexagon (6 sides) have? Use diagonals = nC2 - n.",
+     "answer": "9",
+     "explanation": "6C2 - 6 = 15 - 6 = 9.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-pc-10",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "From 6 men and 4 women, in how many ways can 2 men be chosen (ignore the women for this count)?",
+     "answer": "15",
+     "explanation": "6C2 = 15.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-pc-11",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Permutations & Combinations",
+     "prompt": "Which formula gives the number of permutations of n distinct objects taken r at a time?",
+     "options": [
+      {
+       "text": "n!/(n-r)!",
+       "correct": true
+      },
+      {
+       "text": "n!/(r!(n-r)!)",
+       "correct": false
+      },
+      {
+       "text": "n!/r!",
+       "correct": false
+      },
+      {
+       "text": "r!/(n-r)!",
+       "correct": false
+      }
+     ],
+     "explanation": "nPr = n!/(n-r)! counts ordered selections of r objects from n.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-pc-12",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "How many ways can the letters of the word 'CAT' be arranged?",
+     "answer": "6",
+     "explanation": "CAT has 3 distinct letters, so arrangements = 3! = 6.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-pc-13",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "In how many ways can you choose 1 captain and 1 vice-captain from 5 players (two different roles)?",
+     "answer": "20",
+     "explanation": "This is an ordered selection: 5P2 = 5\u00d74 = 20.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-pc-14",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "How many 2-digit numbers can be formed using digits 1,2,3,4 without repetition?",
+     "answer": "12",
+     "explanation": "First digit: 4 choices, second digit: 3 remaining choices. 4\u00d73 = 12.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-bt-01",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Find the number of terms in the expansion of (x + y)^6.",
+     "answer": "7",
+     "explanation": "The expansion of (x+y)^n has n+1 terms, so (x+y)^6 has 7 terms.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-bt-02",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Find the value of the binomial coefficient 4C2.",
+     "answer": "6",
+     "explanation": "4C2 = 4!/(2!2!) = 6.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-bt-03",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "In the expansion of (x+y)^5, find the coefficient of x\u00b3y\u00b2.",
+     "answer": "10",
+     "explanation": "The coefficient of x^(5-k) y^k is 5Ck. For x\u00b3y\u00b2, k=2: 5C2 = 10.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-bt-04",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Binomial Theorem",
+     "prompt": "The general term in the expansion of (a+b)^n is given by:",
+     "options": [
+      {
+       "text": "nCr\u00b7a^(n-r)\u00b7b^r",
+       "correct": true
+      },
+      {
+       "text": "nCr\u00b7a^r\u00b7b^(n-r)",
+       "correct": false
+      },
+      {
+       "text": "nPr\u00b7a^(n-r)\u00b7b^r",
+       "correct": false
+      },
+      {
+       "text": "n!\u00b7a^(n-r)\u00b7b^r",
+       "correct": false
+      }
+     ],
+     "explanation": "The general (r+1)th term of (a+b)^n is T(r+1) = nCr\u00b7a^(n-r)\u00b7b^r.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-bt-05",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Expand (x+1)^3 and find the coefficient of x\u00b2.",
+     "answer": "3",
+     "explanation": "(x+1)^3 = x\u00b3+3x\u00b2+3x+1, so the coefficient of x\u00b2 is 3.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-bt-06",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Find the middle term's position in the expansion of (x+y)^6 (total 7 terms).",
+     "answer": "4",
+     "explanation": "With 7 terms (odd count), the middle term is the 4th term.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-bt-07",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Using (a+b)^2 = a\u00b2 + 2ab + b\u00b2, evaluate 102\u00b2 using a=100, b=2.",
+     "answer": "10404",
+     "explanation": "102\u00b2 = 100\u00b2 + 2(100)(2) + 2\u00b2 = 10000+400+4 = 10404.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-bt-08",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Find the value of 6C0 + 6C6.",
+     "answer": "2",
+     "explanation": "6C0 = 1 and 6C6 = 1, so their sum is 2.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-bt-09",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "In the expansion of (2+x)^4, find the constant term (term with x\u2070).",
+     "answer": "16",
+     "explanation": "The term with x\u2070 is 4C0\u00b72\u2074\u00b7x\u2070 = 1\u00b716 = 16.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-bt-10",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Binomial Theorem",
+     "prompt": "Which is true for binomial coefficients: nCr = ?",
+     "options": [
+      {
+       "text": "nC(n-r)",
+       "correct": true
+      },
+      {
+       "text": "nC(r-1)",
+       "correct": false
+      },
+      {
+       "text": "(n-1)C(r-1)",
+       "correct": false
+      },
+      {
+       "text": "nC(n+r)",
+       "correct": false
+      }
+     ],
+     "explanation": "Binomial coefficients are symmetric: nCr = nC(n-r).",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-bt-11",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Find the number of terms in the expansion of (2x - 3y)^8.",
+     "answer": "9",
+     "explanation": "(a+b)^n has n+1 terms, so (2x-3y)^8 has 9 terms.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-bt-12",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "In the expansion of (1+x)^4, find the coefficient of x\u00b3.",
+     "answer": "4",
+     "explanation": "The coefficient of x\u00b3 is 4C3 = 4.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-bt-13",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Evaluate (1+1)^4 using the binomial theorem to verify 4C0+4C1+4C2+4C3+4C4.",
+     "answer": "16",
+     "explanation": "(1+1)^4 = 2^4 = 16, which equals the sum of all binomial coefficients.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-ss-01",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find the 5th term of the AP whose first term is 3 and common difference is 4.",
+     "answer": "19",
+     "explanation": "a5 = a + 4d = 3 + 4(4) = 19.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-ss-02",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find the sum of the first 10 natural numbers.",
+     "answer": "55",
+     "explanation": "Sum = n(n+1)/2 = 10(11)/2 = 55.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-ss-03",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find the common ratio of the GP: 2, 6, 18, 54, ...",
+     "answer": "3",
+     "explanation": "Each term is obtained by multiplying the previous by 3, so r = 3.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-ss-04",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find the 4th term of the GP with first term 5 and common ratio 2.",
+     "answer": "40",
+     "explanation": "a4 = a\u00b7r\u00b3 = 5(2)\u00b3 = 40.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-ss-05",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find the sum of the first 5 terms of the AP: 1, 3, 5, 7, 9.",
+     "answer": "25",
+     "explanation": "Sum = 1+3+5+7+9 = 25.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-ss-06",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Sequences & Series",
+     "prompt": "In an AP, if a = 2 and d = 0, what can be said about the sequence?",
+     "options": [
+      {
+       "text": "It is strictly increasing",
+       "correct": false
+      },
+      {
+       "text": "It is strictly decreasing",
+       "correct": false
+      },
+      {
+       "text": "All terms are equal to 2",
+       "correct": true
+      },
+      {
+       "text": "It is a GP",
+       "correct": false
+      }
+     ],
+     "explanation": "With common difference 0, every term equals the first term, so all terms equal 2.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-ss-07",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find the 10th term of the AP: 5, 8, 11, 14, ...",
+     "answer": "32",
+     "explanation": "a = 5, d = 3, a10 = 5 + 9(3) = 32.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-ss-08",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find the sum to infinity of the GP: 1, 1/2, 1/4, 1/8, ... (|r|<1).",
+     "answer": "2",
+     "explanation": "Sum to infinity = a/(1-r) = 1/(1-1/2) = 2.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-ss-09",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find the arithmetic mean of 4 and 10.",
+     "answer": "7",
+     "explanation": "AM = (4+10)/2 = 7.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-ss-10",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find the geometric mean of 4 and 9.",
+     "answer": "6",
+     "explanation": "GM = \u221a(4\u00d79) = \u221a36 = 6.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-ss-11",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find the sum of the first 6 terms of the GP: 1, 2, 4, 8, ...",
+     "answer": "63",
+     "explanation": "Sum = a(r^n -1)/(r-1) = 1(2^6-1)/(2-1) = 63.",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-ss-12",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Sequences & Series",
+     "prompt": "Which of these sequences is a GP?",
+     "options": [
+      {
+       "text": "2, 4, 6, 8",
+       "correct": false
+      },
+      {
+       "text": "3, 6, 12, 24",
+       "correct": true
+      },
+      {
+       "text": "1, 4, 9, 16",
+       "correct": false
+      },
+      {
+       "text": "5, 5, 5, 5",
+       "correct": false
+      }
+     ],
+     "explanation": "3, 6, 12, 24 has a constant ratio of 2 between consecutive terms, so it is a GP. (Note: 5,5,5,5 is also technically a GP with r=1, but 3,6,12,24 is the intended non-trivial GP here.)",
+     "xp": 5
+    },
+    {
+     "id": "alg3-f-ss-13",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find the sum of the squares of the first 3 natural numbers using \u03a3n\u00b2 = n(n+1)(2n+1)/6.",
+     "answer": "14",
+     "explanation": "For n=3: 3(4)(7)/6 = 84/6 = 14. Check: 1+4+9=14.",
+     "xp": 5
+    }
+   ]
+  },
+  {
+   "level": 2,
+   "levelName": "Standard",
+   "questions": [
+    {
+     "id": "alg3-s-set-01",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Sets",
+     "prompt": "If n(A)=8, n(B)=5, n(A\u2229B)=3, find n(A\u222aB).",
+     "options": [
+      {
+       "text": "10",
+       "correct": true
+      },
+      {
+       "text": "13",
+       "correct": false
+      },
+      {
+       "text": "16",
+       "correct": false
+      },
+      {
+       "text": "8",
+       "correct": false
+      }
+     ],
+     "explanation": "n(A\u222aB)=n(A)+n(B)-n(A\u2229B)=8+5-3=10.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-set-02",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Sets",
+     "prompt": "If A and B are disjoint sets with n(A)=6, n(B)=4, find n(A\u222aB).",
+     "options": [
+      {
+       "text": "2",
+       "correct": false
+      },
+      {
+       "text": "10",
+       "correct": true
+      },
+      {
+       "text": "24",
+       "correct": false
+      },
+      {
+       "text": "6",
+       "correct": false
+      }
+     ],
+     "explanation": "Disjoint sets share no elements, so n(A\u222aB)=n(A)+n(B)=10.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-set-03",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Sets",
+     "prompt": "For sets A, B: which identity is always true?",
+     "options": [
+      {
+       "text": "A\u222a(B\u2229C)=(A\u222aB)\u2229(A\u222aC)",
+       "correct": false
+      },
+      {
+       "text": "A\u2229B=A\u222aB",
+       "correct": false
+      },
+      {
+       "text": "(A\u222aB)'=A'\u2229B'",
+       "correct": false
+      },
+      {
+       "text": "Both (i) and (iii)",
+       "correct": true
+      }
+     ],
+     "explanation": "Distributive law A\u222a(B\u2229C)=(A\u222aB)\u2229(A\u222aC) and De Morgan's law (A\u222aB)'=A'\u2229B' are both always true.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-set-04",
+     "type": "NUMERIC",
+     "topic": "Sets",
+     "prompt": "If A={x: x is a factor of 12} and B={x: x is a factor of 18}, find n(A\u2229B).",
+     "answer": "4",
+     "explanation": "Factors of 12: 1,2,3,4,6,12. Factors of 18: 1,2,3,6,9,18. Common: 1,2,3,6 \u2192 4 elements.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-rf-01",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Relations & Functions",
+     "prompt": "Find the range of f(x) = x\u00b2 for domain x \u2208 {-2,-1,0,1,2}.",
+     "options": [
+      {
+       "text": "{0,1,4}",
+       "correct": true
+      },
+      {
+       "text": "{-4,-1,0,1,4}",
+       "correct": false
+      },
+      {
+       "text": "{0,1,2,4}",
+       "correct": false
+      },
+      {
+       "text": "{0,-1,-4}",
+       "correct": false
+      }
+     ],
+     "explanation": "f(-2)=4,f(-1)=1,f(0)=0,f(1)=1,f(2)=4. Range = {0,1,4}.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-rf-02",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Relations & Functions",
+     "prompt": "If f(x)=2x-1 and g(x)=x\u00b2+1, find (g\u2218f)(2).",
+     "options": [
+      {
+       "text": "9",
+       "correct": false
+      },
+      {
+       "text": "10",
+       "correct": true
+      },
+      {
+       "text": "5",
+       "correct": false
+      },
+      {
+       "text": "8",
+       "correct": false
+      }
+     ],
+     "explanation": "f(2)=3, g(3)=3\u00b2+1=10.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-rf-03",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Relations & Functions",
+     "prompt": "Which relation R on Z defined by aRb iff a-b is even, is:",
+     "options": [
+      {
+       "text": "Only reflexive",
+       "correct": false
+      },
+      {
+       "text": "Only symmetric",
+       "correct": false
+      },
+      {
+       "text": "Reflexive, symmetric and transitive (equivalence)",
+       "correct": true
+      },
+      {
+       "text": "Not reflexive",
+       "correct": false
+      }
+     ],
+     "explanation": "a-a=0 is even (reflexive); if a-b even then b-a even (symmetric); if a-b, b-c even then a-c even (transitive). So it's an equivalence relation.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-rf-04",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Relations & Functions",
+     "prompt": "The function f: R\u2192R, f(x)=x\u00b2 is:",
+     "options": [
+      {
+       "text": "One-one and onto",
+       "correct": false
+      },
+      {
+       "text": "One-one but not onto",
+       "correct": false
+      },
+      {
+       "text": "Onto but not one-one",
+       "correct": false
+      },
+      {
+       "text": "Neither one-one nor onto",
+       "correct": true
+      }
+     ],
+     "explanation": "f(-2)=f(2)=4 so not one-one; negative numbers have no pre-image so not onto.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-ind-01",
+     "type": "NUMERIC",
+     "topic": "Mathematical Induction",
+     "prompt": "Using induction, 2^n > n for n\u22651. Verify by finding 2^5 - 5.",
+     "answer": "27",
+     "explanation": "2^5-5=32-5=27>0, confirming 2^5>5.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-ind-02",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Mathematical Induction",
+     "prompt": "P(n): 1\u00b2+2\u00b2+...+n\u00b2 = n(n+1)(2n+1)/6. In the inductive step proving P(k+1) from P(k), we add which term to both sides?",
+     "options": [
+      {
+       "text": "(k+1)",
+       "correct": false
+      },
+      {
+       "text": "(k+1)\u00b2",
+       "correct": true
+      },
+      {
+       "text": "k\u00b2",
+       "correct": false
+      },
+      {
+       "text": "2(k+1)",
+       "correct": false
+      }
+     ],
+     "explanation": "P(k+1) extends the sum by one more term, (k+1)\u00b2.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-ind-03",
+     "type": "NUMERIC",
+     "topic": "Mathematical Induction",
+     "prompt": "If P(n): 7^n - 1 is divisible by 6, verify for n=2 by computing 7\u00b2-1.",
+     "answer": "48",
+     "explanation": "7\u00b2-1=49-1=48, and 48/6=8, confirming divisibility.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-ind-04",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Mathematical Induction",
+     "prompt": "For P(n): n(n+1)(n+2) is divisible by 6, which base case should be checked first?",
+     "options": [
+      {
+       "text": "n=0",
+       "correct": false
+      },
+      {
+       "text": "n=1",
+       "correct": true
+      },
+      {
+       "text": "n=3",
+       "correct": false
+      },
+      {
+       "text": "n=6",
+       "correct": false
+      }
+     ],
+     "explanation": "The statement is typically proven for all natural numbers starting at n=1, so the base case is n=1.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-cn-01",
+     "type": "NUMERIC",
+     "topic": "Complex Numbers",
+     "prompt": "If z = 1 + i, find |z|\u00b2.",
+     "answer": "2",
+     "explanation": "|z|\u00b2 = 1\u00b2 + 1\u00b2 = 2.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-cn-02",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Complex Numbers",
+     "prompt": "Express (2+3i)(1-i) in the form a+bi.",
+     "options": [
+      {
+       "text": "5+i",
+       "correct": true
+      },
+      {
+       "text": "2+2i",
+       "correct": false
+      },
+      {
+       "text": "-1+5i",
+       "correct": false
+      },
+      {
+       "text": "5-i",
+       "correct": false
+      }
+     ],
+     "explanation": "(2+3i)(1-i)=2-2i+3i-3i\u00b2=2+i+3=5+i.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-cn-03",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Complex Numbers",
+     "prompt": "Find the multiplicative inverse of z = 3+4i.",
+     "options": [
+      {
+       "text": "(3-4i)/25",
+       "correct": true
+      },
+      {
+       "text": "(3+4i)/25",
+       "correct": false
+      },
+      {
+       "text": "(3-4i)/5",
+       "correct": false
+      },
+      {
+       "text": "(4-3i)/25",
+       "correct": false
+      }
+     ],
+     "explanation": "1/z = z\u0304/|z|\u00b2 = (3-4i)/(9+16) = (3-4i)/25.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-cn-04",
+     "type": "NUMERIC",
+     "topic": "Complex Numbers",
+     "prompt": "If z1=2-i and z2=-1+3i, find the imaginary part of z1\u00b7z2.",
+     "answer": "7",
+     "explanation": "z1\u00b7z2 = (2)(-1)+(2)(3i)+(-i)(-1)+(-i)(3i) = -2+6i+i-3i\u00b2 = -2+7i+3 = 1+7i. Imaginary part = 7.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-qe-01",
+     "type": "EXPRESSION",
+     "topic": "Quadratic Equations",
+     "prompt": "Find the roots of x\u00b2 - 5x + 6 = 0 (comma separated, ascending order).",
+     "answer": "2,3",
+     "explanation": "Factoring: (x-2)(x-3)=0, so x=2 or x=3.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-qe-02",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Quadratic Equations",
+     "prompt": "If the roots of a quadratic are 2 and -3, which equation has these roots?",
+     "options": [
+      {
+       "text": "x\u00b2+x-6=0",
+       "correct": true
+      },
+      {
+       "text": "x\u00b2-x-6=0",
+       "correct": false
+      },
+      {
+       "text": "x\u00b2+x+6=0",
+       "correct": false
+      },
+      {
+       "text": "x\u00b2-5x+6=0",
+       "correct": false
+      }
+     ],
+     "explanation": "Sum=-1, product=-6. Equation: x\u00b2-(sum)x+product=0 \u2192 x\u00b2+x-6=0.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-qe-03",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Quadratic Equations",
+     "prompt": "For 3x\u00b2-4x+k=0 to have real and equal roots, find k.",
+     "options": [
+      {
+       "text": "4/3",
+       "correct": true
+      },
+      {
+       "text": "3/4",
+       "correct": false
+      },
+      {
+       "text": "16/3",
+       "correct": false
+      },
+      {
+       "text": "2",
+       "correct": false
+      }
+     ],
+     "explanation": "D=0: 16-12k=0 \u2192 k=4/3.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-qe-04",
+     "type": "NUMERIC",
+     "topic": "Quadratic Equations",
+     "prompt": "If \u03b1 and \u03b2 are roots of x\u00b2-6x+8=0, find \u03b1\u00b2+\u03b2\u00b2.",
+     "answer": "20",
+     "explanation": "\u03b1+\u03b2=6, \u03b1\u03b2=8. \u03b1\u00b2+\u03b2\u00b2=(\u03b1+\u03b2)\u00b2-2\u03b1\u03b2=36-16=20.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-li-01",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Linear Inequalities",
+     "prompt": "Solve the system x>2 and x<7 simultaneously; which integers satisfy both?",
+     "options": [
+      {
+       "text": "3,4,5,6",
+       "correct": true
+      },
+      {
+       "text": "2,3,4,5,6,7",
+       "correct": false
+      },
+      {
+       "text": "3,4,5,6,7",
+       "correct": false
+      },
+      {
+       "text": "2,3,4,5,6",
+       "correct": false
+      }
+     ],
+     "explanation": "x must be strictly between 2 and 7: integers 3,4,5,6.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-li-02",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Linear Inequalities",
+     "prompt": "Solve |x-3|<5 for x.",
+     "options": [
+      {
+       "text": "-2<x<8",
+       "correct": true
+      },
+      {
+       "text": "x<8",
+       "correct": false
+      },
+      {
+       "text": "x>-2",
+       "correct": false
+      },
+      {
+       "text": "-8<x<2",
+       "correct": false
+      }
+     ],
+     "explanation": "|x-3|<5 means -5<x-3<5, so -2<x<8.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-li-03",
+     "type": "NUMERIC",
+     "topic": "Linear Inequalities",
+     "prompt": "How many integer solutions satisfy 3x-2 \u2264 10 and x \u2265 -1?",
+     "answer": "6",
+     "explanation": "3x-2\u226410 \u2192 3x\u226412 \u2192 x\u22644. Combined with x\u2265-1: integers -1,0,1,2,3,4 \u2014 that's 6 values.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-li-04",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Linear Inequalities",
+     "prompt": "The solution set of x\u00b2 \u2264 4 is:",
+     "options": [
+      {
+       "text": "-2\u2264x\u22642",
+       "correct": true
+      },
+      {
+       "text": "x\u22642",
+       "correct": false
+      },
+      {
+       "text": "x\u2265-2",
+       "correct": false
+      },
+      {
+       "text": "x\u2264-2 or x\u22652",
+       "correct": false
+      }
+     ],
+     "explanation": "x\u00b2\u22644 means |x|\u22642, i.e. -2\u2264x\u22642.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-pc-01",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "In how many ways can the letters of the word 'LEADER' be arranged?",
+     "answer": "360",
+     "explanation": "LEADER has 6 letters with E repeated twice: 6!/2! = 720/2 = 360.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-pc-02",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "In how many ways can 6 people be seated around a circular table?",
+     "answer": "120",
+     "explanation": "Circular arrangements of n distinct people = (n-1)! = 5! = 120.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-pc-03",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "From 8 players, in how many ways can a team of 3 be chosen?",
+     "answer": "56",
+     "explanation": "8C3 = 8!/(3!5!) = 56.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-pc-04",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "In how many ways can 4 letters be chosen from 10 distinct letters (order doesn't matter)?",
+     "answer": "210",
+     "explanation": "10C4 = 10!/(4!6!) = 210.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-pc-05",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "In how many ways can 4 distinct prizes be distributed among 6 people, if each person can win at most one prize?",
+     "answer": "360",
+     "explanation": "This is an ordered selection: 6P4 = 6!/2! = 360.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-pc-06",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "A committee of 2 men and 1 woman is to be formed from 6 men and 4 women. How many ways?",
+     "answer": "60",
+     "explanation": "Choose 2 men: 6C2=15. Choose 1 woman: 4C1=4. Total = 15\u00d74 = 60.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-pc-07",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "How many diagonals does a decagon (10-sided polygon) have?",
+     "answer": "35",
+     "explanation": "Diagonals = nC2 - n = 10C2 - 10 = 45 - 10 = 35.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-pc-08",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "How many 4-digit numbers greater than 5000 can be formed using digits 1,3,5,7,9 without repetition?",
+     "answer": "72",
+     "explanation": "For the number to exceed 5000, the first digit must be 5, 7, or 9 (3 choices). The remaining 3 positions are filled from the remaining 4 digits: 4P3 = 24 ways. Total = 3 \u00d7 24 = 72.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-pc-09",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "In how many ways can 3 boys and 2 girls be arranged in a row such that all girls sit together?",
+     "answer": "48",
+     "explanation": "Treat the 2 girls as one block (2! internal arrangements) plus 3 boys: 4 units to arrange in 4! ways, times 2! for the girls' internal order: 4!\u00d72! = 24\u00d72 = 48.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-bt-01",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Find the coefficient of x\u2074 in the expansion of (x+2)^6.",
+     "answer": "60",
+     "explanation": "General term T(r+1) = 6Cr\u00b7x^(6-r)\u00b72^r. For x\u2074, 6-r=4 \u2192 r=2: 6C2\u00b72\u00b2 = 15\u00d74 = 60.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-bt-02",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Find the coefficient of x\u00b3 in the expansion of (2x-1)^5.",
+     "answer": "80",
+     "explanation": "General term T(r+1) = 5Cr\u00b7(2x)^(5-r)\u00b7(-1)^r. For x\u00b3, 5-r=3 \u2192 r=2: 5C2\u00b72\u00b3\u00b7(-1)\u00b2 = 10\u00d78\u00d71 = 80.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-bt-03",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Find the term independent of x in the expansion of (x\u00b2 + 1/x)^9.",
+     "answer": "84",
+     "explanation": "T(r+1) = 9Cr\u00b7x^(2(9-r))\u00b7x^(-r) = 9Cr\u00b7x^(18-3r). Setting 18-3r=0 gives r=6: 9C6 = 84.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-bt-04",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Find the sum of binomial coefficients at odd positions in (1+x)^7, i.e. 7C0+7C2+7C4+7C6.",
+     "answer": "64",
+     "explanation": "In any expansion (1+x)^n, the sum of coefficients at even positions equals the sum at odd positions, each equal to 2^(n-1) = 2^6 = 64.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-bt-05",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Binomial Theorem",
+     "prompt": "In the expansion of (a+b)^n, the (r+1)th term from the beginning equals which term from the end?",
+     "options": [
+      {
+       "text": "(n-r)th from the end",
+       "correct": false
+      },
+      {
+       "text": "(n-r+1)th from the end",
+       "correct": true
+      },
+      {
+       "text": "(r+1)th from the end",
+       "correct": false
+      },
+      {
+       "text": "rth from the end",
+       "correct": false
+      }
+     ],
+     "explanation": "The (r+1)th term from the start corresponds to the (n-r+1)th term from the end, by symmetry of the n+1 total terms.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-bt-06",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Find the 4th term in the expansion of (x+3)^6.",
+     "answer": "540",
+     "explanation": "T4 = T(3+1) = 6C3\u00b7x\u00b3\u00b73\u00b3 = 20\u00d727\u00b7x\u00b3 = 540x\u00b3, so the numerical coefficient is 540.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-bt-07",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Using the binomial theorem, approximate 99\u00b3 via (100-1)\u00b3, finding the exact value.",
+     "answer": "970299",
+     "explanation": "(100-1)\u00b3 = 100\u00b3 - 3(100\u00b2)(1) + 3(100)(1\u00b2) - 1 = 1000000 - 30000 + 300 - 1 = 970299.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-bt-08",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Find the number of terms in the expansion of (2x + 3y - z)^4 (a trinomial expansion has (n+1)(n+2)/2 terms).",
+     "answer": "15",
+     "explanation": "For a trinomial raised to power n, the number of terms is (n+1)(n+2)/2 = (5)(6)/2 = 15.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-bt-09",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Find the coefficient of x^5 in the expansion of (1+x)^8.",
+     "answer": "56",
+     "explanation": "The coefficient of x^5 is 8C5 = 56.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-ss-01",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find the sum of the first 15 terms of the AP with first term 2 and common difference 3.",
+     "answer": "345",
+     "explanation": "Sn = n/2[2a+(n-1)d] = 15/2[4+14(3)] = 15/2(46) = 345.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-ss-02",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find the sum of the first 6 terms of the GP with first term 3 and common ratio 2.",
+     "answer": "189",
+     "explanation": "Sn = a(r^n-1)/(r-1) = 3(2^6-1)/(2-1) = 3(63) = 189.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-ss-03",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "How many terms are there in the AP: 5, 8, 11, ..., 50?",
+     "answer": "16",
+     "explanation": "Using a_n = a+(n-1)d: 50 = 5+(n-1)(3) \u2192 n-1=15 \u2192 n=16.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-ss-04",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find the sum to infinity of the GP with first term 4 and common ratio 1/3.",
+     "answer": "6",
+     "explanation": "Sum to infinity = a/(1-r) = 4/(1-1/3) = 4/(2/3) = 6.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-ss-05",
+     "type": "EXPRESSION",
+     "topic": "Sequences & Series",
+     "prompt": "Three numbers in AP have sum 15 and product 80. If the common difference is positive, find the three numbers (comma separated, ascending).",
+     "answer": "2,5,8",
+     "explanation": "Let the numbers be a-d, a, a+d. Sum: 3a=15 \u2192 a=5. Product: (5-d)(5)(5+d)=80 \u2192 25-d\u00b2=16 \u2192 d\u00b2=9 \u2192 d=3 (positive). Numbers: 2, 5, 8.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-ss-06",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find the 3rd term of the harmonic progression (HP) whose corresponding AP terms (reciprocals) are 2, 4, 6.",
+     "answer": "1/6",
+     "explanation": "In an HP, the terms are reciprocals of an AP. The 3rd AP term is 6, so the 3rd HP term is 1/6.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-ss-07",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "If the sum of n terms of an AP is Sn = 3n\u00b2 + 2n, find the first term (S1).",
+     "answer": "5",
+     "explanation": "S1 = 3(1)\u00b2 + 2(1) = 3+2 = 5, which is the first term.",
+     "xp": 6
+    },
+    {
+     "id": "alg3-s-ss-08",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find the sum of the first 20 terms of the series 1+2+3+...+20.",
+     "answer": "210",
+     "explanation": "Sum = n(n+1)/2 = 20(21)/2 = 210.",
+     "xp": 6
+    }
+   ]
+  },
+  {
+   "level": 3,
+   "levelName": "Intermediate",
+   "questions": [
+    {
+     "id": "alg3-i-set-01",
+     "type": "NUMERIC",
+     "topic": "Sets",
+     "prompt": "If n(A)=20, n(B)=15, n(A\u222aB)=28, find n(A\u2229B).",
+     "answer": "7",
+     "explanation": "n(A\u2229B)=n(A)+n(B)-n(A\u222aB)=20+15-28=7.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-set-02",
+     "type": "NUMERIC",
+     "topic": "Sets",
+     "prompt": "In a class of 50 students, 30 play cricket, 25 play football, and 10 play both. How many play neither?",
+     "answer": "5",
+     "explanation": "Play at least one = 30+25-10=45. Neither = 50-45=5.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-set-03",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Sets",
+     "prompt": "If A\u2286B, which of the following is always true?",
+     "options": [
+      {
+       "text": "A\u222aB=A",
+       "correct": false
+      },
+      {
+       "text": "A\u2229B=A",
+       "correct": true
+      },
+      {
+       "text": "A\u2229B=B",
+       "correct": false
+      },
+      {
+       "text": "A-B=A",
+       "correct": false
+      }
+     ],
+     "explanation": "If A\u2286B, every element of A is in B, so A\u2229B=A.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-set-04",
+     "type": "NUMERIC",
+     "topic": "Sets",
+     "prompt": "If n(P(A))=256 (P(A) is the power set of A), find n(A).",
+     "answer": "8",
+     "explanation": "n(P(A))=2^n(A). 2^8=256, so n(A)=8.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-rf-01",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Relations & Functions",
+     "prompt": "If f(x) = (x-1)/(x+2), find the domain of f.",
+     "options": [
+      {
+       "text": "R",
+       "correct": false
+      },
+      {
+       "text": "R - {-2}",
+       "correct": true
+      },
+      {
+       "text": "R - {1}",
+       "correct": false
+      },
+      {
+       "text": "R - {1,-2}",
+       "correct": false
+      }
+     ],
+     "explanation": "f is undefined when x+2=0, i.e. x=-2, so domain is R - {-2}.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-rf-02",
+     "type": "NUMERIC",
+     "topic": "Relations & Functions",
+     "prompt": "If f(x)=3x+2 is invertible, find f\u207b\u00b9(11).",
+     "answer": "3",
+     "explanation": "Set 3x+2=11 \u2192 3x=9 \u2192 x=3. So f\u207b\u00b9(11)=3.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-rf-02b",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Relations & Functions",
+     "prompt": "A relation R on set A={1,2,3} is defined as R={(1,2),(2,1),(1,1),(2,2)}. Is R an equivalence relation on A?",
+     "options": [
+      {
+       "text": "Yes",
+       "correct": false
+      },
+      {
+       "text": "No, not reflexive (3 is missing)",
+       "correct": true
+      },
+      {
+       "text": "No, not symmetric",
+       "correct": false
+      },
+      {
+       "text": "No, not transitive",
+       "correct": false
+      }
+     ],
+     "explanation": "For R to be reflexive on A={1,2,3}, (3,3) must be included, but it is missing, so R is not reflexive on A.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-rf-03",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Relations & Functions",
+     "prompt": "If f:R\u2192R, f(x)=x\u00b3, is f invertible?",
+     "options": [
+      {
+       "text": "Yes, since it is bijective",
+       "correct": true
+      },
+      {
+       "text": "No, since it is not one-one",
+       "correct": false
+      },
+      {
+       "text": "No, since it is not onto",
+       "correct": false
+      },
+      {
+       "text": "Cannot be determined",
+       "correct": false
+      }
+     ],
+     "explanation": "f(x)=x\u00b3 is strictly increasing (one-one) and every real number has a real cube root (onto), so f is bijective and invertible.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-ind-01",
+     "type": "NUMERIC",
+     "topic": "Mathematical Induction",
+     "prompt": "Using induction, prove 1\u00b3+2\u00b3+...+n\u00b3=[n(n+1)/2]\u00b2. Verify for n=4 by computing the sum of cubes.",
+     "answer": "100",
+     "explanation": "1\u00b3+2\u00b3+3\u00b3+4\u00b3=1+8+27+64=100, and [4(5)/2]\u00b2=10\u00b2=100.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-ind-02",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Mathematical Induction",
+     "prompt": "P(n): 4^n - 1 is divisible by 3. In the inductive step, 4^(k+1)-1 is rewritten as:",
+     "options": [
+      {
+       "text": "4\u00b74^k - 1 = 4(4^k-1) + 3",
+       "correct": true
+      },
+      {
+       "text": "4\u00b74^k - 1 = 4^k - 1 + 3",
+       "correct": false
+      },
+      {
+       "text": "4^(k+1)-1 = 4^k-1",
+       "correct": false
+      },
+      {
+       "text": "None of these",
+       "correct": false
+      }
+     ],
+     "explanation": "4^(k+1)-1 = 4\u00b74^k - 1 = 4(4^k - 1) + 4 - 1 = 4(4^k-1) + 3, and since 4^k-1 is divisible by 3 by hypothesis, the whole expression is divisible by 3.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-ind-03",
+     "type": "NUMERIC",
+     "topic": "Mathematical Induction",
+     "prompt": "If P(n): n\u00b2 + n is always even, verify by computing 7\u00b2 + 7.",
+     "answer": "56",
+     "explanation": "7\u00b2+7 = 49+7 = 56, which is even.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-ind-04",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Mathematical Induction",
+     "prompt": "Which of these is proven using the principle of mathematical induction in standard textbooks?",
+     "options": [
+      {
+       "text": "The quadratic formula",
+       "correct": false
+      },
+      {
+       "text": "Sum of first n terms of an AP formula, for all n",
+       "correct": true
+      },
+      {
+       "text": "The value of \u03c0",
+       "correct": false
+      },
+      {
+       "text": "The Pythagorean theorem",
+       "correct": false
+      }
+     ],
+     "explanation": "Formulas that must hold for all natural numbers n, like the AP sum formula, are classic applications of mathematical induction.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-cn-01",
+     "type": "NUMERIC",
+     "topic": "Complex Numbers",
+     "prompt": "Evaluate (1+i)^4.",
+     "answer": "-4",
+     "explanation": "(1+i)\u00b2=2i, so (1+i)^4=(2i)\u00b2=4i\u00b2=-4.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-cn-02",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Complex Numbers",
+     "prompt": "Simplify (3-4i)/(1+2i) to the form a+bi.",
+     "options": [
+      {
+       "text": "-1-2i",
+       "correct": true
+      },
+      {
+       "text": "1+2i",
+       "correct": false
+      },
+      {
+       "text": "-1+2i",
+       "correct": false
+      },
+      {
+       "text": "5-2i",
+       "correct": false
+      }
+     ],
+     "explanation": "Multiply by conjugate: (3-4i)(1-2i)/[(1+2i)(1-2i)] = (3-6i-4i+8i\u00b2)/(1+4) = (3-10i-8)/5 = (-5-10i)/5 = -1-2i.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-cn-03",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Complex Numbers",
+     "prompt": "If one root of a quadratic with real coefficients is 2+3i, the quadratic equation is:",
+     "options": [
+      {
+       "text": "x\u00b2-4x+13=0",
+       "correct": true
+      },
+      {
+       "text": "x\u00b2+4x+13=0",
+       "correct": false
+      },
+      {
+       "text": "x\u00b2-4x-13=0",
+       "correct": false
+      },
+      {
+       "text": "x\u00b2-13x+4=0",
+       "correct": false
+      }
+     ],
+     "explanation": "Since coefficients are real, the other root is the conjugate 2-3i. Sum=4, product=(2)\u00b2+(3)\u00b2=13. Equation: x\u00b2-4x+13=0.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-cn-04",
+     "type": "NUMERIC",
+     "topic": "Complex Numbers",
+     "prompt": "Find |z1\u00b7z2| if z1=3+4i and z2=1-i (give the exact value as a number, rounding is not needed since it simplifies).",
+     "answer": "5*sqrt(2)",
+     "explanation": "|z1|=5, |z2|=\u221a2, so |z1\u00b7z2|=|z1|\u00b7|z2|=5\u221a2.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-qe-01",
+     "type": "NUMERIC",
+     "topic": "Quadratic Equations",
+     "prompt": "If \u03b1, \u03b2 are roots of 2x\u00b2-7x+3=0, find 1/\u03b1 + 1/\u03b2.",
+     "answer": "7/3",
+     "explanation": "1/\u03b1+1/\u03b2=(\u03b1+\u03b2)/(\u03b1\u03b2). Sum=7/2, product=3/2. Ratio=(7/2)/(3/2)=7/3.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-qe-02",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Quadratic Equations",
+     "prompt": "Find the value(s) of k for which x\u00b2+kx+4=0 has roots that differ by 2.",
+     "options": [
+      {
+       "text": "\u00b14",
+       "correct": false
+      },
+      {
+       "text": "\u00b16",
+       "correct": false
+      },
+      {
+       "text": "\u00b12\u221a5",
+       "correct": true
+      },
+      {
+       "text": "\u00b12",
+       "correct": false
+      }
+     ],
+     "explanation": "If the roots differ by 2, (\u03b1-\u03b2)\u00b2 = 4. Also (\u03b1-\u03b2)\u00b2 = (\u03b1+\u03b2)\u00b2 - 4\u03b1\u03b2 = k\u00b2 - 16. Setting k\u00b2 - 16 = 4 gives k\u00b2 = 20, so k = \u00b12\u221a5.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-qe-03",
+     "type": "NUMERIC",
+     "topic": "Quadratic Equations",
+     "prompt": "Find the range of values of m for which x\u00b2-mx+1=0 has real roots (give the minimum positive value of m satisfying D\u22650 among integers).",
+     "answer": "2",
+     "explanation": "D=m\u00b2-4\u22650 means m\u2264-2 or m\u22652. The minimum positive integer value is 2.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-qe-04",
+     "type": "NUMERIC",
+     "topic": "Quadratic Equations",
+     "prompt": "If the roots of x\u00b2-(a+1)x+a=0 are equal, find the value of a.",
+     "answer": "1",
+     "explanation": "Roots equal means D=0: (a+1)\u00b2-4a=0 \u2192 a\u00b2-2a+1=0 \u2192 (a-1)\u00b2=0 \u2192 a=1.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-li-01",
+     "type": "NUMERIC",
+     "topic": "Linear Inequalities",
+     "prompt": "Solve (x-2)/(x+3) > 0. How many of the integers -5, -4, 0, 3 satisfy this?",
+     "answer": "3",
+     "explanation": "The expression is positive when x<-3 or x>2. Testing each: -5 (x<-3, satisfies), -4 (x<-3, satisfies), 0 (between -3 and 2, fails), 3 (x>2, satisfies). So 3 of the 4 integers satisfy it.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-li-02",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Linear Inequalities",
+     "prompt": "Solve x\u00b2 - 5x + 6 \u2264 0.",
+     "options": [
+      {
+       "text": "2\u2264x\u22643",
+       "correct": true
+      },
+      {
+       "text": "x\u22642 or x\u22653",
+       "correct": false
+      },
+      {
+       "text": "x<2",
+       "correct": false
+      },
+      {
+       "text": "x>3",
+       "correct": false
+      }
+     ],
+     "explanation": "Factor: (x-2)(x-3)\u22640 holds between the roots: 2\u2264x\u22643.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-li-03",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Linear Inequalities",
+     "prompt": "Solve x\u00b2 - 4 > 0.",
+     "options": [
+      {
+       "text": "x<-2 or x>2",
+       "correct": true
+      },
+      {
+       "text": "-2<x<2",
+       "correct": false
+      },
+      {
+       "text": "x>2",
+       "correct": false
+      },
+      {
+       "text": "x<-2",
+       "correct": false
+      }
+     ],
+     "explanation": "x\u00b2-4>0 means (x-2)(x+2)>0, which holds outside the roots: x<-2 or x>2.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-li-04",
+     "type": "NUMERIC",
+     "topic": "Linear Inequalities",
+     "prompt": "How many negative integers satisfy x\u00b2 - x - 12 < 0?",
+     "answer": "2",
+     "explanation": "Factor: (x-4)(x+3)<0 holds for -3<x<4. The negative integers strictly in this range are -2 and -1, so there are 2.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-pc-01",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "In how many ways can the letters of the word 'CONSTANT' be arranged?",
+     "answer": "10080",
+     "explanation": "CONSTANT has 8 letters: C,O,N,S,T,A,N,T, where N repeats twice and T repeats twice. Arrangements = 8!/(2!2!) = 40320/4 = 10080.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-pc-02",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "In how many ways can 9 distinct books be divided into 3 groups of 3 books each (groups are distinguishable)?",
+     "answer": "1680",
+     "explanation": "This is 9!/(3!3!3!) = 362880/216 = 1680.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-pc-03",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "In how many ways can 8 people be seated around a circular table if 2 particular people must sit together?",
+     "answer": "1440",
+     "explanation": "Treat the 2 people as a block: 7 units around a circle gives (7-1)! = 720 arrangements, times 2! for the block's internal order: 720\u00d72 = 1440.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-pc-04",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "From a deck of 52 cards, in how many ways can a hand of 5 cards be chosen with exactly 3 kings?",
+     "answer": "4512",
+     "explanation": "Choose 3 of the 4 kings: 4C3=4. Choose 2 of the remaining 48 cards: 48C2=1128. Total = 4\u00d71128 = 4512.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-pc-05",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "In how many ways can 11 players be chosen from a squad of 15 if a particular player must be included?",
+     "answer": "1001",
+     "explanation": "Since the particular player is fixed, choose the remaining 10 from the other 14: 14C10 = 1001.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-pc-06",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "How many 5-digit numbers can be formed using digits 1 to 9, with repetition allowed?",
+     "answer": "59049",
+     "explanation": "Each of the 5 positions has 9 independent choices: 9^5 = 59049.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-pc-07",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "In how many ways can 6 different flags be used to form a signal using exactly 4 flags at a time, where order matters?",
+     "answer": "360",
+     "explanation": "This is 6P4 = 6!/(6-4)! = 720/2 = 360.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-pc-08",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "How many ways can a cricket team of 11 be selected from 15 players if 2 particular players are never selected together?",
+     "answer": "650",
+     "explanation": "Total ways to choose 11 from 15 = 15C11 = 1365. Ways where both particular players are included together = 13C9 = 715 (choosing the remaining 9 from the other 13). Required = 1365 - 715 = 650.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-pc-09",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "In how many distinct ways can the letters of the word 'ASSASSINATION' be arranged?",
+     "answer": "10810800",
+     "explanation": "ASSASSINATION has 13 letters: A(3), S(4), I(2), N(2), T(1), O(1). Arrangements = 13!/(3!4!2!2!) = 10810800.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-bt-01",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Find the coefficient of x\u207b\u00b3 in the expansion of (x - 2/x\u00b2)^9.",
+     "answer": "2016",
+     "explanation": "General term T(r+1) = 9Cr\u00b7x^(9-r)\u00b7(-2)^r\u00b7x^(-2r) = 9Cr\u00b7(-2)^r\u00b7x^(9-3r). Setting 9-3r=-3 gives r=4: 9C4\u00b7(-2)^4 = 126\u00d716 = 2016.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-bt-02",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Find the middle term's coefficient in the expansion of (x/2 - 2/x)^10.",
+     "answer": "-252",
+     "explanation": "With 11 total terms, the middle term is the 6th, at r=5: T6 = 10C5\u00b7(x/2)^5\u00b7(-2/x)^5 = 10C5\u00b7(1/32)\u00b7(-32) = 252\u00d7(-1) = -252.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-bt-03",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "In the expansion of (1+x)^10, find the sum of the coefficients of all odd-power terms (x\u00b9,x\u00b3,...,x\u2079).",
+     "answer": "512",
+     "explanation": "The sum of odd-position coefficients in (1+x)^n equals 2^(n-1) = 2^9 = 512.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-bt-04",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Binomial Theorem",
+     "prompt": "If the 2nd, 3rd, and 4th terms in the expansion of (1+x)^n are in AP, find n.",
+     "options": [
+      {
+       "text": "5",
+       "correct": false
+      },
+      {
+       "text": "6",
+       "correct": false
+      },
+      {
+       "text": "7",
+       "correct": true
+      },
+      {
+       "text": "9",
+       "correct": false
+      }
+     ],
+     "explanation": "The terms are nC1, nC2, nC3. Setting 2\u00b7nC2 = nC1 + nC3 and solving gives n=7 (verified: nC1=7, nC2=21, nC3=35, and 2(21)=42=7+35).",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-bt-05",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Find the value of 7C0 - 7C1 + 7C2 - 7C3 + 7C4 - 7C5 + 7C6 - 7C7.",
+     "answer": "0",
+     "explanation": "This is the expansion of (1-1)^7 = 0^7 = 0, since \u03a3(-1)^r\u00b7nCr = (1-1)^n.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-bt-06",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Find the coefficient of x^6 y^3 in the expansion of (x + y)^9.",
+     "answer": "84",
+     "explanation": "The coefficient is 9C3 (or equivalently 9C6) = 84.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-bt-07",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "If the coefficients of the 5th and 6th terms in the expansion of (1+x)^n are equal, find n.",
+     "answer": "9",
+     "explanation": "5th term coefficient = nC4, 6th = nC5. Setting nC4=nC5 means n=4+5=9 (since nCr=nC(r+1) when n=r+(r+1)).",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-bt-08",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Using the binomial theorem, find the value of 11\u00b3 by expanding (10+1)\u00b3.",
+     "answer": "1331",
+     "explanation": "(10+1)\u00b3 = 10\u00b3+3(10\u00b2)(1)+3(10)(1\u00b2)+1\u00b3 = 1000+300+30+1 = 1331.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-ss-01",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find n such that the sum of the first n terms of the AP 25,22,19,... equals 116.",
+     "answer": "8",
+     "explanation": "Sn = n/2[2(25)+(n-1)(-3)] = 116. Solving gives n=8 (the other root 29/3 is not an integer).",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-ss-02",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "How many terms of the GP 2,6,18,... must be taken for the sum to equal 2186?",
+     "answer": "7",
+     "explanation": "Sum = 2(3^n -1)/(3-1) = 2186 \u2192 3^n -1 = 2186 \u2192 3^n=2187=3^7, so n=7.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-ss-03",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Insert 3 arithmetic means between 2 and 18. What is the 2nd inserted mean?",
+     "answer": "10",
+     "explanation": "With 2, a, b, c, 18 forming an AP of 5 terms, d=(18-2)/4=4. The terms are 2,6,10,14,18. The 2nd inserted mean (b) is 10.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-ss-04",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "The sum of 3 numbers in GP is 38 and their product is 1728. Find the middle term.",
+     "answer": "12",
+     "explanation": "For 3 terms in GP a/r, a, ar: product = a\u00b3 = 1728, so a=12 (the middle term).",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-ss-05",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find the sum of the series 3 + 7 + 11 + ... up to 25 terms.",
+     "answer": "1275",
+     "explanation": "This is an AP with a=3, d=4, n=25. Sn = 25/2[2(3)+24(4)] = 25/2(6+96) = 25/2(102) = 1275.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-ss-06",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "If the pth term of an AP is q and the qth term is p, find the common difference (in terms of p and q, give as -1 when p\u2260q since d is always -1 in this classic setup).",
+     "answer": "-1",
+     "explanation": "Using a+(p-1)d=q and a+(q-1)d=p, subtracting gives (p-q)d = q-p, so d = -1 (for p\u2260q).",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-ss-07",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find the sum to infinity of the series 1 - 1/3 + 1/9 - 1/27 + ... (GP with r=-1/3).",
+     "answer": "3/4",
+     "explanation": "Sum to infinity = a/(1-r) = 1/(1-(-1/3)) = 1/(4/3) = 3/4.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-ss-08",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "The 4th term of a GP is 24 and the 7th term is 192. Find the common ratio.",
+     "answer": "2",
+     "explanation": "T7/T4 = r\u00b3 = 192/24 = 8, so r = 2.",
+     "xp": 7
+    },
+    {
+     "id": "alg3-i-ss-09",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find the sum of the first 12 terms of the series whose nth term is given by a\u2099 = 2n+1.",
+     "answer": "168",
+     "explanation": "Sum = \u03a3(2n+1) for n=1 to 12 = 2(12\u00b713/2) + 12 = 156+12 = 168.",
+     "xp": 7
+    }
+   ]
+  },
+  {
+   "level": 4,
+   "levelName": "Hard",
+   "questions": [
+    {
+     "id": "alg3-h-set-01",
+     "type": "NUMERIC",
+     "topic": "Sets",
+     "prompt": "A set has 6 elements. Find the number of its subsets containing an even number of elements.",
+     "answer": "32",
+     "explanation": "For a set with n elements, exactly half of all 2^n subsets have an even number of elements (for n\u22651): 2^(6-1) = 32.",
+     "xp": 8
+    },
+    {
+     "id": "alg3-h-set-02",
+     "type": "NUMERIC",
+     "topic": "Sets",
+     "prompt": "In a survey of 100 people, 60 read newspaper A, 50 read newspaper B, and 20 read neither. How many read both A and B?",
+     "answer": "30",
+     "explanation": "Read at least one = 100-20=80. By inclusion-exclusion: 80 = 60+50-n(A\u2229B), so n(A\u2229B)=30.",
+     "xp": 8
+    },
+    {
+     "id": "alg3-h-set-03",
+     "type": "NUMERIC",
+     "topic": "Sets",
+     "prompt": "If A, B, C are sets with n(A)=n(B)=n(C)=10, n(A\u2229B)=n(B\u2229C)=n(A\u2229C)=4, n(A\u2229B\u2229C)=2, find n(A\u222aB\u222aC).",
+     "answer": "20",
+     "explanation": "By inclusion-exclusion: n(A\u222aB\u222aC) = \u03a3nA - \u03a3n(pairwise \u2229) + n(triple \u2229) = (10+10+10) - (4+4+4) + 2 = 30-12+2 = 20.",
+     "xp": 8
+    },
+    {
+     "id": "alg3-h-set-04",
+     "type": "NUMERIC",
+     "topic": "Sets",
+     "prompt": "How many non-empty subsets does a set with 5 elements have, excluding the set itself?",
+     "answer": "30",
+     "explanation": "Total subsets = 2^5=32. Excluding the empty set and the full set: 32-2=30.",
+     "xp": 8
+    },
+    {
+     "id": "alg3-h-rf-01",
+     "type": "NUMERIC",
+     "topic": "Relations & Functions",
+     "prompt": "How many onto (surjective) functions are there from a set of 4 elements to a set of 3 elements?",
+     "answer": "36",
+     "explanation": "Using inclusion-exclusion: \u03a3(-1)^k\u00b73Ck\u00b7(3-k)^4 for k=0..3 = 3^4 - 3\u00b72^4 + 3\u00b71^4 - 0 = 81-48+3 = 36.",
+     "xp": 8
+    },
+    {
+     "id": "alg3-h-rf-02",
+     "type": "NUMERIC",
+     "topic": "Relations & Functions",
+     "prompt": "A set A has 3 elements. Find the total number of relations on A that are both reflexive and symmetric.",
+     "answer": "8",
+     "explanation": "A relation on A is a subset of the 9 ordered pairs. Reflexivity forces all 3 diagonal pairs (a,a) to be included. Symmetry means each of the 3 unordered off-diagonal pairs {a,b} must have both (a,b) and (b,a) included together, or neither \u2014 giving 2 independent choices per pair: 2\u00b3 = 8.",
+     "xp": 8
+    },
+    {
+     "id": "alg3-h-rf-03",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Relations & Functions",
+     "prompt": "If f(x) = (ax+b)/(cx+d) is its own inverse (f(f(x))=x for all valid x), which condition must hold?",
+     "options": [
+      {
+       "text": "a+d=0",
+       "correct": true
+      },
+      {
+       "text": "a=d and b=c",
+       "correct": false
+      },
+      {
+       "text": "a-d=0 and bc=0",
+       "correct": false
+      },
+      {
+       "text": "a+d=0 or (a=d and b=c lead to identity)",
+       "correct": false
+      }
+     ],
+     "explanation": "For f to be an involution (self-inverse) M\u00f6bius transformation with c\u22600, the standard condition is a+d=0 (trace zero).",
+     "xp": 8
+    },
+    {
+     "id": "alg3-h-rf-04",
+     "type": "NUMERIC",
+     "topic": "Relations & Functions",
+     "prompt": "Let f:R\u2192R be defined by f(x)=x\u00b2-4x+3. Find the number of real solutions to f(f(x))=0.",
+     "answer": "4",
+     "explanation": "f(x)=0 gives x=1 or x=3. f(f(x))=0 means f(x)=1 or f(x)=3. f(x)=1: x\u00b2-4x+2=0 has discriminant 8>0 (2 real roots). f(x)=3: x\u00b2-4x=0 has roots 0,4 (2 real roots). Total = 4 real solutions.",
+     "xp": 8
+    },
+    {
+     "id": "alg3-h-ind-01",
+     "type": "NUMERIC",
+     "topic": "Mathematical Induction",
+     "prompt": "Using induction, 11^n - 4^n is divisible by 7 for all n\u22651. Verify by computing (11\u00b3-4\u00b3) mod 7.",
+     "answer": "0",
+     "explanation": "11\u00b3-4\u00b3 = 1331-64 = 1267 = 7\u00d7181, so 1267 mod 7 = 0, confirming divisibility.",
+     "xp": 8
+    },
+    {
+     "id": "alg3-h-ind-02",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Mathematical Induction",
+     "prompt": "To prove P(n): n! > 2^n for n\u22654 by induction, which base case must be checked?",
+     "options": [
+      {
+       "text": "n=1",
+       "correct": false
+      },
+      {
+       "text": "n=2",
+       "correct": false
+      },
+      {
+       "text": "n=3",
+       "correct": false
+      },
+      {
+       "text": "n=4",
+       "correct": true
+      }
+     ],
+     "explanation": "Since the statement is claimed to hold for n\u22654, the base case to verify is n=4 (4!=24>16=2^4).",
+     "xp": 8
+    },
+    {
+     "id": "alg3-h-ind-03",
+     "type": "NUMERIC",
+     "topic": "Mathematical Induction",
+     "prompt": "Verify P(n): 1/(1\u00b72)+1/(2\u00b73)+...+1/(n(n+1)) = n/(n+1) for n=5 by computing the sum of the first 5 terms as a fraction's numerator (sum = n/(n+1) in lowest terms).",
+     "answer": "5",
+     "explanation": "The formula gives sum = 5/6 for n=5, so the numerator in lowest terms is 5.",
+     "xp": 8
+    },
+    {
+     "id": "alg3-h-ind-04",
+     "type": "NUMERIC",
+     "topic": "Mathematical Induction",
+     "prompt": "If P(n): 2^(2n) - 1 is divisible by 3 for all n\u22651, verify for n=3 by computing 2^6 - 1.",
+     "answer": "63",
+     "explanation": "2^6-1 = 64-1 = 63 = 3\u00d721, confirming divisibility by 3.",
+     "xp": 8
+    },
+    {
+     "id": "alg3-h-cn-01",
+     "type": "NUMERIC",
+     "topic": "Complex Numbers",
+     "prompt": "Find the smallest positive integer n such that (1+i)^n is a real number.",
+     "answer": "4",
+     "explanation": "(1+i)\u00b2 = 2i (imaginary), (1+i)\u00b3 = -2+2i (complex), (1+i)\u2074 = -4 (real). The smallest such n is 4.",
+     "xp": 8
+    },
+    {
+     "id": "alg3-h-cn-02",
+     "type": "NUMERIC",
+     "topic": "Complex Numbers",
+     "prompt": "If z = (1+i)/(1-i), find z^4.",
+     "answer": "1",
+     "explanation": "z = (1+i)/(1-i) = i (after rationalizing). So z^4 = i^4 = 1.",
+     "xp": 8
+    },
+    {
+     "id": "alg3-h-cn-03",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Complex Numbers",
+     "prompt": "If |z-3+2i|=4 represents a circle in the complex plane, find its center and radius.",
+     "options": [
+      {
+       "text": "Center (3,-2), radius 4",
+       "correct": true
+      },
+      {
+       "text": "Center (-3,2), radius 4",
+       "correct": false
+      },
+      {
+       "text": "Center (3,2), radius 4",
+       "correct": false
+      },
+      {
+       "text": "Center (-3,-2), radius 16",
+       "correct": false
+      }
+     ],
+     "explanation": "|z-(3-2i)|=4 is a circle centered at (3,-2) with radius 4.",
+     "xp": 8
+    },
+    {
+     "id": "alg3-h-cn-04",
+     "type": "NUMERIC",
+     "topic": "Complex Numbers",
+     "prompt": "If z\u2081=2+3i and z\u2082=2-3i are roots of a quadratic with real coefficients, find the equation's constant term (i.e. the product z\u2081z\u2082).",
+     "answer": "13",
+     "explanation": "z\u2081z\u2082 = (2+3i)(2-3i) = 4+9 = 13.",
+     "xp": 8
+    },
+    {
+     "id": "alg3-h-qe-01",
+     "type": "NUMERIC",
+     "topic": "Quadratic Equations",
+     "prompt": "If x\u00b2 - px + q = 0 and x\u00b2 - qx + p = 0 (with p \u2260 q) have exactly one common root, find that common root.",
+     "answer": "1",
+     "explanation": "Subtracting the equations: (q-p)x + (p-q) = 0, i.e. (q-p)x = (q-p). Since p\u2260q, we can divide by (q-p), giving x = 1.",
+     "xp": 8
+    },
+    {
+     "id": "alg3-h-qe-02",
+     "type": "NUMERIC",
+     "topic": "Quadratic Equations",
+     "prompt": "If the roots of ax\u00b2+bx+c=0 are in the ratio 2:3, and a=5, c=30, find |b| (b real).",
+     "answer": "25",
+     "explanation": "If roots are 2k,3k: product=6k\u00b2=c/a=6, so k\u00b2=1, k=1 (taking positive). Sum=5k=-b/a, so b=-5a\u00b7k=-25. |b|=25.",
+     "xp": 8
+    },
+    {
+     "id": "alg3-h-qe-03",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Quadratic Equations",
+     "prompt": "For what values of m do both roots of x\u00b2-2mx+(m\u00b2-1)=0 lie strictly between -2 and 4?",
+     "options": [
+      {
+       "text": "-1<m<3",
+       "correct": true
+      },
+      {
+       "text": "0<m<2",
+       "correct": false
+      },
+      {
+       "text": "-2<m<4",
+       "correct": false
+      },
+      {
+       "text": "1<m<3",
+       "correct": false
+      }
+     ],
+     "explanation": "The equation factors as (x-m)\u00b2=1, so the roots are m+1 and m-1. Requiring -2<m-1 and m+1<4 gives m>-1 and m<3, i.e. -1<m<3.",
+     "xp": 8
+    },
+    {
+     "id": "alg3-h-qe-04",
+     "type": "NUMERIC",
+     "topic": "Quadratic Equations",
+     "prompt": "If \u03b1 and \u03b2 are the roots of x\u00b2-6x+10=0, find \u03b1\u00b3+\u03b2\u00b3.",
+     "answer": "36",
+     "explanation": "\u03b1+\u03b2=6, \u03b1\u03b2=10. \u03b1\u00b3+\u03b2\u00b3=(\u03b1+\u03b2)\u00b3-3\u03b1\u03b2(\u03b1+\u03b2) = 216 - 3(10)(6) = 216-180 = 36.",
+     "xp": 8
+    },
+    {
+     "id": "alg3-h-li-01",
+     "type": "NUMERIC",
+     "topic": "Linear Inequalities",
+     "prompt": "Solve |2x-1| + |x+2| \u2264 5. Find the upper bound of x (as a fraction).",
+     "answer": "4/3",
+     "explanation": "Breaking into cases across the critical points x=-2 and x=1/2, the solution set is -2\u2264x\u22644/3, so the upper bound is 4/3.",
+     "xp": 8
+    },
+    {
+     "id": "alg3-h-li-02",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Linear Inequalities",
+     "prompt": "Solve (x-1)(x-2)(x-3) < 0.",
+     "options": [
+      {
+       "text": "x<1 or 2<x<3",
+       "correct": true
+      },
+      {
+       "text": "x<1 or x>3",
+       "correct": false
+      },
+      {
+       "text": "1<x<2 or x>3",
+       "correct": false
+      },
+      {
+       "text": "x<2",
+       "correct": false
+      }
+     ],
+     "explanation": "The cubic changes sign at each root. Testing intervals: for x<1 the product is negative, for 1<x<2 it's positive, for 2<x<3 it's negative, for x>3 it's positive. So the solution is x<1 or 2<x<3.",
+     "xp": 8
+    },
+    {
+     "id": "alg3-h-li-03",
+     "type": "NUMERIC",
+     "topic": "Linear Inequalities",
+     "prompt": "How many integers satisfy both x\u00b2-7x+10\u22640 and x>1?",
+     "answer": "4",
+     "explanation": "x\u00b2-7x+10\u22640 factors as (x-2)(x-5)\u22640, giving 2\u2264x\u22645. Combined with x>1: integers 2,3,4,5 \u2014 that's 4.",
+     "xp": 8
+    },
+    {
+     "id": "alg3-h-li-04",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Linear Inequalities",
+     "prompt": "Solve 1/(x-2) < 3 for x \u2260 2.",
+     "options": [
+      {
+       "text": "x<2 or x>7/3",
+       "correct": true
+      },
+      {
+       "text": "x>7/3 only",
+       "correct": false
+      },
+      {
+       "text": "2<x<7/3",
+       "correct": false
+      },
+      {
+       "text": "x<7/3",
+       "correct": false
+      }
+     ],
+     "explanation": "1/(x-2)<3 rearranges to (7-3x)/(x-2)<0 (combining over a common denominator). This holds when x<2 or x>7/3.",
+     "xp": 8
+    },
+    {
+     "id": "alg3-h-pc-01",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "In how many ways can 10 identical balls be distributed into 4 distinct boxes such that each box gets at least 1 ball?",
+     "answer": "84",
+     "explanation": "Using stars and bars with each box \u22651: place 1 ball in each box first (uses 4), then distribute the remaining 6 freely among 4 boxes: C(6+4-1,4-1) = C(9,3) = 84.",
+     "xp": 9
+    },
+    {
+     "id": "alg3-h-pc-02",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "A committee of 5 is to be selected from 6 men and 5 women such that it has at least 3 women. How many ways?",
+     "answer": "181",
+     "explanation": "Sum over women=3,4,5: (5C3\u00b76C2)+(5C4\u00b76C1)+(5C5\u00b76C0) = (10\u00d715)+(5\u00d76)+(1\u00d71) = 150+30+1 = 181.",
+     "xp": 9
+    },
+    {
+     "id": "alg3-h-pc-03",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "The word 'MATHEMATICS' has 8 distinct letters. How many 5-letter arrangements can be formed using only distinct letters from it?",
+     "answer": "6720",
+     "explanation": "The 8 distinct letters in MATHEMATICS are M,A,T,H,E,I,C,S. Choosing and arranging 5 of them: 8P5 = 8!/3! = 6720.",
+     "xp": 9
+    },
+    {
+     "id": "alg3-h-pc-04",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "In how many ways can 6 boys and 4 girls be seated in a row of 10 chairs so that no two girls sit together?",
+     "answer": "604800",
+     "explanation": "Seat the 6 boys first: 6! ways, creating 7 gaps (including ends). Choose 4 of these gaps for the girls and arrange them: 7C4 \u00d7 4!. Total = 720 \u00d7 35 \u00d7 24 = 604800.",
+     "xp": 9
+    },
+    {
+     "id": "alg3-h-pc-05",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "In how many ways can 4 cards be drawn from a standard 52-card deck such that all 4 cards are of different suits?",
+     "answer": "28561",
+     "explanation": "Choose one card from each of the 4 suits independently: 13 \u00d7 13 \u00d7 13 \u00d7 13 = 13^4 = 28561.",
+     "xp": 9
+    },
+    {
+     "id": "alg3-h-pc-06",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "Given 10 points on a circle with no 3 collinear, how many triangles can be formed by joining these points?",
+     "answer": "120",
+     "explanation": "Any 3 of the 10 points (no 3 collinear, so none are wasted) form a triangle: 10C3 = 120.",
+     "xp": 9
+    },
+    {
+     "id": "alg3-h-pc-07",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "How many distinct arrangements can be made of all 8 letters of the word 'EQUATION' (all letters distinct)?",
+     "answer": "40320",
+     "explanation": "EQUATION has 8 distinct letters, so the number of arrangements is 8! = 40320.",
+     "xp": 9
+    },
+    {
+     "id": "alg3-h-pc-08",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "How many 4-digit numbers can be formed using digits from 1-9 (no repetition) such that the digits are in strictly increasing order?",
+     "answer": "126",
+     "explanation": "A strictly increasing arrangement is uniquely determined by which 4 digits are chosen from the 9 available: 9C4 = 126.",
+     "xp": 9
+    },
+    {
+     "id": "alg3-h-pc-09",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "In how many ways can 3 elements be chosen from {1,2,...,10} such that no two chosen elements are consecutive?",
+     "answer": "56",
+     "explanation": "The number of ways to choose k non-consecutive elements from n in a row is C(n-k+1,k) = C(10-3+1,3) = C(8,3) = 56.",
+     "xp": 9
+    },
+    {
+     "id": "alg3-h-bt-01",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Find the term independent of x in the expansion of (2x\u00b2 - 1/x)^9.",
+     "answer": "672",
+     "explanation": "General term T(r+1) = 9Cr\u00b7(2x\u00b2)^(9-r)\u00b7(-1/x)^r = 9Cr\u00b72^(9-r)\u00b7(-1)^r\u00b7x^(18-3r). Setting 18-3r=0 gives r=6: 9C6\u00b72\u00b3\u00b71 = 84\u00d78 = 672.",
+     "xp": 9
+    },
+    {
+     "id": "alg3-h-bt-02",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Find \u03a3 r\u00b79Cr for r=0 to 9... (give the value for the general identity \u03a3 r\u00b7nCr = n\u00b72^(n-1), using n=8).",
+     "answer": "1024",
+     "explanation": "The identity \u03a3 r\u00b7nCr = n\u00b72^(n-1) gives, for n=8: 8\u00d72^7 = 8\u00d7128 = 1024.",
+     "xp": 9
+    },
+    {
+     "id": "alg3-h-bt-03",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Find the coefficient of x^5 in the expansion of (1+x)^7\u00b7(1+x)^9.",
+     "answer": "4368",
+     "explanation": "(1+x)^7\u00b7(1+x)^9 = (1+x)^16, so the coefficient of x^5 is 16C5 = 4368.",
+     "xp": 9
+    },
+    {
+     "id": "alg3-h-bt-04",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Find the term that is independent of x in the expansion of (x\u00b2 + 1/x)^12.",
+     "answer": "495",
+     "explanation": "T(r+1) = 12Cr\u00b7x^(2(12-r))\u00b7x^(-r) = 12Cr\u00b7x^(24-3r). Setting 24-3r=0 gives r=8: 12C8 = 495.",
+     "xp": 9
+    },
+    {
+     "id": "alg3-h-bt-05",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "In the expansion of (x+y)^9, find the sum of the coefficients of the two middle terms.",
+     "answer": "252",
+     "explanation": "With 10 total terms, the two middle terms are the 5th and 6th, at r=4 and r=5: 9C4 + 9C5 = 126+126 = 252.",
+     "xp": 9
+    },
+    {
+     "id": "alg3-h-bt-06",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Find the value of \u03a3\u1d4fC(10,k)\u00b2 for k=0 to 10 (i.e. 10C0\u00b2+10C1\u00b2+...+10C10\u00b2).",
+     "answer": "184756",
+     "explanation": "This sum equals the central binomial coefficient C(20,10) = 184756, by Vandermonde's identity.",
+     "xp": 9
+    },
+    {
+     "id": "alg3-h-bt-07",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Find the coefficient of x^4 in the expansion of (1+x+x\u00b2)^5.",
+     "answer": "45",
+     "explanation": "Expanding (1+x+x\u00b2)^5 fully (via the multinomial/trinomial expansion) gives the x\u2074 coefficient as 45.",
+     "xp": 9
+    },
+    {
+     "id": "alg3-h-bt-08",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Binomial Theorem",
+     "prompt": "For the expansion of (a+b)^11 (an odd power), which terms are the largest binomial coefficient terms?",
+     "options": [
+      {
+       "text": "Only the 6th term",
+       "correct": false
+      },
+      {
+       "text": "The 6th and 7th terms",
+       "correct": true
+      },
+      {
+       "text": "Only the 7th term",
+       "correct": false
+      },
+      {
+       "text": "The 1st and 11th terms",
+       "correct": false
+      }
+     ],
+     "explanation": "For an odd exponent n=11, there are two middle terms (since n+1=12 is even), located at positions 6 and 7 (r=5 and r=6), and both share the maximum binomial coefficient 11C5=11C6.",
+     "xp": 9
+    },
+    {
+     "id": "alg3-h-bt-09",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Find the coefficient of x^7 in the expansion of (1 - 2x)^10.",
+     "answer": "-15360",
+     "explanation": "General term T(r+1) = 10Cr\u00b7(-2)^r\u00b7x^r. For r=7: 10C7\u00b7(-2)^7 = 120\u00d7(-128) = -15360.",
+     "xp": 9
+    },
+    {
+     "id": "alg3-h-ss-01",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "If the sum of the first n terms of a series is Sn = 2n\u00b2 + 3n, find the 10th term.",
+     "answer": "41",
+     "explanation": "a\u2099 = S\u2099 - S(n-1). a10 = S10 - S9 = (2(100)+30) - (2(81)+27) = 230 - 189 = 41.",
+     "xp": 9
+    },
+    {
+     "id": "alg3-h-ss-02",
+     "type": "EXPRESSION",
+     "topic": "Sequences & Series",
+     "prompt": "Three positive numbers in GP have sum 21 and sum of squares 189. Find the three numbers (comma separated, ascending).",
+     "answer": "3,6,12",
+     "explanation": "Let the numbers be a/r, a, ar. Solving the system gives a=6 with r=2 (or r=1/2), yielding the numbers 3, 6, 12.",
+     "xp": 9
+    },
+    {
+     "id": "alg3-h-ss-03",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find the sum to infinity of the series 1 + 2(1/2) + 3(1/2)\u00b2 + 4(1/2)\u00b3 + ... (\u03a3 n\u00b7x^(n-1) at x=1/2).",
+     "answer": "4",
+     "explanation": "Using the identity \u03a3 n\u00b7x^(n-1) = 1/(1-x)\u00b2 for |x|<1, at x=1/2: 1/(1/2)\u00b2 = 4.",
+     "xp": 9
+    },
+    {
+     "id": "alg3-h-ss-04",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "In an AP, the 3rd term is 7 and the 7th term is 19. Find the sum of the first 20 terms.",
+     "answer": "590",
+     "explanation": "d = (19-7)/4 = 3, a1 = 7-2(3) = 1. S20 = 20/2[2(1)+19(3)] = 10(2+57) = 590.",
+     "xp": 9
+    },
+    {
+     "id": "alg3-h-ss-05",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "If 3, x, 5 are in harmonic progression (HP), find x.",
+     "answer": "15/4",
+     "explanation": "For three numbers in HP, the middle term is the harmonic mean: x = 2(3)(5)/(3+5) = 30/8 = 15/4.",
+     "xp": 9
+    },
+    {
+     "id": "alg3-h-ss-06",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find the sum of the squares of the first 6 odd natural numbers (1\u00b2+3\u00b2+5\u00b2+7\u00b2+9\u00b2+11\u00b2).",
+     "answer": "286",
+     "explanation": "Using \u03a3(2k-1)\u00b2 for k=1 to 6 = n(2n-1)(2n+1)/3 with n=6: 6(11)(13)/3 = 858/3 = 286.",
+     "xp": 9
+    },
+    {
+     "id": "alg3-h-ss-07",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "A GP has first term 2 and common ratio 3. Find the sum of its first 4 terms.",
+     "answer": "80",
+     "explanation": "Sn = a(r^n-1)/(r-1) = 2(3^4-1)/(3-1) = 2(80)/2 = 80.",
+     "xp": 9
+    },
+    {
+     "id": "alg3-h-ss-08",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find the sum to infinity of the arithmetic-geometric series 1 + 3(1/2) + 5(1/2)\u00b2 + 7(1/2)\u00b3 + ... (first term 1, AP part increases by 2, GP ratio 1/2).",
+     "answer": "6",
+     "explanation": "Using the AGP sum-to-infinity formula a/(1-r) + d\u00b7r/(1-r)\u00b2 with a=1, d=2, r=1/2: 1/(1/2) + 2(1/2)/(1/4) = 2 + 4 = 6.",
+     "xp": 9
+    }
+   ]
+  },
+  {
+   "level": 5,
+   "levelName": "Advanced",
+   "questions": [
+    {
+     "id": "alg3-a-set-01",
+     "type": "NUMERIC",
+     "topic": "Sets",
+     "prompt": "How many injective (one-one) functions can be defined from a set with 3 elements to a set with 5 elements?",
+     "answer": "60",
+     "explanation": "The number of injective functions from an m-element set to an n-element set (m\u2264n) is nPm = 5!/(5-3)! = 60.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-set-02",
+     "type": "NUMERIC",
+     "topic": "Sets",
+     "prompt": "If n(A)=n, and the number of elements in the power set of the power set of A is 65536 (2^16), find n.",
+     "answer": "4",
+     "explanation": "n(P(P(A))) = 2^(2^n) = 65536 = 2^16, so 2^n=16, giving n=4.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-set-03",
+     "type": "NUMERIC",
+     "topic": "Sets",
+     "prompt": "In a group of students, the number of 2-element subsets exceeds the number of 1-element subsets by 5. Find the total number of students.",
+     "answer": "5",
+     "explanation": "nC2 - nC1 = 5 \u2192 n(n-1)/2 - n = 5 \u2192 n\u00b2 - 3n - 10 = 0 \u2192 (n-5)(n+2) = 0, so n=5 (rejecting the negative root). Check: 5C2-5C1 = 10-5 = 5.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-rf-01",
+     "type": "NUMERIC",
+     "topic": "Relations & Functions",
+     "prompt": "Find the number of equivalence relations possible on a set of 4 elements (this equals the 4th Bell number).",
+     "answer": "15",
+     "explanation": "The number of equivalence relations on an n-element set equals the nth Bell number. For n=4, the Bell number is 15.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-rf-02",
+     "type": "NUMERIC",
+     "topic": "Relations & Functions",
+     "prompt": "How many bijective functions exist from a set of 5 elements to itself?",
+     "answer": "120",
+     "explanation": "A bijection from a finite set to itself is a permutation of its elements: 5! = 120.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-rf-03",
+     "type": "NUMERIC",
+     "topic": "Relations & Functions",
+     "prompt": "Let f: {1,2,3,4} \u2192 {1,2,3,4} be defined by f(x) = 5-x. Find the number of elements x for which f(x) = x (fixed points).",
+     "answer": "0",
+     "explanation": "f(x)=x means 5-x=x \u2192 x=2.5, which is not in the domain {1,2,3,4}, so there are 0 fixed points.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-ind-01",
+     "type": "NUMERIC",
+     "topic": "Mathematical Induction",
+     "prompt": "P(n): 7^(2n) - 48n - 1 is divisible by 2304. Verify for n=2 by computing 7^4 - 48(2) - 1, then checking divisibility by 2304 (give the quotient).",
+     "answer": "1",
+     "explanation": "7^4 - 96 - 1 = 2401 - 97 = 2304, and 2304/2304 = 1, confirming divisibility with quotient 1.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-ind-02",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Mathematical Induction",
+     "prompt": "In a strong induction proof, the inductive hypothesis assumes:",
+     "options": [
+      {
+       "text": "Only P(k) is true",
+       "correct": false
+      },
+      {
+       "text": "P(1), P(2), ..., P(k) are all true",
+       "correct": true
+      },
+      {
+       "text": "Only P(k+1) is true",
+       "correct": false
+      },
+      {
+       "text": "P(n) is true for all n simultaneously, before proving anything",
+       "correct": false
+      }
+     ],
+     "explanation": "Strong induction assumes the statement holds for all values up to k (P(1) through P(k)), not just P(k) alone, before proving P(k+1).",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-ind-03",
+     "type": "NUMERIC",
+     "topic": "Mathematical Induction",
+     "prompt": "If P(n): 3^(2n+2) - 8n - 9 is divisible by 64, verify for n=1 by computing the value and dividing by 64.",
+     "answer": "1",
+     "explanation": "3^4 - 8 - 9 = 81-17 = 64, and 64/64 = 1, confirming divisibility with quotient 1.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-cn-01",
+     "type": "NUMERIC",
+     "topic": "Complex Numbers",
+     "prompt": "If \u03c9 is a complex cube root of unity (\u03c9\u22601), find the value of (1+\u03c9-\u03c9\u00b2)\u00b3.",
+     "answer": "-8",
+     "explanation": "Since 1+\u03c9+\u03c9\u00b2=0, we have 1+\u03c9-\u03c9\u00b2 = -2\u03c9\u00b2. So (1+\u03c9-\u03c9\u00b2)\u00b3 = (-2\u03c9\u00b2)\u00b3 = -8\u03c9\u2076 = -8(\u03c9\u00b3)\u00b2 = -8(1)\u00b2 = -8.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-cn-02",
+     "type": "NUMERIC",
+     "topic": "Complex Numbers",
+     "prompt": "If z satisfies z + 1/z = 1, find z\u00b3 + 1/z\u00b3 (give the exact numeric value).",
+     "answer": "-2",
+     "explanation": "z+1/z=1 implies z\u00b2-z+1=0, so z\u00b3=-1 (since z\u00b3+1=(z+1)(z\u00b2-z+1)=0, and z\u2260-1 as that would make z+1/z=-2). Then z\u00b3+1/z\u00b3 = z\u00b3 + 1/z\u00b3 where z\u00b3=-1 gives 1/z\u00b3=-1 too, so the sum is -1+(-1)=-2.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-cn-03",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Complex Numbers",
+     "prompt": "The points representing z, iz, and -z in the complex plane (for z\u22600) form a triangle that is always:",
+     "options": [
+      {
+       "text": "Equilateral",
+       "correct": false
+      },
+      {
+       "text": "Right-angled isosceles",
+       "correct": true
+      },
+      {
+       "text": "Scalene",
+       "correct": false
+      },
+      {
+       "text": "Degenerate (collinear)",
+       "correct": false
+      }
+     ],
+     "explanation": "Multiplying by i rotates z by 90\u00b0, so |z-iz| and |iz-(-z)| are equal (isosceles) and the angle at iz is 90\u00b0, making it a right-angled isosceles triangle.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-qe-01",
+     "type": "NUMERIC",
+     "topic": "Quadratic Equations",
+     "prompt": "The equations x\u00b2+bx+c=0 and x\u00b2+cx+b=0 (b\u2260c) have a common root. Find the value of b+c.",
+     "answer": "-1",
+     "explanation": "Subtracting the equations: (b-c)x + (c-b) = 0, i.e. (b-c)(x-1) = 0. Since b\u2260c, the common root is x=1. Substituting into the first equation: 1+b+c=0, so b+c=-1.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-qe-02",
+     "type": "NUMERIC",
+     "topic": "Quadratic Equations",
+     "prompt": "If \u03b1, \u03b2 are the roots of x\u00b2-px+q=0, find the value of \u03b1\u00b2\u03b2 + \u03b1\u03b2\u00b2 in terms of p and q (give the value when p=5, q=6).",
+     "answer": "30",
+     "explanation": "\u03b1\u00b2\u03b2+\u03b1\u03b2\u00b2 = \u03b1\u03b2(\u03b1+\u03b2) = q\u00b7p. For p=5, q=6: 6\u00d75=30.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-qe-03",
+     "type": "NUMERIC",
+     "topic": "Quadratic Equations",
+     "prompt": "Find the number of real roots of the equation x\u2074 - 5x\u00b2 + 6 = 0.",
+     "answer": "4",
+     "explanation": "Let y=x\u00b2. Then y\u00b2-5y+6=0 gives y=2 or y=3, both positive, so x=\u00b1\u221a2, \u00b1\u221a3 \u2014 4 real roots.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-li-01",
+     "type": "NUMERIC",
+     "topic": "Linear Inequalities",
+     "prompt": "Solve |x\u00b2-4| \u2264 3x for x>0. Find the upper bound of the solution interval.",
+     "answer": "4",
+     "explanation": "For x>0, this splits into cases around x=2. Solving both branches, the solution is 1\u2264x\u22644, so the upper bound is 4.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-li-02",
+     "type": "NUMERIC",
+     "topic": "Linear Inequalities",
+     "prompt": "How many integers in the range -5 \u2264 x \u2264 10 satisfy (x-1)(x-4)(x-7) < 0?",
+     "answer": "8",
+     "explanation": "The cubic is negative for x<1 or 4<x<7. Within -5\u2264x\u226410: integers x<1 are -5,-4,-3,-2,-1,0 (6 values), and integers with 4<x<7 are 5,6 (2 values). Total = 6+2 = 8.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-li-03",
+     "type": "NUMERIC",
+     "topic": "Linear Inequalities",
+     "prompt": "Solve 2 < |x-1| \u2264 5. How many integers satisfy this inequality?",
+     "answer": "6",
+     "explanation": "2<|x-1|\u22645 gives -4\u2264x<-1 or 3<x\u22646. The integers satisfying this are -4,-3,-2 and 4,5,6 \u2014 6 integers in total.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-pc-01",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "In how many distinct ways can 7 distinct beads be arranged on a circular bracelet (where flipping the bracelet over gives the same arrangement)?",
+     "answer": "360",
+     "explanation": "For a bracelet (clockwise and anticlockwise arrangements are identical), the count is (n-1)!/2 = 6!/2 = 720/2 = 360.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-pc-02",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "A committee of 5 is to be chosen from 10 people such that 2 particular people are never both on the committee. How many ways?",
+     "answer": "196",
+     "explanation": "Total ways = 10C5 = 252. Ways where both particular people are included = 8C3 = 56 (choosing the other 3 from the remaining 8). Required = 252 - 56 = 196.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-pc-03",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "In how many ways can 12 distinct toys be distributed among 4 distinct children so that each child gets exactly 3 toys?",
+     "answer": "369600",
+     "explanation": "This is 12!/(3!)^4 = 479001600/1296 = 369600.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-pc-04",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "Find the number of positive integer solutions to x\u2081+x\u2082+x\u2083=15 (each x\u1d62\u22651).",
+     "answer": "91",
+     "explanation": "Using stars and bars with each variable \u22651: C(15-1, 3-1) = C(14,2) = 91.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-pc-05",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "In how many distinct ways can the letters of 'MISSISSIPPI' be arranged so that all 4 S's appear together?",
+     "answer": "840",
+     "explanation": "Treat the 4 S's as one block. The remaining units are M, I, I, I, I, P, P, and the block \u2014 8 units total, with I repeated 4 times and P repeated 2 times: 8!/(4!2!) = 40320/48 = 840.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-pc-06",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "Using each of the digits 1,2,3,4,5,6 exactly once, how many 6-digit numbers formed are divisible by 4?",
+     "answer": "192",
+     "explanation": "A number is divisible by 4 based on its last two digits. Counting permutations of all 6 digits where the last two digits (as a 2-digit number using remaining distinct digits) form a multiple of 4 gives 192 valid arrangements (verified by exhaustive check).",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-pc-07",
+     "type": "NUMERIC",
+     "topic": "Permutations & Combinations",
+     "prompt": "In how many ways can 3 non-consecutive numbers be chosen from 1 to 12 arranged in a circle?",
+     "answer": "112",
+     "explanation": "For choosing k non-consecutive objects from n arranged in a circle, the formula is (n/(n-k))\u00b7C(n-k,k). For n=12,k=3: (12/9)\u00b7C(9,3) = (12/9)(84) = 112.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-bt-01",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "In the expansion of (1+x)^14, find the position r (where the term is 14Cr) such that the binomial coefficients 14C(r-1), 14Cr, 14C(r+1) are in AP, for the smaller valid value of r.",
+     "answer": "5",
+     "explanation": "Setting 2\u00b714Cr = 14C(r-1) + 14C(r+1) and solving gives r=5 or r=9 (by symmetry). The smaller value is r=5 (verified: 14C4=1001, 14C5=2002, 14C6=3003, and 2(2002)=1001+3003=4004).",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-bt-02",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Evaluate \u03a3 (r+1)\u00b75Cr for r=0 to 5, i.e. 1\u00b75C0 + 2\u00b75C1 + 3\u00b75C2 + 4\u00b75C3 + 5\u00b75C4 + 6\u00b75C5.",
+     "answer": "112",
+     "explanation": "\u03a3(r+1)\u00b7nCr = n\u00b72^(n-1) + 2^n for general n. For n=5: 5\u00d716 + 32 = 80+32 = 112.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-bt-03",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Find the coefficient of x^5 in the expansion of (1+x)^5(1+1/x)^5, expressed as a coefficient of x^0 after simplification (this equals the central binomial coefficient 2nCn for n=5).",
+     "answer": "252",
+     "explanation": "(1+x)^5(1+1/x)^5 = (1+x)^10/x^5, so the coefficient of x^5 in the original product is the coefficient of x^10 in (1+x)^10, which is 10C5 = 252.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-bt-04",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Simplify (1+x)^6 + (1+x)^6 and find the coefficient of x^3 in the result.",
+     "answer": "40",
+     "explanation": "(1+x)^6 + (1+x)^6 = 2(1+x)^6. The coefficient of x^3 in (1+x)^6 is 6C3=20, so in 2(1+x)^6 it is 2\u00d720 = 40.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-bt-05",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "After expanding and adding (x+y)^5 + (x-y)^5, how many nonzero terms remain (in x and y)?",
+     "answer": "3",
+     "explanation": "Adding the two expansions cancels every term with an odd power of y, leaving only the y\u2070, y\u00b2, y\u2074 terms \u2014 3 terms in total.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-bt-06",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Binomial Theorem",
+     "prompt": "In the expansion of (1+x)^13, which term(s) have the numerically greatest binomial coefficient?",
+     "options": [
+      {
+       "text": "Only the 7th term",
+       "correct": false
+      },
+      {
+       "text": "The 7th and 8th terms",
+       "correct": true
+      },
+      {
+       "text": "Only the 8th term",
+       "correct": false
+      },
+      {
+       "text": "The 1st and 13th terms",
+       "correct": false
+      }
+     ],
+     "explanation": "For odd n=13, there are two equal greatest binomial coefficients at r=6 and r=7 (13C6=13C7=1716), corresponding to the 7th and 8th terms.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-bt-07",
+     "type": "NUMERIC",
+     "topic": "Binomial Theorem",
+     "prompt": "Find the number of terms in the expansion of (x+y+z+w)^5.",
+     "answer": "56",
+     "explanation": "For a multinomial (sum of k variables) raised to power n, the number of distinct terms is C(n+k-1, k-1). Here n=5, k=4: C(8,3) = 56.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-ss-01",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find the smallest n for which the sum of the first n terms of 1/(1\u00b72) + 1/(2\u00b73) + ... + 1/(n(n+1)) exceeds 0.99.",
+     "answer": "100",
+     "explanation": "The sum telescopes to n/(n+1). Solving n/(n+1) > 0.99 gives n > 99, so the smallest integer n is 100 (at n=100, sum=100/101\u22480.9901).",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-ss-02",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find the sum of the squares of the first 5 terms of the AP 2, 5, 8, 11, 14.",
+     "answer": "410",
+     "explanation": "Sum of squares = 2\u00b2+5\u00b2+8\u00b2+11\u00b2+14\u00b2 = 4+25+64+121+196 = 410.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-ss-03",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Sequences & Series",
+     "prompt": "If a, b, c, d are four consecutive terms of a GP, which identity always holds?",
+     "options": [
+      {
+       "text": "(b-c)\u00b2+(c-a)\u00b2+(d-b)\u00b2 = (a-d)\u00b2",
+       "correct": true
+      },
+      {
+       "text": "a+d = b+c",
+       "correct": false
+      },
+      {
+       "text": "ad = bc always equals a+d",
+       "correct": false
+      },
+      {
+       "text": "(a-b)(c-d)=0",
+       "correct": false
+      }
+     ],
+     "explanation": "For a GP a, ar, ar\u00b2, ar\u00b3, expanding both sides confirms (b-c)\u00b2+(c-a)\u00b2+(d-b)\u00b2 = (a-d)\u00b2 is an algebraic identity that always holds for 4 consecutive GP terms.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-ss-04",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "Find the sum to infinity of the series 1/(1\u00b72) + 1/(2\u00b73) + 1/(3\u00b74) + ... (telescoping).",
+     "answer": "1",
+     "explanation": "Each term 1/(n(n+1)) = 1/n - 1/(n+1). The series telescopes: the sum to infinity is 1 - 0 = 1.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-ss-05",
+     "type": "NUMERIC",
+     "topic": "Sequences & Series",
+     "prompt": "In an AP, the pth term is 1/q and the qth term is 1/p (p\u2260q, both positive). Find the sum of the first pq terms, for p=3, q=4.",
+     "answer": "13/2",
+     "explanation": "Solving for a and d gives a=d=1/(pq). The sum of pq terms is Spq = (pq+1)/2. For p=3,q=4: (12+1)/2 = 13/2.",
+     "xp": 10
+    },
+    {
+     "id": "alg3-a-ss-06",
+     "type": "MULTIPLE_CHOICE",
+     "topic": "Sequences & Series",
+     "prompt": "For a GP with terms T1, T2, T3, ..., which relation always holds among T3, T5, and T7?",
+     "options": [
+      {
+       "text": "T3\u00b7T7 = T5\u00b2",
+       "correct": true
+      },
+      {
+       "text": "T3+T7 = 2T5",
+       "correct": false
+      },
+      {
+       "text": "T3-T7 = T5",
+       "correct": false
+      },
+      {
+       "text": "T3\u00b7T5 = T7",
+       "correct": false
+      }
+     ],
+     "explanation": "In a GP, any term squared equals the product of terms equidistant from it: T5\u00b2 = T3\u00b7T7, since T5 is the geometric mean of T3 and T7 (both 2 steps away in the exponent).",
+     "xp": 10
+    }
+   ]
+  }
+ ]
+}

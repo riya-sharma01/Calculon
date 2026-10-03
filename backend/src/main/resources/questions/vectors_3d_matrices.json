@@ -1,0 +1,2090 @@
+{
+  "domain": "Vectors, 3D Geometry & Matrices",
+  "levels": [
+    {
+      "level": 1,
+      "levelName": "Foundation",
+      "questions": [
+        {
+          "id": "vec2-f-01",
+          "type": "EXPRESSION",
+          "topic": "Vector Algebra",
+          "prompt": "If a=2i-3j+k and b=i+4j-2k, find a+b. (no spaces)",
+          "answer": "3i+j-k",
+          "explanation": "Add corresponding components.",
+          "xp": 8
+        },
+        {
+          "id": "vec2-f-02",
+          "type": "NUMERIC",
+          "topic": "Vector Algebra",
+          "prompt": "Find the magnitude of v=3i-4j+12k.",
+          "answer": "13",
+          "explanation": "sqrt(9+16+144)=sqrt169=13.",
+          "xp": 8
+        },
+        {
+          "id": "vec2-f-03",
+          "type": "EXPRESSION",
+          "topic": "Matrices",
+          "prompt": "A=[[1,2],[3,4]], B=[[0,1],[-1,2]]. Find A+B. (no spaces)",
+          "answer": "[[1,3],[2,6]]",
+          "explanation": "Add corresponding entries.",
+          "xp": 8
+        },
+        {
+          "id": "vec2-f-04",
+          "type": "NUMERIC",
+          "topic": "Determinants",
+          "prompt": "Evaluate |2,3;5,7|.",
+          "answer": "-1",
+          "explanation": "2*7-3*5=-1.",
+          "xp": 8
+        },
+        {
+          "id": "vec2-f-05",
+          "type": "EXPRESSION",
+          "topic": "3D Geometry",
+          "prompt": "Find the distance between P(1,2,3) and Q(4,6,9). (no spaces)",
+          "answer": "√61",
+          "explanation": "sqrt(9+16+36)=sqrt61.",
+          "xp": 10
+        },
+        {
+          "id": "vec2-f-06",
+          "type": "EXPRESSION",
+          "topic": "Vector Algebra",
+          "prompt": "Find the direction cosines of 2i-j+2k. (no spaces)",
+          "answer": "(2/3,-1/3,2/3)",
+          "explanation": "Magnitude=sqrt(4+1+4)=3.",
+          "xp": 10
+        },
+        {
+          "id": "vec2-f-07",
+          "type": "EXPRESSION",
+          "topic": "Matrices",
+          "prompt": "A=[[1,2],[2,1]]. Find A^T. (no spaces)",
+          "answer": "[[1,2],[2,1]]",
+          "explanation": "The matrix is symmetric, so A^T=A.",
+          "xp": 8
+        },
+        {
+          "id": "vec2-f-08",
+          "type": "NUMERIC",
+          "topic": "Determinants",
+          "prompt": "Evaluate |1,2,3;4,5,6;7,8,9|.",
+          "answer": "0",
+          "explanation": "Rows are linearly dependent (R3=2R2-R1).",
+          "xp": 10
+        },
+        {
+          "id": "vec2-f-09",
+          "type": "EXPRESSION",
+          "topic": "Vector Algebra",
+          "prompt": "Find the unit vector along a=3i+4j. (no spaces)",
+          "answer": "(3/5,4/5)",
+          "explanation": "|a|=5.",
+          "xp": 10
+        },
+        {
+          "id": "vec2-f-10",
+          "type": "NUMERIC",
+          "topic": "Vector Algebra",
+          "prompt": "If a.b=0 for a=2i+3j-k, b=i-2j+lk, find l.",
+          "answer": "-4",
+          "explanation": "2-6-l=0 gives l=-4.",
+          "xp": 10
+        },
+        {
+          "id": "vec2-f-11",
+          "type": "EXPRESSION",
+          "topic": "3D Geometry",
+          "prompt": "Find the plane through (1,2,3) with normal 2i+j-k. (no spaces)",
+          "answer": "2x+y-z-1=0",
+          "explanation": "2(x-1)+(y-2)-(z-3)=0.",
+          "xp": 10
+        },
+        {
+          "id": "vec2-f-12",
+          "type": "EXPRESSION",
+          "topic": "Matrices",
+          "prompt": "A is the 2x2 identity matrix. Find A^-1. (no spaces)",
+          "answer": "[[1,0],[0,1]]",
+          "explanation": "Identity's inverse is itself.",
+          "xp": 8
+        },
+        {
+          "id": "vec2-f-13",
+          "type": "NUMERIC",
+          "topic": "Vector Algebra",
+          "prompt": "Find the angle between a=i+j and b=i-j, in degrees.",
+          "answer": "90",
+          "explanation": "Dot product=1-1=0.",
+          "xp": 10
+        },
+        {
+          "id": "vec2-f-14",
+          "type": "NUMERIC",
+          "topic": "Determinants",
+          "prompt": "Evaluate |1,1,1;2,2,2;3,4,5|.",
+          "answer": "0",
+          "explanation": "Row2=2*Row1.",
+          "xp": 8
+        },
+        {
+          "id": "vec2-f-15",
+          "type": "EXPRESSION",
+          "topic": "3D Geometry",
+          "prompt": "Find the midpoint of (1,2,3) and (5,6,7). (no spaces)",
+          "answer": "(3,4,5)",
+          "explanation": "Average each coordinate.",
+          "xp": 8
+        },
+        {
+          "id": "vec2-f-16",
+          "type": "NUMERIC",
+          "topic": "Determinants",
+          "prompt": "A=[[2,1],[3,2]]. Find |A|.",
+          "answer": "1",
+          "explanation": "4-3=1.",
+          "xp": 8
+        },
+        {
+          "id": "vec2-f-17",
+          "type": "EXPRESSION",
+          "topic": "Vector Algebra",
+          "prompt": "Find a×b for a=i+2j+3k, b=2i+3j+4k. (no spaces)",
+          "answer": "-i+2j-k",
+          "explanation": "Cross product via determinant expansion.",
+          "xp": 12
+        },
+        {
+          "id": "vec2-f-18",
+          "type": "EXPRESSION",
+          "topic": "3D Geometry",
+          "prompt": "Find the direction ratios of the line through (2,3,4) and (5,6,7). (no spaces)",
+          "answer": "(3,3,3)",
+          "explanation": "Subtract coordinates.",
+          "xp": 8
+        },
+        {
+          "id": "vec2-f-19",
+          "type": "NUMERIC",
+          "topic": "Determinants",
+          "prompt": "Evaluate |cosθ,-sinθ;sinθ,cosθ|.",
+          "answer": "1",
+          "explanation": "cos²θ+sin²θ=1.",
+          "xp": 10
+        },
+        {
+          "id": "vec2-f-20",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Vector Algebra",
+          "prompt": "If a×b=0, what can be concluded?",
+          "options": [
+            {
+              "text": "They are parallel",
+              "correct": true
+            },
+            {
+              "text": "They are perpendicular",
+              "correct": false
+            },
+            {
+              "text": "They are equal",
+              "correct": false
+            },
+            {
+              "text": "They are unit vectors",
+              "correct": false
+            }
+          ],
+          "explanation": "Zero cross product implies parallel vectors.",
+          "xp": 10
+        },
+        {
+          "id": "vec2-f-21",
+          "type": "EXPRESSION",
+          "topic": "3D Geometry",
+          "prompt": "Find the equation of the line through (1,2,3) with direction (1,-1,2). (no spaces)",
+          "answer": "(x-1)/1=(y-2)/-1=(z-3)/2",
+          "explanation": "Symmetric form uses direction ratios directly.",
+          "xp": 10
+        },
+        {
+          "id": "vec2-f-22",
+          "type": "EXPRESSION",
+          "topic": "Matrices",
+          "prompt": "A=[[1,2],[3,4]]. Find 2A. (no spaces)",
+          "answer": "[[2,4],[6,8]]",
+          "explanation": "Multiply every entry by 2.",
+          "xp": 8
+        },
+        {
+          "id": "vec2-f-23",
+          "type": "NUMERIC",
+          "topic": "Vector Algebra",
+          "prompt": "Evaluate the scalar triple product [i,j,k].",
+          "answer": "1",
+          "explanation": "i.(j×k)=i.i=1.",
+          "xp": 10
+        },
+        {
+          "id": "vec2-f-24",
+          "type": "NUMERIC",
+          "topic": "Vector Algebra",
+          "prompt": "Find the area of the parallelogram with sides i+j and i-j.",
+          "answer": "2",
+          "explanation": "Cross product = -2k, magnitude 2.",
+          "xp": 10
+        },
+        {
+          "id": "vec2-f-25",
+          "type": "NUMERIC",
+          "topic": "Determinants",
+          "prompt": "A=diag(1,2,3). Find |A|.",
+          "answer": "6",
+          "explanation": "Product of diagonal entries: 1*2*3=6.",
+          "xp": 8
+        },
+        {
+          "id": "vec2-f-26",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "3D Geometry",
+          "prompt": "Find the direction cosines of the z-axis.",
+          "options": [
+            {
+              "text": "(0,0,1)",
+              "correct": true
+            },
+            {
+              "text": "(1,0,0)",
+              "correct": false
+            },
+            {
+              "text": "(0,1,0)",
+              "correct": false
+            },
+            {
+              "text": "(1,1,0)",
+              "correct": false
+            }
+          ],
+          "explanation": "The unit vector along the z-axis is k.",
+          "xp": 8
+        },
+        {
+          "id": "vec2-f-27",
+          "type": "NUMERIC",
+          "topic": "Determinants",
+          "prompt": "Evaluate |2,5,1;3,7,4;1,2,3|.",
+          "answer": "0",
+          "explanation": "2(21-8)-5(9-4)+1(6-7)=26-25-1=0.",
+          "xp": 12
+        },
+        {
+          "id": "vec2-f-28",
+          "type": "NUMERIC",
+          "topic": "Vector Algebra",
+          "prompt": "If a.b=|a||b|, find the angle between them, in degrees.",
+          "answer": "0",
+          "explanation": "cosθ=1 gives θ=0.",
+          "xp": 8
+        },
+        {
+          "id": "vec2-f-29",
+          "type": "EXPRESSION",
+          "topic": "3D Geometry",
+          "prompt": "Find the distance from (1,2,3) to the plane x+2y+3z=0. (no spaces)",
+          "answer": "√14",
+          "explanation": "|1+4+9|/sqrt(1+4+9)=14/sqrt14=sqrt14.",
+          "xp": 12
+        },
+        {
+          "id": "vec2-f-30",
+          "type": "EXPRESSION",
+          "topic": "Matrices",
+          "prompt": "Write A=[[1,2],[3,4]] as the sum of a symmetric and skew-symmetric matrix. (no spaces)",
+          "answer": "[[1,2.5],[2.5,4]]+[[0,-0.5],[0.5,0]]",
+          "explanation": "A=(A+A^T)/2+(A-A^T)/2.",
+          "xp": 14
+        },
+        {
+          "id": "vec2-f-31",
+          "type": "NUMERIC",
+          "topic": "3D Geometry",
+          "prompt": "Find the area of the triangle with vertices (1,2,3),(4,5,6),(7,8,9).",
+          "answer": "0",
+          "explanation": "The points are collinear (direction vectors are parallel), so area is 0.",
+          "xp": 12
+        },
+        {
+          "id": "vec2-f-32",
+          "type": "EXPRESSION",
+          "topic": "Matrices",
+          "prompt": "A=[[1,2],[3,4]]. Find A^2. (no spaces)",
+          "answer": "[[7,10],[15,22]]",
+          "explanation": "Direct matrix multiplication.",
+          "xp": 10
+        },
+        {
+          "id": "vec2-f-33",
+          "type": "NUMERIC",
+          "topic": "3D Geometry",
+          "prompt": "Find the angle between lines with directions (1,1,1) and (1,-1,0), in degrees.",
+          "answer": "90",
+          "explanation": "Dot product=1-1+0=0.",
+          "xp": 10
+        },
+        {
+          "id": "vec2-f-34",
+          "type": "EXPRESSION",
+          "topic": "Determinants",
+          "prompt": "Evaluate |x,1,1;1,x,1;1,1,x|. (no spaces)",
+          "answer": "(x+2)(x-1)^2",
+          "explanation": "Row-reduce (R1->R1+R2+R3) then factor.",
+          "xp": 14
+        },
+        {
+          "id": "vec2-f-35",
+          "type": "EXPRESSION",
+          "topic": "Vector Algebra",
+          "prompt": "Unit vectors a,b satisfy a.b=1/2. Find |a+b|. (no spaces)",
+          "answer": "√3",
+          "explanation": "|a+b|²=1+1+2(1/2)=3.",
+          "xp": 12
+        },
+        {
+          "id": "vec2-f-36",
+          "type": "NUMERIC",
+          "topic": "3D Geometry",
+          "prompt": "Find x such that (1,2,3),(2,3,4),(x,5,6) are collinear.",
+          "answer": "4",
+          "explanation": "AC must be a scalar multiple of AB=(1,1,1); this forces x-1=3, x=4.",
+          "xp": 12
+        },
+        {
+          "id": "vec2-f-37",
+          "type": "NUMERIC",
+          "topic": "Determinants",
+          "prompt": "If |A|=2 for a 3x3 matrix, find |2A|.",
+          "answer": "16",
+          "explanation": "|2A|=2^3|A|=8*2=16.",
+          "xp": 10
+        },
+        {
+          "id": "vec2-f-38",
+          "type": "NUMERIC",
+          "topic": "3D Geometry",
+          "prompt": "Find the shortest distance between the lines r=i+λj and r=i+µk.",
+          "answer": "0",
+          "explanation": "Both lines pass through (1,0,0), so they intersect.",
+          "xp": 12
+        },
+        {
+          "id": "vec2-f-39",
+          "type": "EXPRESSION",
+          "topic": "Matrices",
+          "prompt": "A=[[1,2],[3,4]]. Find adj(A). (no spaces)",
+          "answer": "[[4,-2],[-3,1]]",
+          "explanation": "For 2x2 [[a,b],[c,d]], adj=[[d,-b],[-c,a]].",
+          "xp": 10
+        },
+        {
+          "id": "vec2-f-40",
+          "type": "EXPRESSION",
+          "topic": "3D Geometry",
+          "prompt": "Find the plane through the origin with normal 2i-j+k. (no spaces)",
+          "answer": "2x-y+z=0",
+          "explanation": "2x-y+z=0 directly from the normal.",
+          "xp": 10
+        },
+        {
+          "id": "vec2-f-41",
+          "type": "NUMERIC",
+          "topic": "Vector Algebra",
+          "prompt": "a=2i+3j, b=4i-j. Find a.b.",
+          "answer": "5",
+          "explanation": "2(4)+3(-1)=8-3=5.",
+          "xp": 8
+        },
+        {
+          "id": "vec2-f-42",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "3D Geometry",
+          "prompt": "Find the direction cosines of a line making equal angles with all three axes.",
+          "options": [
+            {
+              "text": "(1/√3,1/√3,1/√3)",
+              "correct": true
+            },
+            {
+              "text": "(1/2,1/2,1/2)",
+              "correct": false
+            },
+            {
+              "text": "(1,1,1)",
+              "correct": false
+            },
+            {
+              "text": "(1/√2,1/√2,0)",
+              "correct": false
+            }
+          ],
+          "explanation": "With l=m=n, 3l²=1 gives l=1/√3.",
+          "xp": 12
+        },
+        {
+          "id": "vec2-f-43",
+          "type": "EXPRESSION",
+          "topic": "Matrices",
+          "prompt": "A=[[1,0],[0,-1]]. Find A^2. (no spaces)",
+          "answer": "[[1,0],[0,1]]",
+          "explanation": "A^2 is the identity matrix.",
+          "xp": 10
+        },
+        {
+          "id": "vec2-f-44",
+          "type": "EXPRESSION",
+          "topic": "3D Geometry",
+          "prompt": "Find the line through (1,2,3) perpendicular to the plane x+2y+3z=4. (no spaces)",
+          "answer": "(x-1)/1=(y-2)/2=(z-3)/3",
+          "explanation": "The plane's normal (1,2,3) is the line's direction.",
+          "xp": 12
+        },
+        {
+          "id": "vec2-f-45",
+          "type": "EXPRESSION",
+          "topic": "Determinants",
+          "prompt": "Evaluate |a,b,c;b,c,a;c,a,b|. (no spaces)",
+          "answer": "3abc-a^3-b^3-c^3",
+          "explanation": "Expand using the cyclic structure.",
+          "xp": 16
+        },
+        {
+          "id": "vec2-f-46",
+          "type": "NUMERIC",
+          "topic": "3D Geometry",
+          "prompt": "Find the area of the triangle A(1,2,3),B(2,3,4),C(3,4,5).",
+          "answer": "0",
+          "explanation": "AB and AC are parallel, so the points are collinear (area 0).",
+          "xp": 12
+        },
+        {
+          "id": "vec2-f-47",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Matrices",
+          "prompt": "If A,B are symmetric, AB is symmetric if and only if:",
+          "options": [
+            {
+              "text": "AB=BA",
+              "correct": true
+            },
+            {
+              "text": "AB=-BA",
+              "correct": false
+            },
+            {
+              "text": "A=B",
+              "correct": false
+            },
+            {
+              "text": "A or B is zero",
+              "correct": false
+            }
+          ],
+          "explanation": "(AB)^T=B^T A^T=BA. For AB to be symmetric, BA=AB is required.",
+          "xp": 14
+        },
+        {
+          "id": "vec2-f-48",
+          "type": "NUMERIC",
+          "topic": "3D Geometry",
+          "prompt": "Find the shortest distance from (1,2,3) to the line (x-1)/2=(y-2)/3=(z-3)/4.",
+          "answer": "0",
+          "explanation": "The point itself lies on the line (at parameter 0).",
+          "xp": 12
+        },
+        {
+          "id": "vec2-f-49",
+          "type": "EXPRESSION",
+          "topic": "3D Geometry",
+          "prompt": "Find the angle between the planes x+y+z=1 and 2x+3y+z=2. (no spaces)",
+          "answer": "cos^-1(6/√42)",
+          "explanation": "Normals (1,1,1),(2,3,1); cosθ=6/(√3√14)=6/√42.",
+          "xp": 14
+        },
+        {
+          "id": "vec2-f-50",
+          "type": "NUMERIC",
+          "topic": "Determinants",
+          "prompt": "A cyclic determinant |1,ω,ω²;ω,ω²,1;ω²,1,ω| uses a complex cube root of unity ω. Evaluate it.",
+          "answer": "0",
+          "explanation": "Rows are cyclic permutations of each other, giving determinant 0.",
+          "xp": 16
+        },
+        {
+          "id": "vec2-f-51",
+          "type": "EXPRESSION",
+          "topic": "Vector Algebra",
+          "prompt": "Find a×b for a=2i-j+k, b=i+2j-k. (no spaces)",
+          "answer": "-i+3j+5k",
+          "explanation": "Cross product via determinant expansion.",
+          "xp": 12
+        },
+        {
+          "id": "vec2-f-52",
+          "type": "EXPRESSION",
+          "topic": "Matrices",
+          "prompt": "Find x such that [[x,2],[3,4]] is singular. (enter as a reduced fraction)",
+          "answer": "3/2",
+          "explanation": "Singular means determinant 0: 4x-6=0.",
+          "xp": 12
+        },
+        {
+          "id": "vec2-f-53",
+          "type": "EXPRESSION",
+          "topic": "3D Geometry",
+          "prompt": "Find the line through the collinear points (1,2,3),(3,4,5),(5,6,7). (no spaces)",
+          "answer": "(x-1)/1=(y-2)/1=(z-3)/1",
+          "explanation": "Direction (2,2,2) simplifies to (1,1,1).",
+          "xp": 10
+        },
+        {
+          "id": "vec2-f-54",
+          "type": "NUMERIC",
+          "topic": "3D Geometry",
+          "prompt": "Find the distance from the origin to the plane 2x+3y+6z=42.",
+          "answer": "6",
+          "explanation": "|−42|/sqrt(4+9+36)=42/7=6.",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "levelName": "Standard",
+      "questions": [
+        {
+          "id": "vec2-s-01",
+          "type": "EXPRESSION",
+          "topic": "3D Geometry",
+          "prompt": "Find the point dividing (1,2,3) and (4,5,6) in ratio 2:1 internally. (no spaces)",
+          "answer": "(3,4,5)",
+          "explanation": "Section formula: (2*4+1)/3=3, similarly for y,z.",
+          "xp": 10
+        },
+        {
+          "id": "vec2-s-02",
+          "type": "EXPRESSION",
+          "topic": "Vector Algebra",
+          "prompt": "Find the projection of a=i+2j-3k on b=2i-j+4k. (no spaces)",
+          "answer": "-12/√21",
+          "explanation": "a.b/|b|=(2-2-12)/sqrt21.",
+          "xp": 14
+        },
+        {
+          "id": "vec2-s-03",
+          "type": "EXPRESSION",
+          "topic": "Matrices",
+          "prompt": "A=[[2,-1],[1,3]]. Find A^-1. (no spaces)",
+          "answer": "1/7*[[3,1],[-1,2]]",
+          "explanation": "|A|=7, adj=[[3,1],[-1,2]].",
+          "xp": 14
+        },
+        {
+          "id": "vec2-s-04",
+          "type": "NUMERIC",
+          "topic": "Vector Algebra",
+          "prompt": "Find l such that 2i+lj+k and i-j+3k are perpendicular.",
+          "answer": "5",
+          "explanation": "2-l+3=0 gives l=5.",
+          "xp": 12
+        },
+        {
+          "id": "vec2-s-05",
+          "type": "NUMERIC",
+          "topic": "Determinants",
+          "prompt": "Evaluate |1,2,3;2,3,4;3,4,5|.",
+          "answer": "0",
+          "explanation": "Rows are in AP with the same common difference, giving determinant 0.",
+          "xp": 12
+        },
+        {
+          "id": "vec2-s-06",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "3D Geometry",
+          "prompt": "Do (1,2,3),(2,3,4),(3,4,5) determine a unique plane?",
+          "options": [
+            {
+              "text": "No — they are collinear",
+              "correct": true
+            },
+            {
+              "text": "Yes, x+y+z=6",
+              "correct": false
+            },
+            {
+              "text": "Yes, x+2y+z=8",
+              "correct": false
+            },
+            {
+              "text": "Yes, 2x+y+z=9",
+              "correct": false
+            }
+          ],
+          "explanation": "The three points are collinear, so no unique plane is determined.",
+          "xp": 14
+        },
+        {
+          "id": "vec2-s-07",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Matrices",
+          "prompt": "Is A=[[1,1],[0,0]] idempotent?",
+          "options": [
+            {
+              "text": "Yes",
+              "correct": true
+            },
+            {
+              "text": "No",
+              "correct": false
+            },
+            {
+              "text": "Only if A²=I",
+              "correct": false
+            },
+            {
+              "text": "Only if A=0",
+              "correct": false
+            }
+          ],
+          "explanation": "A²=[[1,1],[0,0]]=A, confirming idempotence.",
+          "xp": 12
+        },
+        {
+          "id": "vec2-s-08",
+          "type": "EXPRESSION",
+          "topic": "3D Geometry",
+          "prompt": "Find the angle between lines with directions (2,3,4) and (3,4,5). (no spaces)",
+          "answer": "cos^-1(38/(5√58))",
+          "explanation": "cosθ=(6+12+20)/(sqrt29*sqrt50).",
+          "xp": 16
+        },
+        {
+          "id": "vec2-s-09",
+          "type": "NUMERIC",
+          "topic": "Vector Algebra",
+          "prompt": "Find the scalar triple product of i+2j+3k, 2i+3j+4k, 3i+4j+5k.",
+          "answer": "0",
+          "explanation": "These vectors are coplanar (linearly dependent), giving 0.",
+          "xp": 14
+        },
+        {
+          "id": "vec2-s-10",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Matrices",
+          "prompt": "Solve x+2y=5, 3x+4y=11 using the inverse matrix method.",
+          "options": [
+            {
+              "text": "(1,2)",
+              "correct": true
+            },
+            {
+              "text": "(2,1)",
+              "correct": false
+            },
+            {
+              "text": "(3,1)",
+              "correct": false
+            },
+            {
+              "text": "(1,3)",
+              "correct": false
+            }
+          ],
+          "explanation": "Solving the system gives x=1,y=2.",
+          "xp": 14
+        },
+        {
+          "id": "vec2-s-11",
+          "type": "EXPRESSION",
+          "topic": "Vector Algebra",
+          "prompt": "Find the area of the parallelogram with a=2i+j-k, b=i-2j+k. (no spaces)",
+          "answer": "√35",
+          "explanation": "a×b=-i-3j-5k, magnitude sqrt(1+9+25).",
+          "xp": 14
+        },
+        {
+          "id": "vec2-s-12",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Determinants",
+          "prompt": "Evaluate |1,1,1;x,y,z;x²,y²,z²|.",
+          "options": [
+            {
+              "text": "(y-x)(z-x)(z-y)",
+              "correct": true
+            },
+            {
+              "text": "(x-y)(y-z)(z-x)",
+              "correct": false
+            },
+            {
+              "text": "(x-y)(x-z)(z-y)",
+              "correct": false
+            },
+            {
+              "text": "(y-x)(z-y)(z-x)",
+              "correct": false
+            }
+          ],
+          "explanation": "This is the standard Vandermonde determinant.",
+          "xp": 16
+        },
+        {
+          "id": "vec2-s-13",
+          "type": "NUMERIC",
+          "topic": "3D Geometry",
+          "prompt": "Find the distance from (1,2,3) to the line r=i+2j+λ(i+j+k).",
+          "answer": "0",
+          "explanation": "At λ=3, the line passes exactly through (1,2,3).",
+          "xp": 14
+        },
+        {
+          "id": "vec2-s-14",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Matrices",
+          "prompt": "Find B such that A+B=[[2,2],[2,2]], where A=[[1,2],[3,4]].",
+          "options": [
+            {
+              "text": "[[1,0],[-1,-2]]",
+              "correct": true
+            },
+            {
+              "text": "[[1,0],[1,2]]",
+              "correct": false
+            },
+            {
+              "text": "[[-1,0],[1,2]]",
+              "correct": false
+            },
+            {
+              "text": "[[1,2],[-1,-2]]",
+              "correct": false
+            }
+          ],
+          "explanation": "B=[[2,2],[2,2]]-A.",
+          "xp": 12
+        },
+        {
+          "id": "vec2-s-15",
+          "type": "EXPRESSION",
+          "topic": "Vector Algebra",
+          "prompt": "Find the projection of i+2j+3k on the direction 2i+3j+6k. (no spaces)",
+          "answer": "26/7",
+          "explanation": "(2+6+18)/7.",
+          "xp": 14
+        },
+        {
+          "id": "vec2-s-16",
+          "type": "NUMERIC",
+          "topic": "Determinants",
+          "prompt": "Evaluate |3,1,2;2,1,1;1,2,3|.",
+          "answer": "4",
+          "explanation": "3(3-2)-1(6-1)+2(4-1)=3-5+6=4.",
+          "xp": 14
+        },
+        {
+          "id": "vec2-s-17",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "3D Geometry",
+          "prompt": "Find the plane through (2,3,4) perpendicular to the line with direction (2,3,4).",
+          "options": [
+            {
+              "text": "2x+3y+4z-29=0",
+              "correct": true
+            },
+            {
+              "text": "2x+3y+4z+29=0",
+              "correct": false
+            },
+            {
+              "text": "2x+3y+4z=10",
+              "correct": false
+            },
+            {
+              "text": "x+y+z=9",
+              "correct": false
+            }
+          ],
+          "explanation": "Normal=(2,3,4): 2(x-2)+3(y-3)+4(z-4)=0.",
+          "xp": 14
+        },
+        {
+          "id": "vec2-s-18",
+          "type": "NUMERIC",
+          "topic": "Vector Algebra",
+          "prompt": "Unit vectors a,b satisfy |a+b|=√3. Find the angle between them, in degrees.",
+          "answer": "60",
+          "explanation": "2+2cosθ=3 gives cosθ=1/2.",
+          "xp": 14
+        },
+        {
+          "id": "vec2-s-19",
+          "type": "NUMERIC",
+          "topic": "Determinants",
+          "prompt": "Evaluate |1,2,3;2,5,8;3,8,13|.",
+          "answer": "0",
+          "explanation": "1(65-64)-2(26-24)+3(16-15)=1-4+3=0.",
+          "xp": 14
+        },
+        {
+          "id": "vec2-s-20",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "3D Geometry",
+          "prompt": "Find the direction cosines of the normal to the plane 3x+4y+5z=10.",
+          "options": [
+            {
+              "text": "(3/√50,4/√50,5/√50)",
+              "correct": true
+            },
+            {
+              "text": "(3/5,4/5,1)",
+              "correct": false
+            },
+            {
+              "text": "(3/10,4/10,5/10)",
+              "correct": false
+            },
+            {
+              "text": "(1/3,1/4,1/5)",
+              "correct": false
+            }
+          ],
+          "explanation": "Normal vector (3,4,5), magnitude sqrt50.",
+          "xp": 14
+        },
+        {
+          "id": "vec2-s-21",
+          "type": "NUMERIC",
+          "topic": "Matrices",
+          "prompt": "Find the rank of [[1,2,3],[2,4,6],[3,6,9]].",
+          "answer": "1",
+          "explanation": "All rows are scalar multiples of the first, so rank 1.",
+          "xp": 12
+        },
+        {
+          "id": "vec2-s-22",
+          "type": "EXPRESSION",
+          "topic": "3D Geometry",
+          "prompt": "Find the shortest distance between the skew lines r=i+j+λ(i+j+k) and r=i+k+µ(i-j+k). (no spaces)",
+          "answer": "1/√2",
+          "explanation": "Cross product of directions has magnitude 2√2; the connecting vector's projection gives distance 1/√2.",
+          "xp": 18
+        },
+        {
+          "id": "vec2-s-23",
+          "type": "NUMERIC",
+          "topic": "Determinants",
+          "prompt": "If |A|=2 for a 3x3 matrix, find |adj(A)|.",
+          "answer": "4",
+          "explanation": "|adj(A)|=|A|^(n-1)=2^2=4.",
+          "xp": 12
+        },
+        {
+          "id": "vec2-s-24",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "3D Geometry",
+          "prompt": "Find the line through (1,2,3) parallel to 2i-j+k.",
+          "options": [
+            {
+              "text": "(x-1)/2=(y-2)/-1=(z-3)/1",
+              "correct": true
+            },
+            {
+              "text": "(x-1)/-2=(y-2)/1=(z-3)/-1",
+              "correct": false
+            },
+            {
+              "text": "(x-1)/1=(y-2)/-2=(z-3)/1",
+              "correct": false
+            },
+            {
+              "text": "(x-1)/2=(y-2)/1=(z-3)/-1",
+              "correct": false
+            }
+          ],
+          "explanation": "Direction ratios are exactly (2,-1,1).",
+          "xp": 12
+        },
+        {
+          "id": "vec2-s-25",
+          "type": "EXPRESSION",
+          "topic": "Vector Algebra",
+          "prompt": "Find |a×b| for a=2i+j+3k, b=i-j+2k. (no spaces)",
+          "answer": "√35",
+          "explanation": "Cross product = 5i-j-3k, magnitude sqrt(25+1+9).",
+          "xp": 14
+        },
+        {
+          "id": "vec2-s-26",
+          "type": "NUMERIC",
+          "topic": "Determinants",
+          "prompt": "Evaluate |1,2,3;4,5,6;7,8,10|.",
+          "answer": "-3",
+          "explanation": "1(50-48)-2(40-42)+3(32-35)=2+4-9=-3.",
+          "xp": 14
+        },
+        {
+          "id": "vec2-s-27",
+          "type": "EXPRESSION",
+          "topic": "3D Geometry",
+          "prompt": "Find the angle between planes 2x+y-2z=5 and 3x+4y+12z=0. (no spaces)",
+          "answer": "cos^-1(-14/39)",
+          "explanation": "Normals (2,1,-2),(3,4,12); cosθ=(6+4-24)/(3*13).",
+          "xp": 16
+        },
+        {
+          "id": "vec2-s-28",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Matrices",
+          "prompt": "Solve x+2y+z=4, 2x+3y+z=7, 3x+4y+2z=11.",
+          "options": [
+            {
+              "text": "(3,0,1)",
+              "correct": true
+            },
+            {
+              "text": "(1,0,3)",
+              "correct": false
+            },
+            {
+              "text": "(0,3,1)",
+              "correct": false
+            },
+            {
+              "text": "(3,1,0)",
+              "correct": false
+            }
+          ],
+          "explanation": "Elimination gives x=3,y=0,z=1.",
+          "xp": 16
+        },
+        {
+          "id": "vec2-s-29",
+          "type": "EXPRESSION",
+          "topic": "Vector Algebra",
+          "prompt": "Find the projection of 2i+j+3k on i+2j+2k. (no spaces)",
+          "answer": "10/3",
+          "explanation": "(2+2+6)/3.",
+          "xp": 14
+        },
+        {
+          "id": "vec2-s-30",
+          "type": "NUMERIC",
+          "topic": "3D Geometry",
+          "prompt": "Find λ such that (1,2,3),(2,3,4),(λ,5,6) are collinear.",
+          "answer": "4",
+          "explanation": "AC must be proportional to AB=(1,1,1); this forces λ-1=3.",
+          "xp": 12
+        },
+        {
+          "id": "vec2-s-31",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Matrices",
+          "prompt": "Find A^-1 for A=[[1,2],[2,4]].",
+          "options": [
+            {
+              "text": "Does not exist",
+              "correct": true
+            },
+            {
+              "text": "[[4,-2],[-2,1]]",
+              "correct": false
+            },
+            {
+              "text": "[[-4,2],[2,-1]]",
+              "correct": false
+            },
+            {
+              "text": "[[1,2],[2,4]]",
+              "correct": false
+            }
+          ],
+          "explanation": "|A|=4-4=0, so A is singular.",
+          "xp": 14
+        },
+        {
+          "id": "vec2-s-32",
+          "type": "NUMERIC",
+          "topic": "Determinants",
+          "prompt": "Evaluate |2,3,4;3,4,5;4,5,6|.",
+          "answer": "0",
+          "explanation": "Rows form an arithmetic progression, giving determinant 0.",
+          "xp": 12
+        },
+        {
+          "id": "vec2-s-33",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "3D Geometry",
+          "prompt": "Find the plane through the line of intersection of x+y+z=1 and 2x+3y+4z=5, passing through (1,2,3).",
+          "options": [
+            {
+              "text": "x-z+2=0",
+              "correct": true
+            },
+            {
+              "text": "x+z-2=0",
+              "correct": false
+            },
+            {
+              "text": "x-y+z=0",
+              "correct": false
+            },
+            {
+              "text": "x+y-z=0",
+              "correct": false
+            }
+          ],
+          "explanation": "Using the family (x+y+z-1)+λ(2x+3y+4z-5)=0 and substituting (1,2,3) gives λ=-1/3, simplifying to x-z+2=0.",
+          "xp": 18
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "levelName": "Intermediate",
+      "questions": [
+        {
+          "id": "vec2-i-01",
+          "type": "NUMERIC",
+          "topic": "Vector Algebra",
+          "prompt": "Show a=i+j+k, b=2i+3j+4k, c=3i+4j+5k are coplanar by finding their scalar triple product.",
+          "answer": "0",
+          "explanation": "The determinant of the three vectors as rows is 0, confirming coplanarity.",
+          "xp": 16
+        },
+        {
+          "id": "vec2-i-02",
+          "type": "NUMERIC",
+          "topic": "Matrices",
+          "prompt": "Find the rank of [[1,1,1],[1,2,3],[1,3,6]].",
+          "answer": "3",
+          "explanation": "|A|=1(12-9)-1(6-3)+1(3-2)=1≠0, so full rank 3.",
+          "xp": 16
+        },
+        {
+          "id": "vec2-i-03",
+          "type": "NUMERIC",
+          "topic": "3D Geometry",
+          "prompt": "Find the shortest distance between (x-1)/2=(y-2)/3=(z-3)/4 and (x-1)/3=(y-2)/4=(z-3)/5.",
+          "answer": "0",
+          "explanation": "Both lines pass through (1,2,3), so they intersect.",
+          "xp": 16
+        },
+        {
+          "id": "vec2-i-04",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Matrices",
+          "prompt": "Find A^-1 for the upper triangular A=[[1,2,3],[0,1,4],[0,0,1]].",
+          "options": [
+            {
+              "text": "[[1,-2,5],[0,1,-4],[0,0,1]]",
+              "correct": true
+            },
+            {
+              "text": "[[1,2,-5],[0,1,4],[0,0,1]]",
+              "correct": false
+            },
+            {
+              "text": "[[1,2,3],[0,1,4],[0,0,1]]",
+              "correct": false
+            },
+            {
+              "text": "[[1,-2,-5],[0,1,4],[0,0,1]]",
+              "correct": false
+            }
+          ],
+          "explanation": "For an upper unitriangular matrix, the inverse follows a known cofactor pattern with a=2,b=3,c=4.",
+          "xp": 18
+        },
+        {
+          "id": "vec2-i-05",
+          "type": "EXPRESSION",
+          "topic": "Vector Algebra",
+          "prompt": "Find λ for coplanar a=2i+λj+k, b=i+2j+3k, c=3i+j+2k. (enter as a reduced fraction)",
+          "answer": "3/7",
+          "explanation": "The scalar triple product gives 7λ-3=0.",
+          "xp": 18
+        },
+        {
+          "id": "vec2-i-06",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "3D Geometry",
+          "prompt": "Find the intersection point of (x-1)/2=(y-2)/3=(z-3)/4 and (x-1)/3=(y-2)/4=(z-3)/5.",
+          "options": [
+            {
+              "text": "(1,2,3)",
+              "correct": true
+            },
+            {
+              "text": "(2,3,4)",
+              "correct": false
+            },
+            {
+              "text": "(3,4,5)",
+              "correct": false
+            },
+            {
+              "text": "(0,0,0)",
+              "correct": false
+            }
+          ],
+          "explanation": "Both lines pass through (1,2,3) at parameter 0.",
+          "xp": 14
+        },
+        {
+          "id": "vec2-i-07",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Matrices",
+          "prompt": "Find adj(A) for A=[[1,2,3],[4,5,6],[7,8,9]].",
+          "options": [
+            {
+              "text": "[[-3,6,-3],[6,-12,6],[-3,6,-3]]",
+              "correct": true
+            },
+            {
+              "text": "[[3,-6,3],[-6,12,-6],[3,-6,3]]",
+              "correct": false
+            },
+            {
+              "text": "[[-3,6,-3],[-6,12,-6],[-3,6,-3]]",
+              "correct": false
+            },
+            {
+              "text": "[[3,6,3],[6,12,6],[3,6,3]]",
+              "correct": false
+            }
+          ],
+          "explanation": "Compute all cofactors, then transpose.",
+          "xp": 18
+        },
+        {
+          "id": "vec2-i-08",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "3D Geometry",
+          "prompt": "Find the plane containing (x-1)/2=(y-2)/3=(z-3)/4 and parallel to (x-1)/3=(y-2)/4=(z-3)/5.",
+          "options": [
+            {
+              "text": "x-2y+z=0",
+              "correct": true
+            },
+            {
+              "text": "x+2y+z=0",
+              "correct": false
+            },
+            {
+              "text": "x-2y-z=0",
+              "correct": false
+            },
+            {
+              "text": "x+2y-z=0",
+              "correct": false
+            }
+          ],
+          "explanation": "Normal = cross product of directions (2,3,4) and (3,4,5) = (-1,2,-1); through (1,2,3) gives x-2y+z=0.",
+          "xp": 18
+        },
+        {
+          "id": "vec2-i-09",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Matrices",
+          "prompt": "For A=[[1,2],[3,4]], evaluate A²-5A-2I.",
+          "options": [
+            {
+              "text": "[[0,0],[0,0]]",
+              "correct": true
+            },
+            {
+              "text": "[[1,0],[0,1]]",
+              "correct": false
+            },
+            {
+              "text": "[[0,1],[1,0]]",
+              "correct": false
+            },
+            {
+              "text": "[[2,0],[0,2]]",
+              "correct": false
+            }
+          ],
+          "explanation": "A²=[[7,10],[15,22]]; A²-5A-2I evaluates to the zero matrix.",
+          "xp": 16
+        },
+        {
+          "id": "vec2-i-10",
+          "type": "NUMERIC",
+          "topic": "3D Geometry",
+          "prompt": "Direction cosines satisfy l+m+n=0 and l²+m²-n²=0. Find the angle between the two resulting directions, in degrees.",
+          "answer": "60",
+          "explanation": "Solving gives direction ratios (0,1,-1) and (1,0,-1); the angle between them is arccos(1/2)=60°.",
+          "xp": 18
+        },
+        {
+          "id": "vec2-i-11",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Matrices",
+          "prompt": "Find A^-1 for the lower triangular A=[[1,0,0],[2,1,0],[3,2,1]].",
+          "options": [
+            {
+              "text": "[[1,0,0],[-2,1,0],[1,-2,1]]",
+              "correct": true
+            },
+            {
+              "text": "[[1,0,0],[2,1,0],[-3,2,1]]",
+              "correct": false
+            },
+            {
+              "text": "[[1,0,0],[-2,1,0],[-1,2,1]]",
+              "correct": false
+            },
+            {
+              "text": "[[1,0,0],[2,1,0],[3,2,1]]",
+              "correct": false
+            }
+          ],
+          "explanation": "For a lower unitriangular matrix, the inverse follows the standard pattern shown.",
+          "xp": 18
+        },
+        {
+          "id": "vec2-i-12",
+          "type": "EXPRESSION",
+          "topic": "3D Geometry",
+          "prompt": "Find the shortest distance between r=i+j+λ(i+j) and r=i+k+µ(i-k). (no spaces)",
+          "answer": "2/√3",
+          "explanation": "Cross product of directions has magnitude √3; the connecting vector's projection gives 2/√3.",
+          "xp": 20
+        },
+        {
+          "id": "vec2-i-13",
+          "type": "EXPRESSION",
+          "topic": "Matrices",
+          "prompt": "If |A|=2 for a 3x3 matrix, find |(2A)^-1|. (enter as a reduced fraction)",
+          "answer": "1/16",
+          "explanation": "|(2A)^-1|=1/|2A|=1/(2^3*2)=1/16.",
+          "xp": 16
+        },
+        {
+          "id": "vec2-i-14",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "3D Geometry",
+          "prompt": "Find the plane through (1,2,3),(2,3,4) perpendicular to x+y+z=1.",
+          "options": [
+            {
+              "text": "x-2y+z=0",
+              "correct": true
+            },
+            {
+              "text": "x+2y+z=0",
+              "correct": false
+            },
+            {
+              "text": "x-2y-z=0",
+              "correct": false
+            },
+            {
+              "text": "x+2y-z=0",
+              "correct": false
+            }
+          ],
+          "explanation": "The normal must satisfy a+b+c=0 and pass through both points, giving x-2y+z=0.",
+          "xp": 18
+        },
+        {
+          "id": "vec2-i-15",
+          "type": "EXPRESSION",
+          "topic": "Vector Algebra",
+          "prompt": "If |a+b|=|a-b|, what can be concluded about a and b? (one word)",
+          "answer": "perpendicular",
+          "explanation": "Squaring both sides and simplifying gives a.b=0.",
+          "xp": 14
+        },
+        {
+          "id": "vec2-i-16",
+          "type": "NUMERIC",
+          "topic": "Matrices",
+          "prompt": "Find the nullity of [[1,2,3],[2,4,6],[3,6,9]].",
+          "answer": "2",
+          "explanation": "Rank=1 (all rows are multiples), so nullity=3-1=2.",
+          "xp": 16
+        },
+        {
+          "id": "vec2-i-17",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "3D Geometry",
+          "prompt": "Find the image of (1,2,3) in the plane 2x+3y+4z=10.",
+          "options": [
+            {
+              "text": "(-11/29,-2/29,7/29)",
+              "correct": true
+            },
+            {
+              "text": "(11/29,2/29,-7/29)",
+              "correct": false
+            },
+            {
+              "text": "(-11/29,2/29,7/29)",
+              "correct": false
+            },
+            {
+              "text": "(11/29,-2/29,-7/29)",
+              "correct": false
+            }
+          ],
+          "explanation": "The foot of the perpendicular is (9/29,28/29,47/29); the image is 2×foot minus the original point.",
+          "xp": 20
+        },
+        {
+          "id": "vec2-i-18",
+          "type": "EXPRESSION",
+          "topic": "Matrices",
+          "prompt": "Find the eigenvalues of [[1,2,3],[2,4,6],[3,6,9]]. (comma-separated)",
+          "answer": "14,0,0",
+          "explanation": "This matrix has rank 1 with trace 14, giving eigenvalues 14,0,0.",
+          "xp": 18
+        },
+        {
+          "id": "vec2-i-19",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "3D Geometry",
+          "prompt": "Find the line of intersection of x+y+z=1 and 2x+3y+4z=5.",
+          "options": [
+            {
+              "text": "(x+2)/1=(y-3)/-2=z/1",
+              "correct": true
+            },
+            {
+              "text": "(x-2)/1=(y+3)/2=z/1",
+              "correct": false
+            },
+            {
+              "text": "(x+2)/-1=(y-3)/2=z/1",
+              "correct": false
+            },
+            {
+              "text": "(x-2)/1=(y+3)/-2=z/-1",
+              "correct": false
+            }
+          ],
+          "explanation": "Solving the two plane equations simultaneously gives x=-2+z, y=3-2z.",
+          "xp": 18
+        },
+        {
+          "id": "vec2-i-20",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Matrices",
+          "prompt": "Find B such that AB=I, where A=[[1,2],[3,4]].",
+          "options": [
+            {
+              "text": "[[-2,1],[1.5,-0.5]]",
+              "correct": true
+            },
+            {
+              "text": "[[2,-1],[-1.5,0.5]]",
+              "correct": false
+            },
+            {
+              "text": "[[4,-2],[-3,1]]",
+              "correct": false
+            },
+            {
+              "text": "[[-4,2],[3,-1]]",
+              "correct": false
+            }
+          ],
+          "explanation": "B=A^-1=(1/-2)[[4,-2],[-3,1]].",
+          "xp": 16
+        },
+        {
+          "id": "vec2-i-21",
+          "type": "EXPRESSION",
+          "topic": "3D Geometry",
+          "prompt": "For what λ do the lines (x-1)/1=(y-2)/2=(z-3)/3 and (x-1)/2=(y-2)/3=(z-3)/λ intersect? (no spaces)",
+          "answer": "all real λ",
+          "explanation": "Both lines always contain the point (1,2,3) regardless of λ, so they always intersect.",
+          "xp": 18
+        },
+        {
+          "id": "vec2-i-22",
+          "type": "NUMERIC",
+          "topic": "Determinants",
+          "prompt": "Evaluate |1,4,7;2,5,8;3,6,9|.",
+          "answer": "0",
+          "explanation": "This is the transpose of a matrix with determinant 0, so it is also 0.",
+          "xp": 14
+        },
+        {
+          "id": "vec2-i-23",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "3D Geometry",
+          "prompt": "Find the sphere with diameter endpoints (1,2,3) and (3,4,5).",
+          "options": [
+            {
+              "text": "(x-2)²+(y-3)²+(z-4)²=3",
+              "correct": true
+            },
+            {
+              "text": "(x-2)²+(y-3)²+(z-4)²=1",
+              "correct": false
+            },
+            {
+              "text": "(x-1)²+(y-2)²+(z-3)²=3",
+              "correct": false
+            },
+            {
+              "text": "(x-3)²+(y-4)²+(z-5)²=3",
+              "correct": false
+            }
+          ],
+          "explanation": "The center is the midpoint (2,3,4); the radius is half the diameter length, √3.",
+          "xp": 18
+        },
+        {
+          "id": "vec2-i-24",
+          "type": "EXPRESSION",
+          "topic": "Matrices",
+          "prompt": "Find the eigenvalues and eigenvectors of A=[[1,2],[2,1]]. (no spaces)",
+          "answer": "3,-1;(1,1),(1,-1)",
+          "explanation": "Characteristic equation (λ-3)(λ+1)=0. For λ=3, eigenvector (1,1); for λ=-1, eigenvector (1,-1).",
+          "xp": 20
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "levelName": "Hard",
+      "questions": [
+        {
+          "id": "vec2-h-01",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Matrices",
+          "prompt": "If adj(A)=diag(1,2,3), find |A| and A.",
+          "options": [
+            {
+              "text": "|A|=√6, A=diag(√6,√6/2,√6/3)",
+              "correct": true
+            },
+            {
+              "text": "|A|=√6, A=diag(√6,√6,√6)",
+              "correct": false
+            },
+            {
+              "text": "|A|=6, A=diag(1,2,3)",
+              "correct": false
+            },
+            {
+              "text": "|A|=6, A=diag(6,3,2)",
+              "correct": false
+            }
+          ],
+          "explanation": "|adj(A)|=|A|²=6 gives |A|=√6. Then A=|A|·adj(A)^-1.",
+          "xp": 22
+        },
+        {
+          "id": "vec2-h-02",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "3D Geometry",
+          "prompt": "Find the plane through the line of intersection of x+y+z=1, 2x+3y+4z=5, perpendicular to x-y+z=0.",
+          "options": [
+            {
+              "text": "x-z+2=0",
+              "correct": true
+            },
+            {
+              "text": "x+z-2=0",
+              "correct": false
+            },
+            {
+              "text": "x-y+z=0",
+              "correct": false
+            },
+            {
+              "text": "x+y-z=0",
+              "correct": false
+            }
+          ],
+          "explanation": "Using the plane family and the perpendicularity condition gives λ=-1/3, simplifying to x-z+2=0.",
+          "xp": 22
+        },
+        {
+          "id": "vec2-h-03",
+          "type": "EXPRESSION",
+          "topic": "Matrices",
+          "prompt": "If A²=A and A≠I, find the possible eigenvalues. (no spaces)",
+          "answer": "0 or 1",
+          "explanation": "λ²=λ gives λ=0 or λ=1.",
+          "xp": 18
+        },
+        {
+          "id": "vec2-h-04",
+          "type": "NUMERIC",
+          "topic": "3D Geometry",
+          "prompt": "Two lines, (x-1)/2=(y-2)/3=(z-3)/4 and (x-1)/3=(y-2)/4=(z-3)/5, both pass through (1,2,3). Find the shortest distance between them.",
+          "answer": "0",
+          "explanation": "Both lines intersect at (1,2,3).",
+          "xp": 18
+        },
+        {
+          "id": "vec2-h-05",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Matrices",
+          "prompt": "Find the characteristic polynomial of [[1,2,3],[2,4,6],[3,6,9]].",
+          "options": [
+            {
+              "text": "λ²(λ-14)",
+              "correct": true
+            },
+            {
+              "text": "λ(λ²-14)",
+              "correct": false
+            },
+            {
+              "text": "(λ-1)(λ-4)(λ-9)",
+              "correct": false
+            },
+            {
+              "text": "λ³-14λ²",
+              "correct": false
+            }
+          ],
+          "explanation": "Eigenvalues are 14,0,0, giving p(λ)=λ²(λ-14).",
+          "xp": 20
+        },
+        {
+          "id": "vec2-h-06",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "3D Geometry",
+          "prompt": "Find the closest point on the plane 2x+3y+4z=10 to the origin.",
+          "options": [
+            {
+              "text": "(20/29,30/29,40/29)",
+              "correct": true
+            },
+            {
+              "text": "(10/29,15/29,20/29)",
+              "correct": false
+            },
+            {
+              "text": "(40/29,60/29,80/29)",
+              "correct": false
+            },
+            {
+              "text": "(5/29,10/29,15/29)",
+              "correct": false
+            }
+          ],
+          "explanation": "Foot of perpendicular from origin: subtract (-10/29)(2,3,4).",
+          "xp": 20
+        },
+        {
+          "id": "vec2-h-07",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Matrices",
+          "prompt": "Find A^-1 and A³ for A=[[1,0,0],[1,1,0],[1,1,1]].",
+          "options": [
+            {
+              "text": "A^-1=[[1,0,0],[-1,1,0],[0,-1,1]], A³=[[1,0,0],[3,1,0],[6,3,1]]",
+              "correct": true
+            },
+            {
+              "text": "A^-1=[[1,0,0],[-1,1,0],[0,1,1]], A³=[[1,0,0],[3,1,0],[3,3,1]]",
+              "correct": false
+            },
+            {
+              "text": "A^-1=[[1,0,0],[1,1,0],[-1,1,1]], A³=[[1,0,0],[3,1,0],[3,2,1]]",
+              "correct": false
+            },
+            {
+              "text": "A^-1=[[1,0,0],[-1,1,0],[-1,-1,1]], A³=[[1,0,0],[3,1,0],[6,3,1]]",
+              "correct": false
+            }
+          ],
+          "explanation": "Row operations for the inverse, and binomial-style expansion for the cube, both of a lower triangular matrix.",
+          "xp": 22
+        },
+        {
+          "id": "vec2-h-08",
+          "type": "EXPRESSION",
+          "topic": "Matrices",
+          "prompt": "Find λ for a unique solution of x+y+z=1, 2x+3y+4z=5, x+2y+λz=3. (no spaces)",
+          "answer": "λ≠3",
+          "explanation": "The coefficient determinant is λ-3; a unique solution requires this to be nonzero.",
+          "xp": 18
+        },
+        {
+          "id": "vec2-h-09",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Vector Algebra",
+          "prompt": "Simplify (a×b)×c.",
+          "options": [
+            {
+              "text": "(a.c)b-(b.c)a",
+              "correct": true
+            },
+            {
+              "text": "(b.c)a-(a.c)b",
+              "correct": false
+            },
+            {
+              "text": "(a.b)c-(b.c)a",
+              "correct": false
+            },
+            {
+              "text": "(a.c)b-(a.b)c",
+              "correct": false
+            }
+          ],
+          "explanation": "This is the standard vector triple product identity.",
+          "xp": 18
+        },
+        {
+          "id": "vec2-h-10",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Matrices",
+          "prompt": "Find A²⁰²³ for A=diag(1,1,-1).",
+          "options": [
+            {
+              "text": "A",
+              "correct": true
+            },
+            {
+              "text": "-A",
+              "correct": false
+            },
+            {
+              "text": "I",
+              "correct": false
+            },
+            {
+              "text": "-I",
+              "correct": false
+            }
+          ],
+          "explanation": "An odd power of -1 stays -1, so A²⁰²³=A.",
+          "xp": 18
+        },
+        {
+          "id": "vec2-h-11",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "3D Geometry",
+          "prompt": "Find the plane containing the line (x-1)/2=(y-2)/3=(z-3)/4 and the point (4,5,6).",
+          "options": [
+            {
+              "text": "x-2y+z=0",
+              "correct": true
+            },
+            {
+              "text": "x+2y-z=0",
+              "correct": false
+            },
+            {
+              "text": "x-2y-z=0",
+              "correct": false
+            },
+            {
+              "text": "x+2y+z=0",
+              "correct": false
+            }
+          ],
+          "explanation": "Normal = direction (2,3,4) × point-vector (3,3,3) = (-3,6,-3), simplifying to (1,-2,1).",
+          "xp": 20
+        },
+        {
+          "id": "vec2-h-12",
+          "type": "NUMERIC",
+          "topic": "Matrices",
+          "prompt": "If |A|=2 for a 3x3 matrix, find |adj(adj(A))|.",
+          "answer": "16",
+          "explanation": "adj(adj(A))=|A|·A=2A, so |2A|=2³·2=16.",
+          "xp": 20
+        },
+        {
+          "id": "vec2-h-13",
+          "type": "EXPRESSION",
+          "topic": "3D Geometry",
+          "prompt": "Find the distance between the parallel planes 2x+3y+4z=10 and 4x+6y+8z=25. (no spaces)",
+          "answer": "5/(2√29)",
+          "explanation": "Normalizing the second plane to 2x+3y+4z=12.5, the distance is |10-12.5|/sqrt(4+9+16).",
+          "xp": 20
+        },
+        {
+          "id": "vec2-h-14",
+          "type": "EXPRESSION",
+          "topic": "Matrices",
+          "prompt": "Find the rank and nullity of [[1,2,3],[2,3,4],[3,4,5]]. (no spaces)",
+          "answer": "rank2,nullity1",
+          "explanation": "The determinant is 0, but a 2x2 minor is nonzero, giving rank 2 and nullity 1.",
+          "xp": 18
+        },
+        {
+          "id": "vec2-h-15",
+          "type": "EXPRESSION",
+          "topic": "3D Geometry",
+          "prompt": "Find the shortest distance between r=i+2j+λ(i+j+k) and r=2i+j+µ(i+j-k). (no spaces)",
+          "answer": "√2",
+          "explanation": "Cross product of directions has magnitude 2√2; the connecting vector's projection gives distance √2.",
+          "xp": 22
+        },
+        {
+          "id": "vec2-h-16",
+          "type": "NUMERIC",
+          "topic": "Matrices",
+          "prompt": "Find |A| for a 3x3 skew-symmetric matrix.",
+          "answer": "0",
+          "explanation": "A^T=-A implies |A|=(-1)^3|A|=-|A|, forcing |A|=0.",
+          "xp": 16
+        },
+        {
+          "id": "vec2-h-17",
+          "type": "EXPRESSION",
+          "topic": "3D Geometry",
+          "prompt": "Find the angle between the plane 2x+3y+4z=5 and the line (x-1)/1=(y-2)/2=(z-3)/3. (no spaces)",
+          "answer": "sin^-1(20/√406)",
+          "explanation": "sinθ=|1(2)+2(3)+3(4)|/(sqrt14*sqrt29).",
+          "xp": 20
+        },
+        {
+          "id": "vec2-h-18",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "3D Geometry",
+          "prompt": "Solve x+2y+3z=1, 2x+3y+4z=2, 3x+4y+5z=3.",
+          "options": [
+            {
+              "text": "(1+t,-2t,t)",
+              "correct": true
+            },
+            {
+              "text": "(1+t,2t,-t)",
+              "correct": false
+            },
+            {
+              "text": "(1-t,-2t,t)",
+              "correct": false
+            },
+            {
+              "text": "(1+t,-2t,-t)",
+              "correct": false
+            }
+          ],
+          "explanation": "From the equations, y=-2z and x=1+z; letting z=t gives the parametrized solution.",
+          "xp": 20
+        },
+        {
+          "id": "vec2-h-19",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Vector Algebra",
+          "prompt": "Find the unit vector perpendicular to both i+j+k and i-j+k.",
+          "options": [
+            {
+              "text": "(1/√2)i-(1/√2)k",
+              "correct": true
+            },
+            {
+              "text": "(1/√2)i+(1/√2)k",
+              "correct": false
+            },
+            {
+              "text": "(1/√2)j-(1/√2)k",
+              "correct": false
+            },
+            {
+              "text": "(1/√2)i-(1/√2)j",
+              "correct": false
+            }
+          ],
+          "explanation": "Cross product = 2i-2k; normalizing gives (1/√2)i-(1/√2)k.",
+          "xp": 18
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "levelName": "Advanced",
+      "questions": [
+        {
+          "id": "vec2-a-01",
+          "type": "NUMERIC",
+          "topic": "Matrices",
+          "prompt": "tr(A)=6, |A|=6, eigenvalues 1,2,3. Find the trace of adj(A).",
+          "answer": "11",
+          "explanation": "Eigenvalues of adj(A) are 6/1,6/2,6/3=6,3,2. Trace=11.",
+          "xp": 22
+        },
+        {
+          "id": "vec2-a-02",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "3D Geometry",
+          "prompt": "Find the plane containing (x-1)/2=(y-2)/3=(z-3)/4 and parallel to i+j+k.",
+          "options": [
+            {
+              "text": "x-2y+z=0",
+              "correct": true
+            },
+            {
+              "text": "x+2y-z=0",
+              "correct": false
+            },
+            {
+              "text": "x-2y-z=0",
+              "correct": false
+            },
+            {
+              "text": "x+2y+z=0",
+              "correct": false
+            }
+          ],
+          "explanation": "Normal = (2,3,4)×(1,1,1) = (-1,2,-1); through (1,2,3) gives x-2y+z=0.",
+          "xp": 22
+        },
+        {
+          "id": "vec2-a-03",
+          "type": "EXPRESSION",
+          "topic": "Matrices",
+          "prompt": "If A²=I and A≠I, find the possible traces (for a 3x3 matrix). (comma-separated)",
+          "answer": "1,-1,-3",
+          "explanation": "Eigenvalues are ±1; since A≠I, at least one is -1, giving possible traces 1,-1,-3.",
+          "xp": 22
+        },
+        {
+          "id": "vec2-a-04",
+          "type": "NUMERIC",
+          "topic": "3D Geometry",
+          "prompt": "Two skew-appearing lines actually intersect. Find their shortest distance.",
+          "answer": "0",
+          "explanation": "When lines intersect, the shortest distance between them is 0.",
+          "xp": 14
+        },
+        {
+          "id": "vec2-a-05",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Matrices",
+          "prompt": "Find the minimal polynomial of [[1,2,3],[2,4,6],[3,6,9]].",
+          "options": [
+            {
+              "text": "x(x-14)",
+              "correct": true
+            },
+            {
+              "text": "x²(x-14)",
+              "correct": false
+            },
+            {
+              "text": "(x-1)(x-4)(x-9)",
+              "correct": false
+            },
+            {
+              "text": "x²-14x",
+              "correct": false
+            }
+          ],
+          "explanation": "A²=14A, so A(A-14I)=0, and since A≠0,14I, the minimal polynomial is exactly x(x-14).",
+          "xp": 24
+        },
+        {
+          "id": "vec2-a-06",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "3D Geometry",
+          "prompt": "Find the closest point on the plane 2x+3y+4z=10 to (1,2,3).",
+          "options": [
+            {
+              "text": "(9/29,28/29,47/29)",
+              "correct": true
+            },
+            {
+              "text": "(20/29,30/29,40/29)",
+              "correct": false
+            },
+            {
+              "text": "(11/29,32/29,49/29)",
+              "correct": false
+            },
+            {
+              "text": "(7/29,26/29,45/29)",
+              "correct": false
+            }
+          ],
+          "explanation": "Foot = (1,2,3) - (10/29)(2,3,4).",
+          "xp": 22
+        },
+        {
+          "id": "vec2-a-07",
+          "type": "NUMERIC",
+          "topic": "Matrices",
+          "prompt": "If adj(A)=A and A is non-singular, find |A|.",
+          "answer": "1",
+          "explanation": "A=adj(A) implies |A|=|adj(A)|=|A|², forcing |A|(|A|-1)=0; non-singular means |A|=1.",
+          "xp": 22
+        },
+        {
+          "id": "vec2-a-08",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "3D Geometry",
+          "prompt": "Find the plane through the same line as before, perpendicular to x+y+z=1.",
+          "options": [
+            {
+              "text": "x-2y+z=0",
+              "correct": true
+            },
+            {
+              "text": "x+2y-z=0",
+              "correct": false
+            },
+            {
+              "text": "x-2y-z=0",
+              "correct": false
+            },
+            {
+              "text": "x+2y+z=0",
+              "correct": false
+            }
+          ],
+          "explanation": "Same construction as the earlier perpendicular-plane problems.",
+          "xp": 20
+        },
+        {
+          "id": "vec2-a-09",
+          "type": "EXPRESSION",
+          "topic": "Vector Algebra",
+          "prompt": "Unit vectors a,b,c have pairwise dot products all equal to 1/2. Find |a+b+c|. (no spaces)",
+          "answer": "√6",
+          "explanation": "|sum|²=3+2(3·1/2)=6.",
+          "xp": 20
+        },
+        {
+          "id": "vec2-a-10",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Matrices",
+          "prompt": "Find Aⁿ for A=[[1,2,3],[0,1,4],[0,0,1]].",
+          "options": [
+            {
+              "text": "[[1,2n,3n+2n(n-1)],[0,1,4n],[0,0,1]]",
+              "correct": true
+            },
+            {
+              "text": "[[1,2n,3n],[0,1,4n],[0,0,1]]",
+              "correct": false
+            },
+            {
+              "text": "[[1,2n,3n+2n(n-1)],[0,1,4n],[0,0,1]] (duplicate option)",
+              "correct": false
+            },
+            {
+              "text": "[[1,2n,3n+4n(n-1)],[0,1,4n],[0,0,1]]",
+              "correct": false
+            }
+          ],
+          "explanation": "Write A=I+N where N is nilpotent (N³=0), then expand the binomial series.",
+          "xp": 26
+        },
+        {
+          "id": "vec2-a-11",
+          "type": "EXPRESSION",
+          "topic": "3D Geometry",
+          "prompt": "Find the shortest distance between r=i+j+λ(i+j+k) and r=i+k+µ(i-j+k). (no spaces)",
+          "answer": "1/√2",
+          "explanation": "Cross product magnitude and projection give this distance.",
+          "xp": 22
+        },
+        {
+          "id": "vec2-a-12",
+          "type": "EXPRESSION",
+          "topic": "Matrices",
+          "prompt": "A has eigenvalues 1,2,3. Find the eigenvalues of adj(A). (comma-separated)",
+          "answer": "6,3,2",
+          "explanation": "|A|=6, so the eigenvalues of adj(A) are 6/1,6/2,6/3.",
+          "xp": 20
+        },
+        {
+          "id": "vec2-a-13",
+          "type": "EXPRESSION",
+          "topic": "3D Geometry",
+          "prompt": "Find the plane through the line of intersection of the earlier two planes, perpendicular to x-y+z=0. (no spaces)",
+          "answer": "x-z+2=0",
+          "explanation": "Same construction as the family-of-planes method used earlier.",
+          "xp": 20
+        },
+        {
+          "id": "vec2-a-14",
+          "type": "EXPRESSION",
+          "topic": "Vector Algebra",
+          "prompt": "Three unit vectors sum to zero. Find the sum of their pairwise dot products. (enter as a reduced fraction, e.g. -1/2)",
+          "answer": "-3/2",
+          "explanation": "0=|sum|²=3+2S gives S=-3/2.",
+          "xp": 20
+        },
+        {
+          "id": "vec2-a-15",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Matrices",
+          "prompt": "Find Aⁿ for A=[[1,1,0],[0,1,1],[0,0,1]].",
+          "options": [
+            {
+              "text": "[[1,n,n(n-1)/2],[0,1,n],[0,0,1]]",
+              "correct": true
+            },
+            {
+              "text": "[[1,n,n²],[0,1,n],[0,0,1]]",
+              "correct": false
+            },
+            {
+              "text": "[[1,n,n(n+1)/2],[0,1,n],[0,0,1]]",
+              "correct": false
+            },
+            {
+              "text": "[[1,n²,n],[0,1,n²],[0,0,1]]",
+              "correct": false
+            }
+          ],
+          "explanation": "This is a Jordan block I+N with N³=0; expanding gives the binomial-coefficient pattern.",
+          "xp": 26
+        },
+        {
+          "id": "vec2-a-16",
+          "type": "NUMERIC",
+          "topic": "3D Geometry",
+          "prompt": "Two lines that intersect have what shortest distance between them?",
+          "answer": "0",
+          "explanation": "By definition, intersecting lines have shortest distance 0.",
+          "xp": 14
+        },
+        {
+          "id": "vec2-a-17",
+          "type": "EXPRESSION",
+          "topic": "Matrices",
+          "prompt": "If A²=A and A is not diagonalizable, is this possible? (no spaces)",
+          "answer": "No such matrix",
+          "explanation": "The minimal polynomial of A divides x(x-1), which has distinct roots, so A is always diagonalizable.",
+          "xp": 22
+        },
+        {
+          "id": "vec2-a-18",
+          "type": "EXPRESSION",
+          "topic": "Matrices",
+          "prompt": "Find λ for infinitely many solutions of the earlier plane system (as posed). (no spaces)",
+          "answer": "No such λ",
+          "explanation": "The determinant vanishes at λ=3, but the resulting system is inconsistent there, so no value of λ gives infinitely many solutions.",
+          "xp": 22
+        },
+        {
+          "id": "vec2-a-19",
+          "type": "EXPRESSION",
+          "topic": "Vector Algebra",
+          "prompt": "If a×b=c and b×c=a, what can be concluded about a,b,c? (a few words)",
+          "answer": "mutually perpendicular unit vectors",
+          "explanation": "Dotting each relation with the appropriate vector shows all pairwise dot products are 0, and the magnitudes work out to 1.",
+          "xp": 24
+        }
+      ]
+    }
+  ]
+}

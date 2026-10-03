@@ -1,0 +1,647 @@
+{
+  "domain": "Trigonometry",
+  "levels": [
+    {
+      "level": 1,
+      "levelName": "Foundation",
+      "questions": [
+        {
+          "id": "trig-f-01",
+          "type": "EXPRESSION",
+          "topic": "Ratios & Identities",
+          "prompt": "In right triangle ABC, right-angled at B, AB=24 cm and BC=7 cm. Find sinA and cosA. (format: sinA,cosA as fractions, no spaces)",
+          "answer": "7/25,24/25",
+          "explanation": "The hypotenuse AC = √(24²+7²) = 25. sinA (opposite/hyp) = 7/25, cosA (adjacent/hyp) = 24/25.",
+          "xp": 8
+        },
+        {
+          "id": "trig-f-02",
+          "type": "EXPRESSION",
+          "topic": "Ratios & Identities",
+          "prompt": "If sinA = 3/4 for an acute angle A, find cosA and tanA. (format: cosA,tanA — use sqrt(n) for square roots, no spaces)",
+          "answer": "sqrt7/4,3/sqrt7",
+          "explanation": "cosA=√(1-sin²A)=√(1-9/16)=√7/4. tanA=sinA/cosA=3/√7.",
+          "xp": 8
+        },
+        {
+          "id": "trig-f-03",
+          "type": "EXPRESSION",
+          "topic": "Ratios & Identities",
+          "prompt": "If 15cotA=8 for an acute angle A, find sinA and secA. (format: sinA,secA as fractions, no spaces)",
+          "answer": "15/17,17/8",
+          "explanation": "cotA=8/15 means the adjacent:opposite ratio is 8:15, giving a right triangle with hypotenuse √(8²+15²)=17. So sinA=15/17, secA=17/8.",
+          "xp": 10
+        },
+        {
+          "id": "trig-f-04",
+          "type": "EXPRESSION",
+          "topic": "Ratios & Identities",
+          "prompt": "If secθ=13/12 for an acute angle θ, find sinθ and tanθ. (format: sinθ,tanθ as fractions, no spaces)",
+          "answer": "5/13,5/12",
+          "explanation": "This is a 5-12-13 right triangle (adjacent=12, hyp=13, opposite=5). sinθ=5/13, tanθ=5/12.",
+          "xp": 10
+        },
+        {
+          "id": "trig-f-05",
+          "type": "NUMERIC",
+          "topic": "Ratios & Identities",
+          "prompt": "Evaluate: sin60°cos30° + sin30°cos60°.",
+          "answer": "1",
+          "explanation": "This is the compound angle formula sin(A+B) with A=60°,B=30°: sin(60°+30°)=sin90°=1.",
+          "xp": 8
+        },
+        {
+          "id": "trig-f-06",
+          "type": "NUMERIC",
+          "topic": "Ratios & Identities",
+          "prompt": "Evaluate: 2tan²45° + cos²30° − sin²60°.",
+          "answer": "2",
+          "explanation": "tan45°=1 so 2tan²45°=2. cos30°=sin60°=√3/2, so cos²30°−sin²60°=0. Total: 2+0=2.",
+          "xp": 8
+        },
+        {
+          "id": "trig-f-07",
+          "type": "EXPRESSION",
+          "topic": "Ratios & Identities",
+          "prompt": "Evaluate: cos45°·sec30° + cosec30°. (format: no spaces, use sqrt(n) for square roots)",
+          "answer": "sqrt6/3+2",
+          "explanation": "cos45°=√2/2, sec30°=2/√3, product=√2/√3=√6/3. cosec30°=2. Sum: √6/3+2.",
+          "xp": 10
+        },
+        {
+          "id": "trig-f-08",
+          "type": "NUMERIC",
+          "topic": "Ratios & Identities",
+          "prompt": "If cosA=4/5 for an acute angle A, find tanA (as a fraction a/b).",
+          "answer": "3/4",
+          "explanation": "This is a 3-4-5 triangle (adjacent=4,hyp=5,opposite=3). tanA=opposite/adjacent=3/4.",
+          "xp": 8
+        },
+        {
+          "id": "trig-f-09",
+          "type": "EXPRESSION",
+          "topic": "Ratios & Identities",
+          "prompt": "If sinA=1/2 for an acute angle A, find cotA. (format: use sqrt(n) for square roots)",
+          "answer": "sqrt3",
+          "explanation": "sinA=1/2 means A=30°. cotA=cos30°/sin30°=(√3/2)/(1/2)=√3.",
+          "xp": 8
+        },
+        {
+          "id": "trig-f-10",
+          "type": "NUMERIC",
+          "topic": "Ratios & Identities",
+          "prompt": "Triangle ABC is right-angled at C. Find cos(A+B), where A and B are the other two angles.",
+          "answer": "0",
+          "explanation": "Since C=90°, angles A and B sum to 90° (angles of a triangle sum to 180°). cos(A+B)=cos90°=0.",
+          "xp": 8
+        },
+        {
+          "id": "trig-f-11",
+          "type": "NUMERIC",
+          "topic": "Ratios & Identities",
+          "prompt": "If 4tanθ=3 for an acute angle θ, evaluate (4sinθ−cosθ)/(4sinθ+cosθ).",
+          "answer": "0.5",
+          "explanation": "tanθ=3/4 gives a 3-4-5 triangle: sinθ=3/5, cosθ=4/5. (4(3/5)-4/5)/(4(3/5)+4/5) = (12/5-4/5)/(12/5+4/5) = (8/5)/(16/5) = 0.5.",
+          "xp": 12
+        },
+        {
+          "id": "trig-f-12",
+          "type": "NUMERIC",
+          "topic": "Heights & Distances",
+          "prompt": "A vertical pole of height h casts a shadow of length h√3. Find the sun's angle of elevation, in degrees.",
+          "answer": "30",
+          "explanation": "tan(angle) = height/shadow = h/(h√3) = 1/√3, so the angle is 30°.",
+          "xp": 10
+        },
+        {
+          "id": "trig-f-13",
+          "type": "NUMERIC",
+          "topic": "Ratios & Identities",
+          "prompt": "If √3·tanθ=1 for an acute angle θ, find sin²θ − cos²θ.",
+          "answer": "-0.5",
+          "explanation": "tanθ=1/√3 means θ=30°. sin²30°-cos²30° = 1/4-3/4 = -1/2 = -0.5.",
+          "xp": 10
+        },
+        {
+          "id": "trig-f-14",
+          "type": "NUMERIC",
+          "topic": "Heights & Distances",
+          "prompt": "A 15 m ladder leans against a wall, making a 60° angle with the wall itself (not the ground). Find the height it reaches on the wall, in meters.",
+          "answer": "7.5",
+          "explanation": "Since the angle is measured from the wall, the height along the wall is the adjacent side: 15×cos(60°) = 15×0.5 = 7.5 m.",
+          "xp": 12
+        },
+        {
+          "id": "trig-f-15",
+          "type": "NUMERIC",
+          "topic": "Heights & Distances",
+          "prompt": "A 20 m rope is tied from the top of a vertical pole to a point on the ground, making a 30° angle with the ground. Find the pole's height, in meters.",
+          "answer": "10",
+          "explanation": "height = rope length × sin(angle) = 20×sin30° = 20×0.5 = 10 m.",
+          "xp": 10
+        },
+        {
+          "id": "trig-f-16",
+          "type": "EXPRESSION",
+          "topic": "Heights & Distances",
+          "prompt": "A tower's base is 30 m from an observer. The angle of elevation to its top is 30°. Find the tower's height. (format: use sqrt(n) for square roots)",
+          "answer": "10sqrt3",
+          "explanation": "height = distance × tan(angle) = 30×tan30° = 30×(1/√3) = 30/√3 = 10√3 m.",
+          "xp": 10
+        },
+        {
+          "id": "trig-f-17",
+          "type": "EXPRESSION",
+          "topic": "Heights & Distances",
+          "prompt": "A kite flies at a height of 60 m, with its string making a 60° angle with the ground. Find the string's length. (format: use sqrt(n) for square roots)",
+          "answer": "40sqrt3",
+          "explanation": "length = height/sin(angle) = 60/sin60° = 60/(√3/2) = 120/√3 = 40√3 m.",
+          "xp": 10
+        },
+        {
+          "id": "trig-f-20",
+          "type": "EXPRESSION",
+          "topic": "Inverse Trigonometry",
+          "prompt": "Find the principal value of sin⁻¹(1/2). (format: pi/n or n*pi)",
+          "answer": "pi/6",
+          "explanation": "sin(π/6)=1/2, and π/6 lies in the principal range of sin⁻¹, [-π/2,π/2].",
+          "xp": 10
+        },
+        {
+          "id": "trig-f-21",
+          "type": "EXPRESSION",
+          "topic": "Inverse Trigonometry",
+          "prompt": "Find the principal value of cos⁻¹(−1/2). (format: n*pi/m)",
+          "answer": "2pi/3",
+          "explanation": "cos(2π/3)=-1/2, and 2π/3 lies in the principal range of cos⁻¹, [0,π].",
+          "xp": 10
+        },
+        {
+          "id": "trig-f-22",
+          "type": "EXPRESSION",
+          "topic": "Inverse Trigonometry",
+          "prompt": "Find the principal value of tan⁻¹(1). (format: pi/n)",
+          "answer": "pi/4",
+          "explanation": "tan(π/4)=1, and π/4 lies in the principal range of tan⁻¹, (-π/2,π/2).",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "levelName": "Standard",
+      "questions": [
+        {
+          "id": "trig-s-01",
+          "type": "NUMERIC",
+          "topic": "Ratios & Identities",
+          "prompt": "For acute angles θ,φ with sinθ=1/2 and cosφ=1/2, find θ+φ in degrees.",
+          "answer": "90",
+          "explanation": "sinθ=1/2 gives θ=30°. cosφ=1/2 gives φ=60°. Sum: 90°.",
+          "xp": 12
+        },
+        {
+          "id": "trig-s-02",
+          "type": "NUMERIC",
+          "topic": "Ratios & Identities",
+          "prompt": "If sinθ=cosθ, find sin⁴θ+cos⁴θ.",
+          "answer": "0.5",
+          "explanation": "sinθ=cosθ means θ=45°, so sinθ=cosθ=1/√2. sin⁴θ+cos⁴θ=2×(1/√2)⁴=2×(1/4)=0.5.",
+          "xp": 12
+        },
+        {
+          "id": "trig-s-03",
+          "type": "NUMERIC",
+          "topic": "Ratios & Identities",
+          "prompt": "If tanθ=1/3 for an acute angle θ, find (1+tan²θ)/(1+cot²θ).",
+          "answer": "0.1111",
+          "explanation": "This expression simplifies to tan²θ (a standard identity). tan²θ=(1/3)²=1/9≈0.1111.",
+          "xp": 14
+        },
+        {
+          "id": "trig-s-04",
+          "type": "NUMERIC",
+          "topic": "Ratios & Identities",
+          "prompt": "If cotθ=7/8, evaluate (1+tanθ)/(1−tanθ).",
+          "answer": "-15",
+          "explanation": "tanθ=8/7. (1+8/7)/(1-8/7) = (15/7)/(-1/7) = -15.",
+          "xp": 14
+        },
+        {
+          "id": "trig-s-05",
+          "type": "EXPRESSION",
+          "topic": "Ratios & Identities",
+          "prompt": "Evaluate tan(22.5°). (format: use sqrt(n), no spaces)",
+          "answer": "sqrt2-1",
+          "explanation": "Using the half-angle formula on tan45°=1, tan(22.5°)=√2-1.",
+          "xp": 14
+        },
+        {
+          "id": "trig-s-06",
+          "type": "EXPRESSION",
+          "topic": "Ratios & Identities",
+          "prompt": "Find the value of tan75° − cot75°. (format: use sqrt(n))",
+          "answer": "2sqrt3",
+          "explanation": "tan75°=2+√3 and cot75°=2-√3 (standard values). Their difference: (2+√3)-(2-√3)=2√3.",
+          "xp": 14
+        },
+        {
+          "id": "trig-s-07",
+          "type": "NUMERIC",
+          "topic": "Ratios & Identities",
+          "prompt": "If tanA=3/4 with A in the first quadrant, find sin(2A).",
+          "answer": "0.96",
+          "explanation": "tanA=3/4 gives a 3-4-5 triangle: sinA=3/5, cosA=4/5. sin2A=2sinAcosA=2(3/5)(4/5)=24/25=0.96.",
+          "xp": 14
+        },
+        {
+          "id": "trig-s-08",
+          "type": "EXPRESSION",
+          "topic": "Heights & Distances",
+          "prompt": "A 1.5 m tall observer looks at the top of a 30 m building. Walking toward the building, the angle of elevation increases from 30° to 60°. Find the distance walked. (format: use sqrt(n))",
+          "answer": "19sqrt3",
+          "explanation": "The effective height above eye level is 30-1.5=28.5 m. Distance at 30°: 28.5/tan30°. Distance at 60°: 28.5/tan60°. Difference: 28.5/tan30° - 28.5/tan60° = 19√3 m.",
+          "xp": 16
+        },
+        {
+          "id": "trig-s-09",
+          "type": "EXPRESSION",
+          "topic": "Heights & Distances",
+          "prompt": "A 30 m tower is observed from a point where its angle of elevation is 60°. Find the horizontal distance from that point to the tower's base. (format: use sqrt(n))",
+          "answer": "10sqrt3",
+          "explanation": "distance = height/tan(angle) = 30/tan60° = 30/√3 = 10√3 m.",
+          "xp": 12
+        },
+        {
+          "id": "trig-s-12",
+          "type": "EXPRESSION",
+          "topic": "Inverse Trigonometry",
+          "prompt": "Find sin⁻¹(√3/2) + cos⁻¹(√3/2). (format: pi/n)",
+          "answer": "pi/2",
+          "explanation": "This uses the identity sin⁻¹x + cos⁻¹x = π/2 for any valid x, here x=√3/2.",
+          "xp": 12
+        },
+        {
+          "id": "trig-s-13",
+          "type": "EXPRESSION",
+          "topic": "Inverse Trigonometry",
+          "prompt": "Find cos⁻¹(cos(5π/3)). (format: pi/n)",
+          "answer": "pi/3",
+          "explanation": "5π/3 is outside cos⁻¹'s principal range [0,π]. Since cos(5π/3)=cos(π/3)=1/2, and π/3 is in range, the answer is π/3.",
+          "xp": 14
+        },
+        {
+          "id": "trig-s-14",
+          "type": "EXPRESSION",
+          "topic": "Inverse Trigonometry",
+          "prompt": "Find tan⁻¹(tan(3π/4)). (format: -pi/n)",
+          "answer": "-pi/4",
+          "explanation": "3π/4 is outside tan⁻¹'s principal range (-π/2,π/2). tan(3π/4)=-1, and tan⁻¹(-1)=-π/4, which is in range.",
+          "xp": 14
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "levelName": "Intermediate",
+      "questions": [
+        {
+          "id": "trig-i-01",
+          "type": "NUMERIC",
+          "topic": "Ratios & Identities",
+          "prompt": "If sinA + sin²A = 1, find cos²A + cos⁴A.",
+          "answer": "1",
+          "explanation": "From sinA+sin²A=1, we get sinA=1-sin²A=cos²A. Substituting: cos²A+cos⁴A = sinA+sin²A = 1 (given).",
+          "xp": 14
+        },
+        {
+          "id": "trig-i-02",
+          "type": "NUMERIC",
+          "topic": "Trigonometric Equations",
+          "prompt": "Solve 2sin²θ − cos²θ = 2 for θ in [0°,90°]. Give θ in degrees.",
+          "answer": "90",
+          "explanation": "Rewrite as 2sin²θ-(1-sin²θ)=2, giving 3sin²θ=3, so sin²θ=1, meaning θ=90°.",
+          "xp": 14
+        },
+        {
+          "id": "trig-i-03",
+          "type": "EXPRESSION",
+          "topic": "Heights & Distances",
+          "prompt": "A tower stands next to a 7 m building, on the same level ground. From the building's roof, the tower's top has an elevation angle of 60°, and the tower's base has a depression angle of 45°. Find the tower's total height, measured from the ground. (format: no spaces, use sqrt(n))",
+          "answer": "7+7sqrt3",
+          "explanation": "The 45° depression to the tower's base gives horizontal distance = 7 m (since tan45°=1 and the vertical drop equals the building's height). The 60° elevation to the tower's top then gives an additional rise of 7×tan60°=7√3 m above roof level. Total tower height from the ground: 7+7√3 m.",
+          "xp": 18
+        },
+        {
+          "id": "trig-i-04",
+          "type": "EXPRESSION",
+          "topic": "Heights & Distances",
+          "prompt": "A 75 m lighthouse spots two ships on the same side, at depression angles 30° and 45°. Find the distance between the ships. (format: no spaces, use sqrt(n))",
+          "answer": "75sqrt3-75",
+          "explanation": "Distance to nearer ship (45°): 75/tan45°=75 m. Distance to farther ship (30°): 75/tan30°=75√3 m. Difference: 75√3-75 m.",
+          "xp": 18
+        },
+        {
+          "id": "trig-i-05",
+          "type": "NUMERIC",
+          "topic": "Heights & Distances",
+          "prompt": "A 1.2 m tall observer watches a balloon at height 88.2 m above the ground. As the balloon drifts, the angle of elevation changes from 60° to 30°. Find the horizontal distance traveled, rounded to 2 decimal places.",
+          "answer": "100.46",
+          "explanation": "Effective height above eye level: 88.2-1.2=87 m. Distance at 60°: 87/tan60°. Distance at 30°: 87/tan30°. Difference ≈ 100.46 m.",
+          "xp": 18
+        },
+        {
+          "id": "trig-i-06",
+          "type": "EXPRESSION",
+          "topic": "Heights & Distances",
+          "prompt": "A tower stands atop a 20 m building. From a ground point, the bottom and top of the tower have elevation angles 45° and 60°. Find the tower's height (not including the building). (format: no spaces, use sqrt(n))",
+          "answer": "20sqrt3-20",
+          "explanation": "Horizontal distance from point: 20/tan45°=20 m. Total height (building+tower) from that point: 20×tan60°=20√3 m. Tower height alone: 20√3-20 m.",
+          "xp": 18
+        },
+        {
+          "id": "trig-i-09",
+          "type": "NUMERIC",
+          "topic": "Ratios & Identities",
+          "prompt": "If tanx=3/4 and x lies in the third quadrant, find secx.",
+          "answer": "-1.25",
+          "explanation": "In Q3, both sinx and cosx are negative. Using the 3-4-5 triangle magnitude: cosx=-4/5, so secx=1/cosx=-5/4=-1.25.",
+          "xp": 16
+        },
+        {
+          "id": "trig-i-10",
+          "type": "NUMERIC",
+          "topic": "Ratios & Identities",
+          "prompt": "If sinθ+cosθ=1, find sin(2θ).",
+          "answer": "0",
+          "explanation": "Squaring both sides: 1+2sinθcosθ=1, so 2sinθcosθ=0, meaning sin(2θ)=0.",
+          "xp": 14
+        },
+        {
+          "id": "trig-i-11",
+          "type": "EXPRESSION",
+          "topic": "Trigonometric Equations",
+          "prompt": "Solve 5cos²θ + 7sin²θ − 6 = 0 for θ in [0°,180°]. (format: comma-separated degrees, ascending, no spaces)",
+          "answer": "45,135",
+          "explanation": "Substituting sin²θ=1-cos²θ: 5cos²θ+7-7cos²θ-6=0, giving -2cos²θ+1=0, so cos²θ=1/2. This gives θ=45° or θ=135°.",
+          "xp": 18
+        },
+        {
+          "id": "trig-i-12",
+          "type": "EXPRESSION",
+          "topic": "Trigonometric Equations",
+          "prompt": "Solve 2sin²θ = 3cosθ for θ in [0°,360°). (format: comma-separated degrees, ascending, no spaces)",
+          "answer": "60,300",
+          "explanation": "Substituting sin²θ=1-cos²θ: 2-2cos²θ=3cosθ, giving 2cos²θ+3cosθ-2=0, which factors to (2cosθ-1)(cosθ+2)=0. Since cosθ=-2 is impossible, cosθ=1/2, giving θ=60° or θ=300°.",
+          "xp": 20
+        },
+        {
+          "id": "trig-i-13",
+          "type": "EXPRESSION",
+          "topic": "Inverse Trigonometry",
+          "prompt": "Find sin⁻¹(3/5) + cos⁻¹(3/5). (format: pi/n)",
+          "answer": "pi/2",
+          "explanation": "This uses the identity sin⁻¹x+cos⁻¹x=π/2 for any valid x.",
+          "xp": 14
+        },
+        {
+          "id": "trig-i-14",
+          "type": "EXPRESSION",
+          "topic": "Inverse Trigonometry",
+          "prompt": "If sin⁻¹x = π/6, find x and cos⁻¹x. (format: x,cos^-1(x) comma-separated, no spaces)",
+          "answer": "1/2,pi/3",
+          "explanation": "sin⁻¹x=π/6 means x=sin(π/6)=1/2. Then cos⁻¹(1/2)=π/3.",
+          "xp": 16
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "levelName": "Hard",
+      "questions": [
+        {
+          "id": "trig-h-01",
+          "type": "EXPRESSION",
+          "topic": "Ratios & Identities",
+          "prompt": "If cos(α+β)=4/5 and sin(α−β)=5/13, with both α+β and α−β in the first quadrant, find tan(2α). (enter as a reduced fraction)",
+          "answer": "56/33",
+          "explanation": "cos(α+β)=4/5 gives sin(α+β)=3/5. sin(α-β)=5/13 gives cos(α-β)=12/13. Using tan(2α)=tan[(α+β)+(α-β)] with the tangent addition formula gives 56/33.",
+          "xp": 20
+        },
+        {
+          "id": "trig-h-02",
+          "type": "EXPRESSION",
+          "topic": "Ratios & Identities",
+          "prompt": "Find the exact value of cos⁴(π/8) + cos⁴(3π/8) + cos⁴(5π/8) + cos⁴(7π/8). (enter as a reduced fraction)",
+          "answer": "3/2",
+          "explanation": "Since cos(5π/8)=-cos(3π/8) and cos(7π/8)=-cos(π/8), the fourth powers pair up: 2cos⁴(π/8)+2cos⁴(3π/8). Since 3π/8=π/2-π/8, this is 2(cos⁴x+sin⁴x) at x=π/8, which equals 2(1-½sin²(2x))=2(1-¼)=3/2.",
+          "xp": 22
+        },
+        {
+          "id": "trig-h-03",
+          "type": "EXPRESSION",
+          "topic": "Ratios & Identities",
+          "prompt": "Given cosq=8/17 with q in the first quadrant, find cos(30°+q) + cos(45°−q) + cos(120°−q). (format: no spaces, use sqrt(n))",
+          "answer": "(23sqrt2+23sqrt3-23)/34",
+          "explanation": "Expand each term using the compound angle formulas with cosq=8/17, sinq=15/17, then combine. The result simplifies to (23√2+23√3-23)/34.",
+          "xp": 24
+        },
+        {
+          "id": "trig-h-04",
+          "type": "NUMERIC",
+          "topic": "Trigonometric Equations",
+          "prompt": "Find the number of solutions of tanx + secx = 2cosx in [0, 2π).",
+          "answer": "2",
+          "explanation": "Rewriting as (sinx+1)/cosx=2cosx leads to 2sin²x+sinx-1=0, factoring to (2sinx-1)(sinx+1)=0. sinx=-1 is rejected (cosx=0 there, undefined). sinx=1/2 gives x=π/6 and x=5π/6, both valid — 2 solutions.",
+          "xp": 18
+        },
+        {
+          "id": "trig-h-05",
+          "type": "EXPRESSION",
+          "topic": "Ratios & Identities",
+          "prompt": "If tanA=1/2 for an acute angle A, find tan(2A). (enter as a reduced fraction)",
+          "answer": "4/3",
+          "explanation": "tan(2A) = 2tanA/(1-tan²A) = 2(1/2)/(1-1/4) = 1/(3/4) = 4/3.",
+          "xp": 16
+        },
+        {
+          "id": "trig-h-06",
+          "type": "NUMERIC",
+          "topic": "Heights & Distances",
+          "prompt": "A car approaches a tower at constant speed. The angle of depression from the tower's top changes from 30° to 60° over 6 seconds. Find the additional time needed to reach the tower's base.",
+          "answer": "3",
+          "explanation": "Using cotangent ratios, the distance covered in the first 6 seconds relates to the remaining distance in a fixed proportion (based on cot30°-cot60° vs cot60°), giving a remaining time of 3 seconds.",
+          "xp": 20
+        },
+        {
+          "id": "trig-h-07",
+          "type": "EXPRESSION",
+          "topic": "Heights & Distances",
+          "prompt": "Two equal-height poles stand on opposite sides of an 80 m wide road. From a point between them on the road, the angles of elevation to their tops are 60° and 30°. Find the pole height and the point's distance from each pole. (format: height,distance-to-60deg-pole,distance-to-30deg-pole, no spaces, use sqrt(n))",
+          "answer": "20sqrt3,20,60",
+          "explanation": "Let d1,d2 be distances with d1+d2=80. height=d1·tan60°=d2·tan30°. Solving: d1=20 m, d2=60 m, height=20√3 m.",
+          "xp": 22
+        },
+        {
+          "id": "trig-h-09",
+          "type": "NUMERIC",
+          "topic": "Ratios & Identities",
+          "prompt": "If tanα=1/2 and tanβ=1/3, find tan(2α+β).",
+          "answer": "3",
+          "explanation": "tan(2α)=2(1/2)/(1-1/4)=4/3. tan(2α+β)=(4/3+1/3)/(1-(4/3)(1/3))=(5/3)/(5/9)=3.",
+          "xp": 20
+        },
+        {
+          "id": "trig-h-10",
+          "type": "EXPRESSION",
+          "topic": "Inverse Trigonometry",
+          "prompt": "Find the principal value of cos⁻¹(cos(7π/6)). (format: n*pi/m)",
+          "answer": "5pi/6",
+          "explanation": "7π/6 is outside [0,π]. cos(7π/6)=cos(5π/6) (by symmetry, cos is even about π), and 5π/6 is in the principal range.",
+          "xp": 18
+        },
+        {
+          "id": "trig-h-11",
+          "type": "EXPRESSION",
+          "topic": "Inverse Trigonometry",
+          "prompt": "Find the principal value of sin⁻¹(sin(5π/6)). (format: pi/n)",
+          "answer": "pi/6",
+          "explanation": "5π/6 is outside [-π/2,π/2]. sin(5π/6)=sin(π/6)=1/2, and π/6 is in the principal range.",
+          "xp": 18
+        },
+        {
+          "id": "trig-h-12",
+          "type": "EXPRESSION",
+          "topic": "Inverse Trigonometry",
+          "prompt": "Evaluate tan⁻¹(1/2) + tan⁻¹(1/3). (format: pi/n)",
+          "answer": "pi/4",
+          "explanation": "Using the addition formula: tan(sum) = (1/2+1/3)/(1-1/6) = (5/6)/(5/6) = 1. Since both angles are small and positive, the sum is tan⁻¹(1)=π/4.",
+          "xp": 20
+        },
+        {
+          "id": "trig-h-13",
+          "type": "NUMERIC",
+          "topic": "Inverse Trigonometry",
+          "prompt": "If sin⁻¹x + cos⁻¹(2x) = π/2, find x.",
+          "answer": "0",
+          "explanation": "Since sin⁻¹x+cos⁻¹x=π/2 always, the equation becomes cos⁻¹(2x)=cos⁻¹(x), so 2x=x, meaning x=0.",
+          "xp": 18
+        },
+        {
+          "id": "trig-h-14",
+          "type": "NUMERIC",
+          "topic": "Heights & Distances",
+          "prompt": "A tower stands atop a 20 m building. Elevation angles to the tower's bottom and top from a ground point are 45° and 60° respectively. Find the tower's height above the building, rounded to 2 decimal places.",
+          "answer": "14.64",
+          "explanation": "Horizontal distance: 20/tan45°=20 m. Total height (building+tower): 20×tan60°=20√3≈34.64 m. Tower height alone: 34.64-20=14.64 m.",
+          "xp": 20
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "levelName": "Advanced",
+      "questions": [
+        {
+          "id": "trig-a-01",
+          "type": "EXPRESSION",
+          "topic": "Trigonometric Equations",
+          "prompt": "Solve sinx − 3sin(2x) + sin(3x) = cosx − 3cos(2x) + cos(3x) for x in [0,2π). (format: comma-separated, ascending, no spaces)",
+          "answer": "pi/8,5pi/8,9pi/8,13pi/8",
+          "explanation": "Using sum-to-product on (sinx+sin3x) and (cosx+cos3x), the equation reduces to (2cosx-3)(sin2x-cos2x)=0. Since 2cosx=3 is impossible, sin2x=cos2x gives tan2x=1, so x=π/8+kπ/2 for k=0,1,2,3.",
+          "xp": 24
+        },
+        {
+          "id": "trig-a-02",
+          "type": "EXPRESSION",
+          "topic": "Trigonometric Equations",
+          "prompt": "Solve (√3−1)cosθ + (√3+1)sinθ = 2 for θ in [0,2π). (format: comma-separated, ascending, no spaces)",
+          "answer": "pi/6,2pi/3",
+          "explanation": "This can be rewritten in the form Rsin(θ+φ)=2 for suitable R,φ, or solved by testing standard angles. Direct verification shows θ=π/6 and θ=2π/3 both satisfy the equation.",
+          "xp": 24
+        },
+        {
+          "id": "trig-a-03",
+          "type": "NUMERIC",
+          "topic": "Ratios & Identities",
+          "prompt": "Find the minimum value of 3cosx + 4sinx + 8.",
+          "answer": "3",
+          "explanation": "The expression a·cosx+b·sinx has range [-√(a²+b²), √(a²+b²)]. Here √(9+16)=5, so 3cosx+4sinx ranges over [-5,5]. Minimum of the full expression: -5+8=3.",
+          "xp": 20
+        },
+        {
+          "id": "trig-a-04",
+          "type": "EXPRESSION",
+          "topic": "Ratios & Identities",
+          "prompt": "If tanA=1/2 and tanB=1/3 (both acute), find tan(2A+B) and identify which quadrant the angle 2A+B lies in. (format: value,QuadrantX (roman-numeral-free, e.g. 5,QuadrantIII))",
+          "answer": "3,QuadrantI",
+          "explanation": "tan(2A+B)=3, using tan2A=4/3 (double-angle on tanA=1/2) combined with tanB=1/3 via the addition formula. Numerically, A≈26.57° and B≈18.43°, so 2A+B≈71.57°, which lies in Quadrant I (0°-90°), not Quadrant II.",
+          "xp": 22
+        },
+        {
+          "id": "trig-a-05",
+          "type": "EXPRESSION",
+          "topic": "Inverse Trigonometry",
+          "prompt": "If tan⁻¹x + tan⁻¹y + tan⁻¹z = π (all terms defined), find the relationship among x, y, and z. (format: no spaces)",
+          "answer": "x+y+z=xyz",
+          "explanation": "This is the inverse-tangent analog of the triangle identity tanA+tanB+tanC=tanA·tanB·tanC (valid when A+B+C=π). Setting A=tan⁻¹x etc. gives x+y+z=xyz.",
+          "xp": 24
+        },
+        {
+          "id": "trig-a-06",
+          "type": "EXPRESSION",
+          "topic": "Inverse Trigonometry",
+          "prompt": "If sin⁻¹x + sin⁻¹y = 2π/3, find cos⁻¹x + cos⁻¹y. (format: pi/n)",
+          "answer": "pi/3",
+          "explanation": "Using sin⁻¹x+cos⁻¹x=π/2 for each variable: (cos⁻¹x+cos⁻¹y) = π - (sin⁻¹x+sin⁻¹y) = π - 2π/3 = π/3.",
+          "xp": 20
+        },
+        {
+          "id": "trig-a-07",
+          "type": "EXPRESSION",
+          "topic": "Inverse Trigonometry",
+          "prompt": "Evaluate cos⁻¹(cos(5π/3)) − sin⁻¹(sin(5π/3)). (format: n*pi/m)",
+          "answer": "2pi/3",
+          "explanation": "cos⁻¹(cos5π/3)=π/3 (bringing 5π/3 into [0,π]). sin⁻¹(sin5π/3)=-π/3 (bringing it into [-π/2,π/2]). Difference: π/3-(-π/3)=2π/3.",
+          "xp": 22
+        },
+        {
+          "id": "trig-a-08",
+          "type": "EXPRESSION",
+          "topic": "Inverse Trigonometry",
+          "prompt": "The equation sin⁻¹x = 2sin⁻¹a has a solution. Find the condition this places on a. (format: no spaces, use sqrt(n))",
+          "answer": "|a|<=1/sqrt2",
+          "explanation": "Writing x=sin(2sin⁻¹a)=2a√(1-a²), the requirement |x|≤1 combined with keeping 2sin⁻¹a within sin⁻¹'s range [-π/2,π/2] leads to the condition |a|≤1/√2.",
+          "xp": 24
+        },
+        {
+          "id": "trig-a-09",
+          "type": "EXPRESSION",
+          "topic": "Inverse Trigonometry",
+          "prompt": "For 0≤α≤π/2, simplify cot⁻¹(√cosα) − tan⁻¹(√cosα) in terms of α. (format: no spaces, use sqrt(cosalpha) and tan^-1(...))",
+          "answer": "pi/2-2tan^-1(sqrt(cosalpha))",
+          "explanation": "Using cot⁻¹Z=π/2-tan⁻¹Z with Z=√cosα: the expression becomes (π/2-tan⁻¹Z)-tan⁻¹Z = π/2-2tan⁻¹Z.",
+          "xp": 24
+        },
+        {
+          "id": "trig-a-10",
+          "type": "EXPRESSION",
+          "topic": "Inverse Trigonometry",
+          "prompt": "If tan⁻¹x : tan⁻¹y = 1:4 (with |x| small enough that tan(4tan⁻¹x) is defined by direct expansion), express y in terms of x. (format: no spaces)",
+          "answer": "4x(1-x^2)/(x^4-6x^2+1)",
+          "explanation": "Since tan⁻¹y=4tan⁻¹x, y=tan(4tan⁻¹x). Expanding tan(4t) in terms of tanT=x using the double-angle formula twice gives y=4x(1-x²)/(x⁴-6x²+1).",
+          "xp": 26
+        },
+        {
+          "id": "trig-a-11",
+          "type": "EXPRESSION",
+          "topic": "Inverse Trigonometry",
+          "prompt": "Find the sum of the first n terms of cosec⁻¹√10 + cosec⁻¹√50 + cosec⁻¹√170 + ... where the kth term is cosec⁻¹√[(k²+1)(k²+2k+2)]. (format: no spaces)",
+          "answer": "tan^-1(n+1)-pi/4",
+          "explanation": "Each term cosec⁻¹√[(k²+1)((k+1)²+1)] can be rewritten as tan⁻¹(k+1)-tan⁻¹(k) (a telescoping difference). Summing from k=1 to n telescopes to tan⁻¹(n+1)-tan⁻¹(1) = tan⁻¹(n+1)-π/4.",
+          "xp": 26
+        }
+      ]
+    }
+  ]
+}

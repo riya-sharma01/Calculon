@@ -1,0 +1,2173 @@
+{
+  "domain": "Calculus",
+  "levels": [
+    {
+      "level": 1,
+      "levelName": "Foundation",
+      "questions": [
+        {
+          "id": "calc2-f-01",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→2) (x²−4)/(x−2).",
+          "answer": "4",
+          "explanation": "Factor: (x²−4)/(x−2) = (x−2)(x+2)/(x−2) = x+2 for x≠2. The limit is 2+2=4.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-02",
+          "type": "EXPRESSION",
+          "topic": "Derivatives",
+          "prompt": "Find d/dx(x³−5x²+7x). (format: no spaces)",
+          "answer": "3x^2-10x+7",
+          "explanation": "Differentiate term by term using the power rule.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-03",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→0) sin(7x)/x.",
+          "answer": "7",
+          "explanation": "Write sin(7x)/x = 7·sin(7x)/(7x), and sin(u)/u→1 as u→0, so the limit is 7.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-04",
+          "type": "EXPRESSION",
+          "topic": "Derivatives",
+          "prompt": "Find d/dx(x² sinx). (format: no spaces)",
+          "answer": "2xsinx+x^2cosx",
+          "explanation": "Product rule: d/dx(uv)=u'v+uv' with u=x², v=sinx.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-05",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→0) [1−cos(4x)]/x².",
+          "answer": "8",
+          "explanation": "Using 1−cos(u) ≈ u²/2 for small u, with u=4x: (4x)²/2/x² = 16x²/(2x²) = 8.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-06",
+          "type": "NUMERIC",
+          "topic": "Derivatives",
+          "prompt": "Find the slope of the tangent to y=x²+3x at x=1.",
+          "answer": "5",
+          "explanation": "y'=2x+3. At x=1: y'=2+3=5.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-07",
+          "type": "EXPRESSION",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→∞) (5x²−1)/(2x²+3). (enter as a reduced fraction)",
+          "answer": "5/2",
+          "explanation": "Divide numerator and denominator by x²: (5−1/x²)/(2+3/x²) → 5/2 as x→∞.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-08",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Continuity & Differentiability",
+          "prompt": "Is f(x)=|x−3| differentiable at x=3?",
+          "options": [
+            {
+              "text": "No",
+              "correct": true
+            },
+            {
+              "text": "Yes",
+              "correct": false
+            },
+            {
+              "text": "Only from the left",
+              "correct": false
+            },
+            {
+              "text": "Only from the right",
+              "correct": false
+            }
+          ],
+          "explanation": "The left-hand derivative is −1 and the right-hand derivative is +1. Since they differ, f is not differentiable at x=3.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-09",
+          "type": "EXPRESSION",
+          "topic": "Derivatives",
+          "prompt": "Find d/dx[ln(x²+1)]. (format: no spaces)",
+          "answer": "2x/(x^2+1)",
+          "explanation": "Chain rule: d/dx ln(u) = u'/u with u=x²+1.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-10",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→0) (e^(3x)−1)/x.",
+          "answer": "3",
+          "explanation": "This is the standard exponential limit lim(e^(kx)−1)/x = k, here k=3.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-11",
+          "type": "EXPRESSION",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the equation of the tangent to y=x² at x=2. (format: no spaces)",
+          "answer": "y=4x-4",
+          "explanation": "Point (2,4), slope y'=2x=4. Equation: y−4=4(x−2), i.e. y=4x−4.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-12",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫(4x³−6x+1)dx. (format: no spaces)",
+          "answer": "x^4-3x^2+x+C",
+          "explanation": "Apply the power rule to each term.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-13",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀² x dx.",
+          "answer": "2",
+          "explanation": "[x²/2] from 0 to 2 = 4/2−0 = 2.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-14",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Find ∫ dx/(1+x²). (format: no spaces)",
+          "answer": "tan^-1(x)+C",
+          "explanation": "This is a standard integral.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-15",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀^π sinx dx.",
+          "answer": "2",
+          "explanation": "[−cosx] from 0 to π = 1−(−1) = 2.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-16",
+          "type": "EXPRESSION",
+          "topic": "Differential Equations",
+          "prompt": "Solve dy/dx=2x, given y(0)=3. (format: no spaces)",
+          "answer": "y=x^2+3",
+          "explanation": "Integrating: y=x²+C. Using y(0)=3 gives C=3.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-17",
+          "type": "EXPRESSION",
+          "topic": "Differential Equations",
+          "prompt": "Solve dy/dx=3y, given y(0)=2. (format: no spaces)",
+          "answer": "2e^(3x)",
+          "explanation": "Separable equation: y=Ce^(3x). Using y(0)=2 gives C=2.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-18",
+          "type": "EXPRESSION",
+          "topic": "Application of Integrals",
+          "prompt": "Find the area under y=x² on [0,1]. (enter as a reduced fraction)",
+          "answer": "1/3",
+          "explanation": "∫₀¹ x² dx = [x³/3] from 0 to 1 = 1/3.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-19",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the critical point of f(x)=x²−6x+5.",
+          "answer": "3",
+          "explanation": "f'(x)=2x−6=0 gives x=3.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-20",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the minimum value of f(x)=x²−6x+10.",
+          "answer": "1",
+          "explanation": "Completing the square: (x−3)²+1, so the minimum value is 1.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-21",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→0) [(1+x)⁴−1]/x.",
+          "answer": "4",
+          "explanation": "Binomial expansion gives (1+x)⁴=1+4x+6x²+..., so the numerator is 4x+O(x²). Dividing by x and taking the limit gives 4.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-22",
+          "type": "EXPRESSION",
+          "topic": "Derivatives",
+          "prompt": "Find d/dx[sin(x²)]. (format: no spaces)",
+          "answer": "2xcos(x^2)",
+          "explanation": "Chain rule with u=x².",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-23",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₁ᵉ dx/x.",
+          "answer": "1",
+          "explanation": "[lnx] from 1 to e = 1−0 = 1.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-24",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Applications of Derivatives",
+          "prompt": "If x²+y²=16, find dy/dx.",
+          "options": [
+            {
+              "text": "x/y",
+              "correct": false
+            },
+            {
+              "text": "−x/y",
+              "correct": true
+            },
+            {
+              "text": "y/x",
+              "correct": false
+            },
+            {
+              "text": "−y/x",
+              "correct": false
+            }
+          ],
+          "explanation": "Implicit differentiation: 2x+2yy'=0, so y'=−x/y.",
+          "xp": 12
+        },
+        {
+          "id": "calc2-f-25",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→0) tan(5x)/x.",
+          "answer": "5",
+          "explanation": "5·tan(5x)/(5x) → 5·1 = 5 as x→0.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-26",
+          "type": "NUMERIC",
+          "topic": "Derivatives",
+          "prompt": "Find d²/dx²(x⁴).",
+          "answer": "12x^2",
+          "explanation": "First derivative is 4x³, second derivative is 12x².",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-27",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹(1−x)dx. (enter as a reduced fraction)",
+          "answer": "1/2",
+          "explanation": "[x−x²/2] from 0 to 1 = (1−0.5)−0 = 0.5.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-28",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the x-coordinate of the vertex of y=x²−8x+3.",
+          "answer": "4",
+          "explanation": "For a parabola, the vertex is at x=−b/(2a) = 8/2 = 4.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-29",
+          "type": "EXPRESSION",
+          "topic": "Derivatives",
+          "prompt": "Find d/dx(xeˣ). (format: no spaces)",
+          "answer": "e^x(x+1)",
+          "explanation": "Product rule: d/dx(x·eˣ) = eˣ + x·eˣ = eˣ(x+1).",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-30",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→0) (eˣ−1)/x.",
+          "answer": "1",
+          "explanation": "This is the standard exponential limit, equal to 1.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-31",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Find ∫ 5/x dx. (format: no spaces)",
+          "answer": "5ln|x|+C",
+          "explanation": "Constant multiple of the standard integral of 1/x.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-32",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Applications of Derivatives",
+          "prompt": "If f'(x)=0 for every x on an interval, what can be concluded about f on that interval?",
+          "options": [
+            {
+              "text": "f is constant",
+              "correct": true
+            },
+            {
+              "text": "f is increasing",
+              "correct": false
+            },
+            {
+              "text": "f is decreasing",
+              "correct": false
+            },
+            {
+              "text": "f has a maximum",
+              "correct": false
+            }
+          ],
+          "explanation": "By the Mean Value Theorem, if the derivative is zero everywhere on an interval, the function must be constant there.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-33",
+          "type": "EXPRESSION",
+          "topic": "Derivatives",
+          "prompt": "Find the slope of y=√x at x=9. (enter as a reduced fraction)",
+          "answer": "1/6",
+          "explanation": "y'=1/(2√x). At x=9: 1/(2·3)=1/6.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-34",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀^(π/2) cosx dx.",
+          "answer": "1",
+          "explanation": "[sinx] from 0 to π/2 = 1−0 = 1.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-35",
+          "type": "EXPRESSION",
+          "topic": "Differential Equations",
+          "prompt": "Solve dy/dx=1/(1+x²), given y(0)=0. (format: no spaces)",
+          "answer": "tan^-1(x)",
+          "explanation": "Integrating gives y=arctan(x)+C. Using y(0)=0 gives C=0.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-36",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the maximum value of −x²+6x−1.",
+          "answer": "8",
+          "explanation": "Completing the square: −(x−3)²+8, so the maximum value is 8.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-37",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→0) (sinx/x)².",
+          "answer": "1",
+          "explanation": "Since sinx/x→1, the square of the limit is also 1.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-38",
+          "type": "EXPRESSION",
+          "topic": "Derivatives",
+          "prompt": "For x>0, find d/dx(xˣ). (format: no spaces)",
+          "answer": "x^x(lnx+1)",
+          "explanation": "Using logarithmic differentiation: ln y = x ln x, so y'/y = lnx+1, giving y'=xˣ(lnx+1).",
+          "xp": 12
+        },
+        {
+          "id": "calc2-f-39",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₂⁴ dx/x. (format: no spaces)",
+          "answer": "ln2",
+          "explanation": "[lnx] from 2 to 4 = ln4−ln2 = ln2 (using the log quotient rule).",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-40",
+          "type": "EXPRESSION",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the tangent to y=1/x at x=1. (format: no spaces)",
+          "answer": "y=2-x",
+          "explanation": "Point (1,1), slope y'=−1/x²=−1. Equation: y−1=−1(x−1), i.e. y=2−x.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-41",
+          "type": "NUMERIC",
+          "topic": "Derivatives",
+          "prompt": "If f(x)=x³, find f'(−2).",
+          "answer": "12",
+          "explanation": "f'(x)=3x². At x=−2: 3(4)=12.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-42",
+          "type": "EXPRESSION",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→∞) (7x+1)/(3x−2). (enter as a reduced fraction)",
+          "answer": "7/3",
+          "explanation": "Divide by x: (7+1/x)/(3−2/x) → 7/3 as x→∞.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-43",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Find ∫(2x+5)dx. (format: no spaces)",
+          "answer": "x^2+5x+C",
+          "explanation": "Apply the power rule to each term.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-44",
+          "type": "NUMERIC",
+          "topic": "Application of Integrals",
+          "prompt": "Find the area between y=x and the x-axis on [−1,1].",
+          "answer": "1",
+          "explanation": "The area is ∫₋₁¹|x|dx = 2∫₀¹x dx = 2(1/2) = 1 (using symmetry).",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-45",
+          "type": "EXPRESSION",
+          "topic": "Differential Equations",
+          "prompt": "Solve dy/dx=4x/y, given y(0)=2. (format: no spaces)",
+          "answer": "y^2=4x^2+4",
+          "explanation": "Separating variables: y dy=4x dx, so y²/2=2x²+C. Using y(0)=2 gives C=2, so y²=4x²+4.",
+          "xp": 12
+        },
+        {
+          "id": "calc2-f-46",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ x³ dx. (enter as a reduced fraction)",
+          "answer": "1/4",
+          "explanation": "[x⁴/4] from 0 to 1 = 1/4.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-47",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "For x>0, find the stationary point of x+1/x.",
+          "answer": "1",
+          "explanation": "f'(x)=1−1/x²=0 gives x²=1, so x=1 (taking the positive root since x>0).",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-48",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→0) [(1+sinx)−1]/x.",
+          "answer": "1",
+          "explanation": "This simplifies to sinx/x, which approaches 1 as x→0.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-49",
+          "type": "EXPRESSION",
+          "topic": "Derivatives",
+          "prompt": "Find d/dx[cos(3x)]. (format: no spaces)",
+          "answer": "-3sin(3x)",
+          "explanation": "Chain rule with u=3x.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-50",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹(2x+1)² dx. (enter as a reduced fraction)",
+          "answer": "13/3",
+          "explanation": "Expanding gives 4x²+4x+1. Integrating: [4x³/3+2x²+x] from 0 to 1 = 4/3+2+1 = 13/3.",
+          "xp": 12
+        },
+        {
+          "id": "calc2-f-51",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the minimum value of x²+4x+7.",
+          "answer": "3",
+          "explanation": "Completing the square: (x+2)²+3, so the minimum value is 3.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-52",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→0) ln(1+x)/x.",
+          "answer": "1",
+          "explanation": "This is the standard logarithmic limit, equal to 1.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-53",
+          "type": "EXPRESSION",
+          "topic": "Derivatives",
+          "prompt": "Find d/dx(secx). (format: no spaces)",
+          "answer": "secxtanx",
+          "explanation": "This is a standard derivative.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-54",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ 2/(1+x²) dx. (format: no spaces)",
+          "answer": "π/2",
+          "explanation": "2[arctan(x)] from 0 to 1 = 2(π/4−0) = π/2.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-55",
+          "type": "EXPRESSION",
+          "topic": "Differential Equations",
+          "prompt": "Solve dy/dx+y=0, given y(0)=4. (format: no spaces)",
+          "answer": "4e^(-x)",
+          "explanation": "Separable: y=Ce⁻ˣ. Using y(0)=4 gives C=4.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-56",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the maximum value of 4x−x².",
+          "answer": "4",
+          "explanation": "Completing the square: 4−(x−2)², so the maximum value is 4.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-57",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→0) [(1+x)²−1]/x.",
+          "answer": "2",
+          "explanation": "Expanding: (2x+x²)/x = 2+x → 2 as x→0.",
+          "xp": 8
+        },
+        {
+          "id": "calc2-f-58",
+          "type": "EXPRESSION",
+          "topic": "Derivatives",
+          "prompt": "Find d/dx[ln(sinx)]. (format: no spaces)",
+          "answer": "cotx",
+          "explanation": "Chain rule: (cosx)/(sinx) = cotx.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-59",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ dx/(1+x). (format: no spaces)",
+          "answer": "ln2",
+          "explanation": "[ln(1+x)] from 0 to 1 = ln2−ln1 = ln2.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-60",
+          "type": "NUMERIC",
+          "topic": "Application of Integrals",
+          "prompt": "Find the area under y=2x+1 from x=0 to x=1.",
+          "answer": "2",
+          "explanation": "∫₀¹(2x+1)dx = [x²+x] from 0 to 1 = 2.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-61",
+          "type": "EXPRESSION",
+          "topic": "Differential Equations",
+          "prompt": "Solve dy/dx=y, given y(0)=5. (format: no spaces)",
+          "answer": "5e^x",
+          "explanation": "Separable: y=Ceˣ. Using y(0)=5 gives C=5.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-62",
+          "type": "EXPRESSION",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the critical points of x³−3x. (format: ±1, no spaces)",
+          "answer": "±1",
+          "explanation": "3x²−3=0 gives x²=1, so x=±1.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-63",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀^(π/2) sin²x dx. (format: no spaces)",
+          "answer": "π/4",
+          "explanation": "Using sin²x=(1−cos2x)/2: (1/2)∫₀^(π/2)(1−cos2x)dx = (1/2)(π/2−0) = π/4.",
+          "xp": 12
+        },
+        {
+          "id": "calc2-f-64",
+          "type": "EXPRESSION",
+          "topic": "Derivatives",
+          "prompt": "Find d/dx[(2x+1)⁵]. (format: no spaces)",
+          "answer": "10(2x+1)^4",
+          "explanation": "Chain rule: 5(2x+1)⁴·2 = 10(2x+1)⁴.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-f-65",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→0) [(1+2x)³−1]/x.",
+          "answer": "6",
+          "explanation": "Expanding: (1+2x)³=1+6x+12x²+8x³. The numerator is 6x+12x²+8x³. Dividing by x and taking the limit gives 6.",
+          "xp": 10
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "levelName": "Standard",
+      "questions": [
+        {
+          "id": "calc2-s-01",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→0) [sin(3x)−3x]/x³.",
+          "answer": "-4.5",
+          "explanation": "Using sin(3x)=3x−(3x)³/6+O(x⁵), the numerator is −(27/6)x³+O(x⁵)=−4.5x³+.... Dividing by x³ gives −4.5.",
+          "xp": 14
+        },
+        {
+          "id": "calc2-s-02",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫ x lnx dx. (format: no spaces)",
+          "answer": "x^2/2*lnx-x^2/4+C",
+          "explanation": "Integration by parts with u=lnx, dv=x dx.",
+          "xp": 12
+        },
+        {
+          "id": "calc2-s-03",
+          "type": "EXPRESSION",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the normal to y=x² at x=1. (format: no spaces)",
+          "answer": "y=1-(x-1)/2",
+          "explanation": "Tangent slope is 2, so normal slope is −1/2. Through (1,1): y−1=−(1/2)(x−1).",
+          "xp": 14
+        },
+        {
+          "id": "calc2-s-04",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ x/(1+x²) dx. (format: no spaces)",
+          "answer": "ln2/2",
+          "explanation": "Substituting u=1+x²: (1/2)∫₁² du/u = (1/2)ln2.",
+          "xp": 12
+        },
+        {
+          "id": "calc2-s-05",
+          "type": "EXPRESSION",
+          "topic": "Differential Equations",
+          "prompt": "Solve dy/dx+y=eˣ, given y(0)=0. (format: no spaces)",
+          "answer": "(e^x-e^(-x))/2",
+          "explanation": "Using integrating factor eˣ: (yeˣ)'=e^(2x), so yeˣ=e^(2x)/2+C. Using y(0)=0 gives C=−1/2, so y=(eˣ−e⁻ˣ)/2.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-s-06",
+          "type": "MULTIPLE_CHOICE",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the minimum value of x+4/x for x>0.",
+          "options": [
+            {
+              "text": "4",
+              "correct": true
+            },
+            {
+              "text": "2",
+              "correct": false
+            },
+            {
+              "text": "8",
+              "correct": false
+            },
+            {
+              "text": "1",
+              "correct": false
+            }
+          ],
+          "explanation": "By AM-GM, x+4/x ≥ 2√(x·4/x) = 2√4 = 4.",
+          "xp": 12
+        },
+        {
+          "id": "calc2-s-07",
+          "type": "EXPRESSION",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→0) (eˣ−1−x)/x². (enter as a reduced fraction)",
+          "answer": "1/2",
+          "explanation": "Using eˣ=1+x+x²/2+..., the numerator is x²/2+O(x³). Dividing by x² gives 1/2.",
+          "xp": 14
+        },
+        {
+          "id": "calc2-s-08",
+          "type": "EXPRESSION",
+          "topic": "Application of Integrals",
+          "prompt": "Find the area between y=x² and y=2x. (enter as a reduced fraction)",
+          "answer": "4/3",
+          "explanation": "They intersect where x²=2x, i.e. x=0,2. Area = ∫₀²(2x−x²)dx = [x²−x³/3] from 0 to 2 = 4−8/3 = 4/3.",
+          "xp": 14
+        },
+        {
+          "id": "calc2-s-09",
+          "type": "EXPRESSION",
+          "topic": "Applications of Derivatives",
+          "prompt": "If f'(x)=x(x−1)(x+2), find the interval(s) where f is increasing. (format: no spaces)",
+          "answer": "(-2,0)∪(1,∞)",
+          "explanation": "Sign analysis across the roots −2,0,1 shows f'>0 on (−2,0) and (1,∞).",
+          "xp": 16
+        },
+        {
+          "id": "calc2-s-10",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Find ∫ dx/(x²−1). (format: no spaces)",
+          "answer": "1/2*ln|(x-1)/(x+1)|+C",
+          "explanation": "Standard partial fractions result for this integral.",
+          "xp": 14
+        },
+        {
+          "id": "calc2-s-11",
+          "type": "NUMERIC",
+          "topic": "Derivatives",
+          "prompt": "If y=xˣ, find y'(1).",
+          "answer": "1",
+          "explanation": "y'=xˣ(lnx+1). At x=1: 1·(0+1)=1.",
+          "xp": 12
+        },
+        {
+          "id": "calc2-s-12",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→0) (1−cosx)/x².",
+          "answer": "0.5",
+          "explanation": "Using 1−cosx≈x²/2 for small x, the limit is 1/2.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-s-13",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the maximum value of x³−3x on [−2,2].",
+          "answer": "2",
+          "explanation": "f'=3x²−3=0 gives x=±1. Comparing f(−2)=−2, f(2)=2, f(−1)=2, f(1)=−2, the maximum is 2.",
+          "xp": 14
+        },
+        {
+          "id": "calc2-s-14",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀^(π/2) x sinx dx.",
+          "answer": "1",
+          "explanation": "By parts (u=x, dv=sinx dx): [−xcosx+sinx] from 0 to π/2 = (0+1)−(0+0) = 1.",
+          "xp": 14
+        },
+        {
+          "id": "calc2-s-15",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the y-coordinate of the point on y=x² closest to (0,3), rounded to 2 decimal places.",
+          "answer": "2.50",
+          "explanation": "Minimize D²=x²+(x²−3)². Setting the derivative to zero: 2x[1+2(x²−3)]=0 gives x²=5/2 (the x=0 case gives a larger distance). The corresponding y=x²=2.5.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-s-16",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→0) tan(5x)/tan(3x).",
+          "answer": "1.6667",
+          "explanation": "Both tan(5x) and tan(3x) behave like their arguments near 0, so the ratio approaches 5/3 ≈ 1.6667.",
+          "xp": 12
+        },
+        {
+          "id": "calc2-s-17",
+          "type": "EXPRESSION",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the equation of the tangent to y=eˣ at x=0. (format: no spaces)",
+          "answer": "y=x+1",
+          "explanation": "Point (0,1), slope y'=eˣ=1 at x=0. Equation: y−1=1(x−0), i.e. y=x+1.",
+          "xp": 12
+        },
+        {
+          "id": "calc2-s-18",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ x²eˣ dx, rounded to 2 decimal places.",
+          "answer": "0.71",
+          "explanation": "By parts twice: [x²eˣ−2xeˣ+2eˣ] from 0 to 1 = (e−2e+2e)−(0−0+2) = e−2 ≈ 0.72... (precise value e−2≈0.71828).",
+          "xp": 16
+        },
+        {
+          "id": "calc2-s-19",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the number of critical points of f(x)=x⁴−4x²+3.",
+          "answer": "3",
+          "explanation": "f'(x)=4x³−8x=4x(x²−2)=0 gives x=0,±√2 — three critical points.",
+          "xp": 12
+        },
+        {
+          "id": "calc2-s-20",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫ eˣ sinx dx. (format: no spaces)",
+          "answer": "e^x(sinx-cosx)/2+C",
+          "explanation": "Using repeated integration by parts (a standard reduction formula result).",
+          "xp": 16
+        },
+        {
+          "id": "calc2-s-21",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→∞) x·sin(1/x).",
+          "answer": "1",
+          "explanation": "Let u=1/x→0. The expression becomes sin(u)/u → 1.",
+          "xp": 12
+        },
+        {
+          "id": "calc2-s-22",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the minimum value of 2x²−8x+3.",
+          "answer": "-5",
+          "explanation": "Completing the square: 2(x−2)²−5, so the minimum value is −5.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-s-23",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫ x²eˣ dx. (format: no spaces)",
+          "answer": "e^x(x^2-2x+2)+C",
+          "explanation": "Integration by parts applied twice.",
+          "xp": 14
+        },
+        {
+          "id": "calc2-s-24",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "A rectangle is inscribed under y=9−x² with its base on the x-axis. Find its maximum possible area.",
+          "answer": "20.78",
+          "explanation": "With half-width x, area=2x(9−x²). Setting the derivative to zero: 18−6x²=0 gives x=√3. Area=2√3(9−3)=12√3≈20.78.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-s-25",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→1) (x³−1)/(x−1).",
+          "answer": "3",
+          "explanation": "Factor: (x−1)(x²+x+1)/(x−1) = x²+x+1. At x=1: 1+1+1=3.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-s-26",
+          "type": "EXPRESSION",
+          "topic": "Differential Equations",
+          "prompt": "Solve dy/dx=y², given y(0)=1. (format: no spaces)",
+          "answer": "y=1/(1-x)",
+          "explanation": "Separable: dy/y²=dx, so −1/y=x+C. Using y(0)=1 gives C=−1, so y=1/(1−x).",
+          "xp": 16
+        },
+        {
+          "id": "calc2-s-27",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ dx/(1+x)².",
+          "answer": "0.5",
+          "explanation": "[−1/(1+x)] from 0 to 1 = −1/2−(−1) = 1/2.",
+          "xp": 12
+        },
+        {
+          "id": "calc2-s-28",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→0) (tanx−x)/x³.",
+          "answer": "0.3333",
+          "explanation": "Using tanx=x+x³/3+..., the numerator is x³/3+.... Dividing by x³ gives 1/3.",
+          "xp": 14
+        },
+        {
+          "id": "calc2-s-29",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the number of real roots of x³−3x−1=0.",
+          "answer": "3",
+          "explanation": "f'=3x²−3=0 gives x=±1. f(1)=−3 (local min), f(−1)=1 (local max). Since the local max is positive and local min is negative, there are 3 real roots.",
+          "xp": 14
+        },
+        {
+          "id": "calc2-s-30",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ x²lnx dx.",
+          "answer": "-0.1111",
+          "explanation": "By parts: [x³/3·lnx−x³/9] from 0 to 1. At x=1: −1/9. At x=0: the limit is 0. Result: −1/9 ≈ −0.1111.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-s-31",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the distance from the origin to the line 3x+4y=10.",
+          "answer": "2",
+          "explanation": "Distance = |−10|/√(9+16) = 10/5 = 2.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-s-32",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ dx/(1+x²). (format: no spaces)",
+          "answer": "π/4",
+          "explanation": "[arctan(x)] from 0 to 1 = π/4−0 = π/4.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-s-33",
+          "type": "EXPRESSION",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the critical points of x⁴−4x²+2. (format: comma-separated, no spaces)",
+          "answer": "0,±√2",
+          "explanation": "4x³−8x=4x(x²−2)=0 gives x=0 and x=±√2.",
+          "xp": 14
+        },
+        {
+          "id": "calc2-s-34",
+          "type": "EXPRESSION",
+          "topic": "Differential Equations",
+          "prompt": "Solve dy/dx+y/x=1, given y(1)=0. (format: no spaces)",
+          "answer": "y=x/2-1/(2x)",
+          "explanation": "Linear ODE with integrating factor x: (xy)'=x, so xy=x²/2+C. Using y(1)=0 gives C=−1/2.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-s-35",
+          "type": "EXPRESSION",
+          "topic": "Application of Integrals",
+          "prompt": "Find the area between y=x and y=x² on [0,1]. (enter as a reduced fraction)",
+          "answer": "1/6",
+          "explanation": "∫₀¹(x−x²)dx = [x²/2−x³/3] from 0 to 1 = 1/2−1/3 = 1/6.",
+          "xp": 12
+        },
+        {
+          "id": "calc2-s-36",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ x/(1+x) dx. (format: no spaces)",
+          "answer": "1-ln2",
+          "explanation": "Rewrite x/(1+x)=1−1/(1+x). Integrating: [x−ln(1+x)] from 0 to 1 = (1−ln2)−0.",
+          "xp": 14
+        },
+        {
+          "id": "calc2-s-37",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the maximum value of x(2−x) on [0,2].",
+          "answer": "1",
+          "explanation": "f(x)=2x−x²=1−(x−1)². Maximum is 1, at x=1.",
+          "xp": 12
+        },
+        {
+          "id": "calc2-s-38",
+          "type": "EXPRESSION",
+          "topic": "Derivatives",
+          "prompt": "Find d/dx[arctan(√x)]. (format: no spaces)",
+          "answer": "1/(2√x(1+x))",
+          "explanation": "Chain rule: 1/(1+x)·1/(2√x).",
+          "xp": 14
+        },
+        {
+          "id": "calc2-s-39",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀^(π/4) sec²x dx.",
+          "answer": "1",
+          "explanation": "[tanx] from 0 to π/4 = 1−0 = 1.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-s-40",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "A ladder 5m long leans against a wall. If the base slides away at 1m/s, find how fast the top slides down when the base is 3m from the wall (in m/s).",
+          "answer": "0.75",
+          "explanation": "x²+y²=25. Differentiating: 2x(dx/dt)+2y(dy/dt)=0. At x=3, y=4: 6(1)+8(dy/dt)=0, so dy/dt=−6/8=−0.75. The speed is 0.75 m/s.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-s-41",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→0) (cosx−1)/x.",
+          "answer": "0",
+          "explanation": "Using cosx≈1−x²/2, the numerator is ≈−x²/2, so dividing by x gives ≈−x/2→0.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-s-42",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫ x·2ˣ dx. (format: no spaces)",
+          "answer": "x*2^x/ln2-2^x/(ln2)^2+C",
+          "explanation": "Integration by parts with u=x, dv=2ˣ dx.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-s-43",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the value of x that minimizes x²+(10−x)² (i.e., splits 10 into two parts with minimum sum of squares).",
+          "answer": "5",
+          "explanation": "Let f(x)=x²+(10−x)². f'(x)=2x−2(10−x)=4x−20=0 gives x=5.",
+          "xp": 12
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "levelName": "Intermediate",
+      "questions": [
+        {
+          "id": "calc2-i-01",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→0) (e^(sinx)−1−sinx)/x².",
+          "answer": "0.5",
+          "explanation": "Let u=sinx→0. The expression is (eᵘ−1−u)/x², and since eᵘ−1−u≈u²/2 and u≈x for small x, the limit is 1/2.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-i-02",
+          "type": "NUMERIC",
+          "topic": "Continuity & Differentiability",
+          "prompt": "For f(x)=|x²−a| to be differentiable everywhere, what condition must a satisfy? (enter 1 if a<0 is required, 0 otherwise)",
+          "answer": "1",
+          "explanation": "f fails to be differentiable wherever x²−a=0 has a real solution and changes sign there. This is avoided entirely only when a<0 (no real solutions).",
+          "xp": 16
+        },
+        {
+          "id": "calc2-i-03",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀^(π/2) ln(sinx) dx. (format: no spaces)",
+          "answer": "-π/2*ln2",
+          "explanation": "This is a classical result, provable via the symmetry ∫₀^(π/2)ln(sinx)dx=∫₀^(π/2)ln(cosx)dx and combining.",
+          "xp": 20
+        },
+        {
+          "id": "calc2-i-04",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "A particle's position is s(t)=t³−6t²+9t on [0,5]. Find the total distance traveled.",
+          "answer": "28",
+          "explanation": "v=s'=3(t−1)(t−3), zero at t=1,3. s(0)=0,s(1)=4,s(3)=0,s(5)=20. Total distance=|4−0|+|0−4|+|20−0|=28.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-i-05",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→0) [ln(1+x)−x+x²/2]/x³.",
+          "answer": "0.3333",
+          "explanation": "Using ln(1+x)=x−x²/2+x³/3−..., the bracket is x³/3+.... Dividing by x³ gives 1/3.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-i-06",
+          "type": "EXPRESSION",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the maximum value of x(1−x)² on [0,1]. (enter as a reduced fraction)",
+          "answer": "4/27",
+          "explanation": "f'=1−4x+3x²=0 gives x=1 or x=1/3. f(1/3)=(1/3)(4/9)=4/27, which exceeds the endpoint values of 0.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-i-07",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Is there a real x where the tangent to y=x+1/x is parallel to y=3x+5? (enter 0 for no, 1 for yes)",
+          "answer": "0",
+          "explanation": "y'=1−1/x²=3 requires x²=−1/2, which has no real solution.",
+          "xp": 14
+        },
+        {
+          "id": "calc2-i-08",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ x²/(1+x³) dx. (format: no spaces)",
+          "answer": "ln2/3",
+          "explanation": "Substituting u=1+x³: (1/3)∫₁² du/u = (1/3)ln2.",
+          "xp": 14
+        },
+        {
+          "id": "calc2-i-09",
+          "type": "EXPRESSION",
+          "topic": "Differential Equations",
+          "prompt": "Solve dy/dx+y·tanx=sinx, given y(0)=1. (format: no spaces)",
+          "answer": "cosx(1-ln(cosx))",
+          "explanation": "Integrating factor secx: (y·secx)'=tanx, so y·secx=−ln(cosx)+C. Using y(0)=1 gives C=1, so y=cosx(1−ln(cosx)).",
+          "xp": 20
+        },
+        {
+          "id": "calc2-i-10",
+          "type": "EXPRESSION",
+          "topic": "Application of Integrals",
+          "prompt": "Find the total area enclosed between y=x and y=x³. (enter as a reduced fraction)",
+          "answer": "1/2",
+          "explanation": "By symmetry, the total area is 2∫₀¹(x−x³)dx = 2[x²/2−x⁴/4] from 0 to 1 = 2(1/4) = 1/2.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-i-11",
+          "type": "EXPRESSION",
+          "topic": "Applications of Derivatives",
+          "prompt": "If f'(x)=(x−1)²(x+2), find the interval where f is decreasing. (format: no spaces)",
+          "answer": "(-∞,-2)",
+          "explanation": "Since (x−1)² ≥ 0 always, the sign of f' matches the sign of (x+2), which is negative when x<−2.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-i-12",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→0) [√(1+x)−1−x/2]/x².",
+          "answer": "-0.125",
+          "explanation": "Using the binomial expansion √(1+x)=1+x/2−x²/8+..., the bracket is −x²/8+.... Dividing by x² gives −1/8.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-i-13",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the minimum value of x²+4x+7+4/(x+2) for x>−2, rounded to 2 decimal places.",
+          "answer": "7.76",
+          "explanation": "Let t=x+2>0. The expression becomes t²+3+4/t. Minimizing t²+4/t gives t=2^(1/3), and the total minimum value is 3+3·2^(2/3)≈7.76.",
+          "xp": 20
+        },
+        {
+          "id": "calc2-i-14",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ dx/(1+x²)², rounded to 4 decimal places.",
+          "answer": "0.9270",
+          "explanation": "Using the reduction formula for this integral: π/8+1/4 ≈ 0.9270.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-i-15",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the absolute minimum value of x⁴−4x²+2.",
+          "answer": "-2",
+          "explanation": "f'=4x³−8x=4x(x²−2)=0 gives x=0,±√2. f(0)=2, f(±√2)=4−8+2=−2. The minimum is −2.",
+          "xp": 14
+        },
+        {
+          "id": "calc2-i-16",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ ln(1+x²) dx, rounded to 4 decimal places.",
+          "answer": "0.2648",
+          "explanation": "This evaluates to ln2−2+π/2 ≈ 0.2648.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-i-17",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→∞) x(√(x²+1)−x).",
+          "answer": "0.5",
+          "explanation": "Rationalizing: x/(√(x²+1)+x) = 1/(√(1+1/x²)+1) → 1/2 as x→∞.",
+          "xp": 14
+        },
+        {
+          "id": "calc2-i-18",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀^(π/2) x cosx dx, rounded to 4 decimal places.",
+          "answer": "0.5708",
+          "explanation": "By parts: [xsinx+cosx] from 0 to π/2 = (π/2+0)−(0+1) = π/2−1 ≈ 0.5708.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-i-19",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ dx/(1+x+x²), rounded to 4 decimal places.",
+          "answer": "0.6046",
+          "explanation": "Completing the square and using the arctan integral gives π/(3√3) ≈ 0.6046.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-i-20",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the number of real solutions of x=e^(−x).",
+          "answer": "1",
+          "explanation": "Let f(x)=x−e^(−x). f'(x)=1+e^(−x)>0 always, so f is strictly increasing, giving exactly one root.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-i-21",
+          "type": "EXPRESSION",
+          "topic": "Differential Equations",
+          "prompt": "Solve dy/dx+2y=2e^(−2x), given y(0)=0. (format: no spaces)",
+          "answer": "2xe^(-2x)",
+          "explanation": "Using integrating factor e^(2x): (y·e^(2x))'=2, so y·e^(2x)=2x+C. Using y(0)=0 gives C=0, so y=2xe^(−2x).",
+          "xp": 18
+        },
+        {
+          "id": "calc2-i-22",
+          "type": "EXPRESSION",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the value of x in [0,1] that maximizes x³(1−x)². (enter as a reduced fraction)",
+          "answer": "3/5",
+          "explanation": "f'(x)=3x²(1−x)²−2x³(1−x)=x²(1−x)[3(1−x)−2x]=x²(1−x)(3−5x)=0 gives x=3/5 (excluding trivial endpoints).",
+          "xp": 18
+        },
+        {
+          "id": "calc2-i-23",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ x³/(1+x²) dx. (format: no spaces)",
+          "answer": "(1-ln2)/2",
+          "explanation": "Rewrite x³/(1+x²)=x−x/(1+x²). Integrating: [x²/2−(1/2)ln(1+x²)] from 0 to 1 = (1/2−(1/2)ln2).",
+          "xp": 16
+        },
+        {
+          "id": "calc2-i-24",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the minimum distance from the point (0,1) to the curve y=x², rounded to 2 decimal places.",
+          "answer": "0.87",
+          "explanation": "Minimize D²=x²+(x²−1)². Setting the derivative to zero and solving gives the minimum distance √3/2 ≈ 0.87.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-i-25",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "If f'(x)=x/(1+x²) and f(0)=2, find f(1), rounded to 4 decimal places.",
+          "answer": "2.3466",
+          "explanation": "∫₀¹ x/(1+x²)dx = (1/2)ln2 ≈ 0.3466 (using the substitution u=1+x²). So f(1)=2+0.3466=2.3466.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-i-26",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ arctan(x) dx. (format: no spaces)",
+          "answer": "π/4-ln2/2",
+          "explanation": "By parts: [x·arctanx−(1/2)ln(1+x²)] from 0 to 1 = (π/4−(1/2)ln2)−0.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-i-27",
+          "type": "EXPRESSION",
+          "topic": "Derivatives",
+          "prompt": "If y=(sinx)ˣ, find y'(π/2). (enter a single number)",
+          "answer": "0",
+          "explanation": "Logarithmic differentiation gives y'/y=ln(sinx)+x·cotx. At x=π/2: ln(1)+（π/2)(0)=0, so y'=y·0=0.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-i-28",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ x²/(1+x²) dx, rounded to 4 decimal places.",
+          "answer": "0.2146",
+          "explanation": "Rewrite x²/(1+x²)=1−1/(1+x²). Integrating: [x−arctan(x)] from 0 to 1 = 1−π/4 ≈ 0.2146.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-i-29",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the maximum value of x^a(1−x)^b on (0,1) for a=2, b=1.",
+          "answer": "0.1481",
+          "explanation": "Using x=a/(a+b)=2/3, the maximum value is (2/3)²(1/3)¹=4/27≈0.1481.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-i-30",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ ln(1+x)/(1+x) dx, rounded to 4 decimal places.",
+          "answer": "0.2402",
+          "explanation": "Substituting u=ln(1+x): this becomes ∫₀^(ln2) u du = (ln2)²/2 ≈ 0.2402.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-i-31",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the number of roots of eˣ=x+2.",
+          "answer": "2",
+          "explanation": "Let h(x)=eˣ−x−2. h has a minimum below zero (at x=0, h=−1<0), and h→∞ at both ends, giving 2 real roots.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-i-32",
+          "type": "EXPRESSION",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the maximum value of x^a(1−x)^b on (0,1), in terms of a and b. (format: no spaces)",
+          "answer": "a^a*b^b/(a+b)^(a+b)",
+          "explanation": "Using logarithmic differentiation, the maximum occurs at x=a/(a+b), giving this value.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-i-33",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the minimum of t^2+3+4/t for t>0, rounded to 4 decimals.",
+          "answer": "7.7622",
+          "explanation": "Minimizing gives t=2^(1/3), value 3+3*2^(2/3)=7.7622.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-i-34",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate integral 0 to 1 of dx/(1+x^2)^2, rounded to 4 decimals.",
+          "answer": "0.9270",
+          "explanation": "pi/8+1/4=0.9270.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-i-35",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the absolute minimum of x^4-4x^2+2.",
+          "answer": "-2",
+          "explanation": "Critical points 0,+-sqrt2; minimum value -2 at x=+-sqrt2.",
+          "xp": 14
+        },
+        {
+          "id": "calc2-i-36",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate integral 0 to 1 of ln(1+x^2)dx, rounded to 4 decimals.",
+          "answer": "0.2648",
+          "explanation": "ln2-2+pi/2=0.2648.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-i-37",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate integral 0 to pi/2 of x*cosx dx, rounded to 4 decimals.",
+          "answer": "0.5708",
+          "explanation": "By parts: pi/2-1=0.5708.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-i-38",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate integral 0 to 1 of dx/(1+x+x^2), rounded to 4 decimals.",
+          "answer": "0.6046",
+          "explanation": "pi/(3*sqrt3)=0.6046.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-i-39",
+          "type": "EXPRESSION",
+          "topic": "Differential Equations",
+          "prompt": "Solve dy/dx+2y=2e^(-2x), given y(0)=0.",
+          "answer": "2xe^(-2x)",
+          "explanation": "Verify: y=2xe^(-2x) satisfies the ODE and initial condition.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-i-40",
+          "type": "EXPRESSION",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the x in [0,1] maximizing x^3(1-x)^2, as a fraction.",
+          "answer": "3/5",
+          "explanation": "Setting derivative to zero gives x=3/5.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-i-41",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate integral 0 to 1 of x^3/(1+x^2) dx.",
+          "answer": "(1-ln2)/2",
+          "explanation": "Rewrite and integrate directly.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-i-42",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the minimum distance from (0,1) to y=x^2, rounded to 2 decimals.",
+          "answer": "0.87",
+          "explanation": "Minimum distance is sqrt3/2=0.87.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-i-43",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "If f'(x)=x/(1+x^2) and f(0)=2, find f(1), rounded to 4 decimals.",
+          "answer": "2.3466",
+          "explanation": "f(1)=2+(1/2)ln2=2.3466.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-i-44",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate integral 0 to 1 of arctan(x) dx.",
+          "answer": "π/4-ln2/2",
+          "explanation": "By parts.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-i-45",
+          "type": "NUMERIC",
+          "topic": "Derivatives",
+          "prompt": "If y=(sinx)^x, find y'(pi/2).",
+          "answer": "0",
+          "explanation": "y'/y=ln(sinx)+x*cotx; at x=pi/2 this is 0.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-i-46",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate integral 0 to 1 of x^2/(1+x^2) dx, rounded to 4 decimals.",
+          "answer": "0.2146",
+          "explanation": "1-pi/4=0.2146.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-i-47",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate integral 0 to 1 of ln(1+x)/(1+x) dx, rounded to 4 decimals.",
+          "answer": "0.2402",
+          "explanation": "(ln2)^2/2=0.2402.",
+          "xp": 16
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "levelName": "Hard",
+      "questions": [
+        {
+          "id": "calc2-h-01",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→0) [(1+sinx)^(1/x) − e]/x, rounded to 4 decimal places.",
+          "answer": "-1.3591",
+          "explanation": "This limit works out to −e/2 ≈ −1.3591, using the expansion of (1+sinx)^(1/x) around e.",
+          "xp": 22
+        },
+        {
+          "id": "calc2-h-02",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "For f(x)=x³−3ax²+3a²x, is f always increasing regardless of the real value of a? (enter 1 for yes, 0 for no)",
+          "answer": "1",
+          "explanation": "f'(x)=3x²−6ax+3a²=3(x−a)², which is always ≥0 for any real a. So f is always non-decreasing (increasing) for any value of a.",
+          "xp": 20
+        },
+        {
+          "id": "calc2-h-03",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the minimum value of xˣ for x>0, rounded to 4 decimal places.",
+          "answer": "0.6922",
+          "explanation": "d/dx(xˣ)=xˣ(lnx+1)=0 gives x=1/e. The value there is (1/e)^(1/e)=e^(−1/e)≈0.6922.",
+          "xp": 20
+        },
+        {
+          "id": "calc2-h-04",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀^∞ dx/(1+x⁴). (format: no spaces)",
+          "answer": "π/(2√2)",
+          "explanation": "This is a standard Beta-function integral result.",
+          "xp": 22
+        },
+        {
+          "id": "calc2-h-05",
+          "type": "EXPRESSION",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the maximum value of x^a(1−x)^b on (0,1), in terms of a,b. (format: no spaces)",
+          "answer": "a^a*b^b/(a+b)^(a+b)",
+          "explanation": "Using logarithmic differentiation, the maximum occurs at x=a/(a+b), giving this value.",
+          "xp": 22
+        },
+        {
+          "id": "calc2-h-06",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ lnx/(1+x) dx. (format: no spaces)",
+          "answer": "-π^2/12",
+          "explanation": "This is a classical result involving the dilogarithm function.",
+          "xp": 24
+        },
+        {
+          "id": "calc2-h-07",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the number of real roots of x=e^(−x).",
+          "answer": "1",
+          "explanation": "f(x)=x−e^(−x) is strictly increasing (f'=1+e^(−x)>0 always) and changes sign once, giving exactly one root.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-h-08",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "A rectangle is inscribed in the unit circle x²+y²=1. Find its maximum possible area.",
+          "answer": "2",
+          "explanation": "With vertices (±x,±y), area=4xy subject to x²+y²=1. By AM-GM, maximum occurs at x=y=1/√2, giving area 4(1/2)=2.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-h-09",
+          "type": "EXPRESSION",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→0) (tanx−sinx)/x³. (enter as a reduced fraction)",
+          "answer": "1/2",
+          "explanation": "Using tanx−sinx=tanx(1−cosx)≈x·(x²/2), dividing by x³ gives 1/2.",
+          "xp": 20
+        },
+        {
+          "id": "calc2-h-10",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Does the equation eˣ=λx have exactly two stationary points of g(x)=eˣ−λx for some real λ? (enter 0 for no, 1 for yes)",
+          "answer": "0",
+          "explanation": "g'(x)=eˣ−λ=0 has at most one solution (x=lnλ, only when λ>0), so g never has two stationary points regardless of λ.",
+          "xp": 20
+        },
+        {
+          "id": "calc2-h-11",
+          "type": "EXPRESSION",
+          "topic": "Differential Equations",
+          "prompt": "Solve dy/dx=y(1−y/2), given y(0)=1. (format: no spaces)",
+          "answer": "2/(1+e^(-x))",
+          "explanation": "This is a logistic equation with carrying capacity 2 and rate 1. Solving gives y=2/(1+e^(−x)).",
+          "xp": 24
+        },
+        {
+          "id": "calc2-h-12",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀^(π/2) dx/(1+tanx). (format: no spaces)",
+          "answer": "π/4",
+          "explanation": "Using the substitution x→π/2−x shows the integral equals π/4 by symmetry (King's rule).",
+          "xp": 20
+        },
+        {
+          "id": "calc2-h-13",
+          "type": "EXPRESSION",
+          "topic": "Application of Integrals",
+          "prompt": "Find the area between y=x² and y=4−x². (format: no spaces)",
+          "answer": "16√2/3",
+          "explanation": "They intersect at x=±√2. Area = ∫₋√2^√2 (4−2x²)dx = 16√2/3.",
+          "xp": 20
+        },
+        {
+          "id": "calc2-h-14",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Rolle's theorem requires f to be continuous on [a,b], differentiable on (a,b), and f(a)=f(b). Under these conditions, does there always exist c in (a,b) with f'(c)=0? (enter 1 for yes, 0 for no)",
+          "answer": "1",
+          "explanation": "This is exactly the statement of Rolle's theorem.",
+          "xp": 14
+        },
+        {
+          "id": "calc2-h-15",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ dx/(1+x+x²)², rounded to 4 decimal places.",
+          "answer": "0.4031",
+          "explanation": "The correct value is 2√3π/27 ≈ 0.4031 (this integral does not include an extra constant term).",
+          "xp": 26
+        },
+        {
+          "id": "calc2-h-16",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the minimum value of x²+4/x² for x>0.",
+          "answer": "4",
+          "explanation": "By AM-GM, x²+4/x² ≥ 2√(x²·4/x²) = 2·2 = 4.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-h-17",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀^∞ x/(1+x³) dx. (format: no spaces)",
+          "answer": "2π/(3√3)",
+          "explanation": "This is a standard Beta-function integral result.",
+          "xp": 24
+        },
+        {
+          "id": "calc2-h-18",
+          "type": "EXPRESSION",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the envelope of the family of lines y=mx+1/m for m>0, in the region x,y>0. (format: no spaces)",
+          "answer": "y^2=4x",
+          "explanation": "Eliminating m by treating y=mx+1/m as a quadratic in m and setting the discriminant to zero gives y²=4x.",
+          "xp": 24
+        },
+        {
+          "id": "calc2-h-19",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the absolute maximum of x⁴−2x² on [−2,2].",
+          "answer": "8",
+          "explanation": "Critical points at x=0,±1. f(±2)=16−8=8, f(0)=0, f(±1)=−1. The absolute maximum is 8.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-h-20",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→0) [e^(−0.5) − cos(x)^(1/x²)]/x², rounded to 4 decimal places.",
+          "answer": "0.0505",
+          "explanation": "This equals e^(−0.5)/12 ≈ 0.0505, derived from the expansion of cos(x)^(1/x²) around e^(−1/2).",
+          "xp": 26
+        },
+        {
+          "id": "calc2-h-21",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Solve lnx=1−x for x>0. Find the number of real solutions.",
+          "answer": "1",
+          "explanation": "f(x)=lnx+x−1 is strictly increasing (f'=1/x+1>0), and f(1)=0 exactly. There is exactly one solution, x=1.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-h-22",
+          "type": "EXPRESSION",
+          "topic": "Differential Equations",
+          "prompt": "Solve x·dy/dx−y=x², given y(1)=0. (format: no spaces)",
+          "answer": "x^2-x",
+          "explanation": "Rewriting as dy/dx−y/x=x (linear ODE), with integrating factor 1/x: (y/x)'=1, so y/x=x+C. Using y(1)=0 gives C=−1.",
+          "xp": 22
+        },
+        {
+          "id": "calc2-h-23",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ (1−x)/(1+x²) dx. (format: no spaces)",
+          "answer": "π/4-ln2/2",
+          "explanation": "Split into ∫1/(1+x²)dx − ∫x/(1+x²)dx = [arctanx] − [(1/2)ln(1+x²)] from 0 to 1.",
+          "xp": 22
+        },
+        {
+          "id": "calc2-h-24",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the maximum value of x(lnx)² on (0,1], rounded to 4 decimal places.",
+          "answer": "0.5413",
+          "explanation": "f'=lnx(lnx+2)=0 gives x=1 or x=e⁻². At x=e⁻²: f=4e⁻²≈0.5413, which exceeds the value at x=1 (which is 0).",
+          "xp": 22
+        },
+        {
+          "id": "calc2-h-25",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "If f'(x)=x/(1+x²) and f(0)=0, find f(e). (format: no spaces)",
+          "answer": "ln(1+e^2)/2",
+          "explanation": "Integrating: f(x)=(1/2)ln(1+x²). At x=e: (1/2)ln(1+e²).",
+          "xp": 18
+        },
+        {
+          "id": "calc2-h-26",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the minimum value of (x+1/x)² for x>0.",
+          "answer": "4",
+          "explanation": "By AM-GM, x+1/x≥2, so the minimum of the square is 4.",
+          "xp": 14
+        },
+        {
+          "id": "calc2-h-27",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ lnx/(1+x²) dx. (format: -G, no spaces)",
+          "answer": "-G",
+          "explanation": "This evaluates to the negative of Catalan's constant, denoted G≈0.916.",
+          "xp": 26
+        },
+        {
+          "id": "calc2-h-28",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the minimum value of x³+8/x³ for x>0, rounded to 4 decimal places.",
+          "answer": "5.6569",
+          "explanation": "By AM-GM on the two terms: x³+8/x³ ≥ 2√8 = 4√2 ≈ 5.6569.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-h-29",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "For what range of |a| does x³−3x+a=0 have three distinct real roots?",
+          "answer": "|a|<2",
+          "explanation": "f'=3x²−3=0 gives x=±1. f(1)=a−2 (local min), f(−1)=a+2 (local max). Three real roots require a−2<0<a+2, i.e. |a|<2.",
+          "xp": 20
+        },
+        {
+          "id": "calc2-h-30",
+          "type": "EXPRESSION",
+          "topic": "Differential Equations",
+          "prompt": "Solve dy/dx=2x−y, given y(0)=1. Find y(ln2). (format: no spaces)",
+          "answer": "2ln2-0.5",
+          "explanation": "Linear ODE, integrating factor eˣ: solving gives y=2x−2+3e^(−x). At x=ln2: y=2ln2−2+3(1/2)=2ln2−0.5.",
+          "xp": 24
+        },
+        {
+          "id": "calc2-h-31",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀^∞ dx/(eˣ+1). (format: no spaces)",
+          "answer": "ln2",
+          "explanation": "This is a standard result, evaluable via substitution u=eˣ.",
+          "xp": 22
+        },
+        {
+          "id": "calc2-h-32",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the number of real roots of x⁵−5x+1=0.",
+          "answer": "3",
+          "explanation": "f'=5x⁴−5=0 gives x=±1. f(1)=−3 (local min, negative), f(−1)=5 (local max, positive). This gives 3 real roots.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-h-33",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the minimum value of x−lnx for x>0.",
+          "answer": "1",
+          "explanation": "f'=1−1/x=0 gives x=1. f(1)=1−0=1, and f''(1)=1>0 confirms a minimum.",
+          "xp": 14
+        },
+        {
+          "id": "calc2-h-34",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ dx/(1+x³). (format: no spaces)",
+          "answer": "ln2/3+π/(3√3)",
+          "explanation": "Using partial fractions on 1/(1+x³)=1/((1+x)(1−x+x²)).",
+          "xp": 24
+        },
+        {
+          "id": "calc2-h-35",
+          "type": "EXPRESSION",
+          "topic": "Application of Integrals",
+          "prompt": "Find the area between y=lnx and y=x−1 on [1,e]. (format: no spaces)",
+          "answer": "(e^2-2e-1)/2",
+          "explanation": "Since x−1 ≥ lnx on this interval, area = ∫₁ᵉ[(x−1)−lnx]dx = [x²/2−x·lnx] from 1 to e.",
+          "xp": 24
+        },
+        {
+          "id": "calc2-h-36",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "If f'(x)=|x−1| and f(0)=0, find f(2).",
+          "answer": "1",
+          "explanation": "For x<1: f(x)=x−x²/2, giving f(1)=0.5. For x>1: f(x)=0.5+(x−1)²/2. At x=2: f(2)=0.5+0.5=1.",
+          "xp": 20
+        },
+        {
+          "id": "calc2-h-37",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ arctan(x)/(1+x²) dx. (format: no spaces)",
+          "answer": "π^2/32",
+          "explanation": "Substituting u=arctan(x): ∫₀^(π/4) u du = (π/4)²/2 = π²/32.",
+          "xp": 22
+        },
+        {
+          "id": "calc2-h-38",
+          "type": "EXPRESSION",
+          "topic": "Differential Equations",
+          "prompt": "Solve x·dy/dx+y=x², given y(1)=0. (format: no spaces)",
+          "answer": "(x^3-1)/(3x)",
+          "explanation": "Note that x·dy/dx+y = d/dx(xy), so d/dx(xy)=x², giving xy=x³/3+C. Using y(1)=0 gives C=−1/3.",
+          "xp": 24
+        },
+        {
+          "id": "calc2-h-39",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ dx/(1+x²)³, rounded to 4 decimal places.",
+          "answer": "0.5890",
+          "explanation": "This evaluates to 3π/32+1/4 ≈ 0.5890, using the trigonometric substitution x=tanθ.",
+          "xp": 26
+        },
+        {
+          "id": "calc2-h-40",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the minimum value of x+1/x for x>0.",
+          "answer": "2",
+          "explanation": "By AM-GM, x+1/x ≥ 2√(x·1/x) = 2.",
+          "xp": 10
+        },
+        {
+          "id": "calc2-h-41",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the absolute maximum of x²e^(−x) for x≥0, rounded to 4 decimal places.",
+          "answer": "0.5413",
+          "explanation": "f'=xe^(−x)(2−x)=0 gives x=0 or x=2. f(2)=4e⁻²≈0.5413, which is the maximum since f→0 as x→∞.",
+          "xp": 20
+        },
+        {
+          "id": "calc2-h-42",
+          "type": "NUMERIC",
+          "topic": "Limits",
+          "prompt": "Evaluate lim(x→0) [(1+x)^(1/x) − e + (e/2)x]/x², rounded to 4 decimal places.",
+          "answer": "1.2456",
+          "explanation": "This evaluates to 11e/24 ≈ 1.2456, using the higher-order expansion of (1+x)^(1/x) around e.",
+          "xp": 26
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "levelName": "Advanced",
+      "questions": [
+        {
+          "id": "calc2-a-01",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "For g(x)=x−a·lnx (a>0), find the value of a for which g has exactly one positive root.",
+          "answer": "e",
+          "explanation": "g'(x)=1−a/x=0 gives x=a (a minimum, since g''=a/x²>0). g(a)=a(1−lna). This equals zero exactly when lna=1, i.e. a=e.",
+          "xp": 24
+        },
+        {
+          "id": "calc2-a-02",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ (lnx)²/(1+x) dx, rounded to 4 decimal places.",
+          "answer": "1.8031",
+          "explanation": "This evaluates to (3/2)ζ(3) ≈ 1.8031, where ζ(3) is Apéry's constant.",
+          "xp": 28
+        },
+        {
+          "id": "calc2-a-03",
+          "type": "EXPRESSION",
+          "topic": "Applications of Derivatives",
+          "prompt": "For what range of a does x⁴−2ax²+1≥0 hold for all real x? (format: no spaces)",
+          "answer": "a≤1",
+          "explanation": "Substituting t=x²≥0, this requires t²−2at+1≥0 for all t≥0. Completing the square, the condition reduces to a≤1.",
+          "xp": 26
+        },
+        {
+          "id": "calc2-a-04",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀^(π/2) dx/(sinx+cosx)².",
+          "answer": "1",
+          "explanation": "Writing sinx+cosx=√2sin(x+π/4), the integral becomes (1/2)∫csc²(x+π/4)dx, which evaluates to exactly 1.",
+          "xp": 26
+        },
+        {
+          "id": "calc2-a-05",
+          "type": "EXPRESSION",
+          "topic": "Differential Equations",
+          "prompt": "Solve dy/dx=y(1−y), given y(0)=c (0<c<1). (format: no spaces)",
+          "answer": "1/(1+(1/c-1)e^(-x))",
+          "explanation": "This is a logistic equation with carrying capacity 1 and rate 1.",
+          "xp": 26
+        },
+        {
+          "id": "calc2-a-06",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the maximum area of a rectangle inscribed in the ellipse x²/a²+y²/b²=1, in terms of a,b.",
+          "answer": "2ab",
+          "explanation": "Using x=acosθ, y=bsinθ: area=4xy=4ab·sinθcosθ=2ab·sin(2θ), maximized at 2ab.",
+          "xp": 24
+        },
+        {
+          "id": "calc2-a-07",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "For what value(s) of a does x³−3x+a=0 have a repeated root?",
+          "answer": "±2",
+          "explanation": "A repeated root occurs at the boundary of the three-real-root region found earlier, i.e. a=±2.",
+          "xp": 22
+        },
+        {
+          "id": "calc2-a-08",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ lnx/(1−x) dx. (format: no spaces)",
+          "answer": "-π^2/6",
+          "explanation": "This is a classical dilogarithm-related result.",
+          "xp": 28
+        },
+        {
+          "id": "calc2-a-09",
+          "type": "EXPRESSION",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the minimum value of x²+k/x² for x>0, k>0, in terms of k. (format: no spaces)",
+          "answer": "2√k",
+          "explanation": "By AM-GM: x²+k/x² ≥ 2√(x²·k/x²) = 2√k.",
+          "xp": 20
+        },
+        {
+          "id": "calc2-a-10",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ arctan(x)/x dx. (enter as G)",
+          "answer": "G",
+          "explanation": "This evaluates to Catalan's constant G≈0.916.",
+          "xp": 28
+        },
+        {
+          "id": "calc2-a-11",
+          "type": "EXPRESSION",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the maximum value of x^a·e^(−x) for x>0, a>0, in terms of a. (format: no spaces)",
+          "answer": "a^a*e^(-a)",
+          "explanation": "Setting the derivative to zero gives x=a, with value aᵃ·e⁻ᵃ.",
+          "xp": 24
+        },
+        {
+          "id": "calc2-a-12",
+          "type": "EXPRESSION",
+          "topic": "Differential Equations",
+          "prompt": "Solve x+lnx=0 for x>0, expressed using the Lambert W function. (format: W(1), no spaces)",
+          "answer": "W(1)",
+          "explanation": "Rewriting as x·eˣ=1 (by multiplying both sides of x=e^(−x) by eˣ) gives x=W(1) by the definition of the Lambert W function.",
+          "xp": 26
+        },
+        {
+          "id": "calc2-a-13",
+          "type": "EXPRESSION",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the maximum value of lnx/x for x>0. (format: no spaces)",
+          "answer": "1/e",
+          "explanation": "f'=(1−lnx)/x²=0 gives x=e. The value there is ln(e)/e=1/e.",
+          "xp": 20
+        },
+        {
+          "id": "calc2-a-14",
+          "type": "EXPRESSION",
+          "topic": "Differential Equations",
+          "prompt": "Solve dy/dx+y=xy², given y(0)=1. (format: no spaces)",
+          "answer": "1/(x+1)",
+          "explanation": "This is a Bernoulli equation. Verify: y=1/(x+1) gives y'=−1/(x+1)², and y'+y=x/(x+1)²=xy², confirming the solution.",
+          "xp": 28
+        },
+        {
+          "id": "calc2-a-15",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "For x>0, find the range of x+1/x (give the lower bound).",
+          "answer": "2",
+          "explanation": "By AM-GM, x+1/x≥2, with equality at x=1. The range is [2,∞).",
+          "xp": 14
+        },
+        {
+          "id": "calc2-a-16",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀^(π/2) ln(1+cosx) dx, rounded to 4 decimal places.",
+          "answer": "0.7431",
+          "explanation": "This evaluates to 2G−(π/2)ln2 ≈ 0.7431, where G is Catalan's constant.",
+          "xp": 30
+        },
+        {
+          "id": "calc2-a-17",
+          "type": "EXPRESSION",
+          "topic": "Differential Equations",
+          "prompt": "Solve dy/dx−y/x=x², given y(1)=2. (format: no spaces)",
+          "answer": "(x^3+3x)/2",
+          "explanation": "Linear ODE, integrating factor 1/x: (y/x)'=x, so y/x=x²/2+C. Using y(1)=2 gives C=3/2.",
+          "xp": 24
+        },
+        {
+          "id": "calc2-a-18",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the maximum absolute value of x³−3x on [−2,2].",
+          "answer": "2",
+          "explanation": "Evaluating at critical points and endpoints (x=−2,−1,1,2) all give |value|=2.",
+          "xp": 18
+        },
+        {
+          "id": "calc2-a-19",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate ∫₀¹ (lnx)²/(1+x²) dx, rounded to 4 decimal places.",
+          "answer": "1.9379",
+          "explanation": "This evaluates to π³/16 ≈ 1.9379.",
+          "xp": 30
+        },
+        {
+          "id": "calc2-a-20",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find the min value of x^2+4x+7+4/(x+2) for x>-2, rounded 2dp.",
+          "answer": "7.76",
+          "explanation": "Substituting t=x+2, minimizing t^2+4/t gives value 3+3*2^(2/3)=7.76.",
+          "xp": 20
+        },
+        {
+          "id": "calc2-a-21",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Is there a real solution to eˣ=λx with two stationary points, for any λ? (0=no,1=yes)",
+          "answer": "0",
+          "explanation": "g'(x)=eˣ-λ has at most one zero, so never two stationary points.",
+          "xp": 20
+        },
+        {
+          "id": "calc2-a-22",
+          "type": "EXPRESSION",
+          "topic": "Differential Equations",
+          "prompt": "Solve dy/dx=y(1-y/2), given y(0)=1.",
+          "answer": "2/(1+e^(-x))",
+          "explanation": "Logistic equation, K=2, r=1.",
+          "xp": 24
+        },
+        {
+          "id": "calc2-a-23",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate integral 0 to pi/2 of dx/(1+tanx).",
+          "answer": "π/4",
+          "explanation": "By symmetry (King's rule).",
+          "xp": 20
+        },
+        {
+          "id": "calc2-a-24",
+          "type": "EXPRESSION",
+          "topic": "Application of Integrals",
+          "prompt": "Find area between y=x^2 and y=4-x^2.",
+          "answer": "16√2/3",
+          "explanation": "Intersect at x=+-sqrt2; standard area computation.",
+          "xp": 20
+        },
+        {
+          "id": "calc2-a-25",
+          "type": "NUMERIC",
+          "topic": "Integrals",
+          "prompt": "Evaluate integral 0 to 1 of dx/(1+x+x^2)^2, rounded 4dp.",
+          "answer": "0.4031",
+          "explanation": "Correct value is 2*sqrt3*pi/27=0.4031.",
+          "xp": 26
+        },
+        {
+          "id": "calc2-a-26",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find min value of x^2+4/x^2 for x>0.",
+          "answer": "4",
+          "explanation": "AM-GM gives minimum 4.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-a-27",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate integral 0 to inf of x/(1+x^3) dx.",
+          "answer": "2π/(3√3)",
+          "explanation": "Standard Beta integral.",
+          "xp": 24
+        },
+        {
+          "id": "calc2-a-28",
+          "type": "EXPRESSION",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find envelope of y=mx+1/m, m>0, x,y>0.",
+          "answer": "y^2=4x",
+          "explanation": "Discriminant condition on m.",
+          "xp": 24
+        },
+        {
+          "id": "calc2-a-29",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find absolute max of x^4-2x^2 on [-2,2].",
+          "answer": "8",
+          "explanation": "Max at x=+-2, value 8.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-a-30",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Solve lnx=1-x, x>0. Number of solutions?",
+          "answer": "1",
+          "explanation": "f strictly increasing, f(1)=0 exactly.",
+          "xp": 16
+        },
+        {
+          "id": "calc2-a-31",
+          "type": "EXPRESSION",
+          "topic": "Differential Equations",
+          "prompt": "Solve x dy/dx - y=x^2, y(1)=0.",
+          "answer": "x^2-x",
+          "explanation": "Linear ODE solved with integrating factor 1/x.",
+          "xp": 22
+        },
+        {
+          "id": "calc2-a-32",
+          "type": "EXPRESSION",
+          "topic": "Integrals",
+          "prompt": "Evaluate integral 0 to 1 of (1-x)/(1+x^2) dx.",
+          "answer": "π/4-ln2/2",
+          "explanation": "Split into two standard integrals.",
+          "xp": 22
+        },
+        {
+          "id": "calc2-a-33",
+          "type": "NUMERIC",
+          "topic": "Applications of Derivatives",
+          "prompt": "Find max of x(lnx)^2 on (0,1], rounded 4dp.",
+          "answer": "0.5413",
+          "explanation": "Max at x=e^-2, value 4e^-2=0.5413.",
+          "xp": 22
+        }
+      ]
+    }
+  ]
+}
