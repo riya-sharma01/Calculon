@@ -16,7 +16,8 @@ import org.springframework.core.annotation.Order;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.stereotype.Component;
-import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.support.TransactionTemplate;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -46,16 +47,22 @@ public class JsonQuestionSeeder implements CommandLineRunner {
     private final LessonRepository lessonRepository;
     private final QuestionRepository questionRepository;
     private final ObjectMapper objectMapper = new ObjectMapper();
+    private final TransactionTemplate transactionTemplate;
 
     public JsonQuestionSeeder(MathDomainRepository domainRepository, LessonRepository lessonRepository,
-                               QuestionRepository questionRepository) {
+                               QuestionRepository questionRepository, PlatformTransactionManager transactionManager) {
         this.domainRepository = domainRepository;
         this.lessonRepository = lessonRepository;
         this.questionRepository = questionRepository;
+        this.transactionTemplate = new TransactionTemplate(transactionManager);
     }
 
+    /**
+     * Each file is loaded in its own transaction (not one giant transaction for everything), and a failure
+     * in one file is logged and skipped rather than thrown. A CommandLineRunner that throws takes the whole
+     * application down at startup, which on a host like Render shows up as an endless crash-and-restart loop.
+     */
     @Override
-    @Transactional
     public void run(String... args) throws IOException {
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
         Resource[] files = resolver.getResources("classpath:questions/*.json");
@@ -71,11 +78,14 @@ public class JsonQuestionSeeder implements CommandLineRunner {
         for (Resource file : files) {
             try (InputStream in = file.getInputStream()) {
                 QuestionBankFile bank = objectMapper.readValue(in, QuestionBankFile.class);
-                int[] counts = loadBank(bank);
+                int[] counts = transactionTemplate.execute(status -> loadBank(bank));
+                if (counts == null) {
+                    counts = new int[]{0, 0};
+                }
                 totalInserted += counts[0];
                 totalSkipped += counts[1];
                 log.info("Question bank '{}': {} inserted, {} already present.", bank.getDomain(), counts[0], counts[1]);
-            } catch (IOException e) {
+            } catch (IOException | RuntimeException e) {
                 log.error("Failed to load question bank file {}: {}", file.getFilename(), e.getMessage(), e);
             }
         }

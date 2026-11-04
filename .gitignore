@@ -1,21 +1,17 @@
-# Maven
-backend/target/
+# Dependencies and build output — never commit these
+node_modules/
+dist/
+target/
+*.class
 
-# Local environment/configuration
-backend/src/main/resources/application-local.properties
-
-# Environment files
+# Local environment files (may contain secrets). .env.example IS committed.
 .env
-*.env
+.env.*
+!.env.example
 
-# IDE
-.idea/
-.vscode/
-*.iml
-
-# Logs
-*.log
-
-# OS files
+# OS / editor noise
 .DS_Store
 Thumbs.db
+.idea/
+.vscode/
+*.log

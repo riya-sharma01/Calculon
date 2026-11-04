@@ -21,7 +21,9 @@ public class CorsConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOriginPatterns(Arrays.asList(allowedOriginPatterns.split(",")));
+        // trim() so "https://a.com, https://b.com" (space after the comma) still matches.
+        config.setAllowedOriginPatterns(
+                Arrays.stream(allowedOriginPatterns.split(",")).map(String::trim).filter(s -> !s.isEmpty()).toList());
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
         config.setAllowCredentials(true);
