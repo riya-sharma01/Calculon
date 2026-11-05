@@ -1,14 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { domainsApi, lessonsApi } from '../api/calculon';
-
-const DIFF_BADGE = {
-  FOUNDATION: 'badge-foundation',
-  STANDARD: 'badge-standard',
-  INTERMEDIATE: 'badge-intermediate',
-  HARD: 'badge-hard',
-  ADVANCED: 'badge-advanced',
-};
+import { getDomainMeta, levelIndex, LEVELS } from '../domainMeta';
 
 export default function DomainDetailPage() {
   const { domainId } = useParams();
@@ -30,42 +23,57 @@ export default function DomainDetailPage() {
       .catch((err) => setError(err.message));
   }, [domainId]);
 
+  const meta = getDomainMeta(domain?.name);
+
   return (
-    <div className="page container">
-      <div className="page-header">
-        <Link to="/domains" style={{ color: 'var(--chalk-dim)', fontSize: '0.85rem', textDecoration: 'none' }}>
-          ← All domains
-        </Link>
-        <h1 className="display" style={{ marginTop: 10 }}>{domain?.name || '…'}</h1>
-        {domain && <p>{domain.description}</p>}
+    <main className="page container">
+      <Link to="/domains" className="back-link">← All domains</Link>
+
+      <div className="domain-hero" style={{ '--tile': meta.color, '--tint': meta.tint }}>
+        <div className={`domain-icon ${meta.glyph.length > 2 ? 'glyph-sm' : ''}`} aria-hidden="true">
+          {meta.glyph}
+        </div>
+        <div>
+          <h1 className="display">{domain?.name || '…'}</h1>
+          {domain && <p>{meta.topics || domain.description}</p>}
+        </div>
       </div>
 
       {error && <div className="error-text">{error}</div>}
-      {!lessons && !error && <div className="spinner-text">Loading lessons…</div>}
+      {!lessons && !error && <div className="spinner-text">Loading levels…</div>}
 
       {lessons && lessons.length === 0 && (
-        <p style={{ color: 'var(--chalk-dim)' }}>No lessons yet in this domain — check back soon.</p>
+        <p className="lesson-meta">No levels in this domain yet. Check back soon.</p>
       )}
 
       {lessons && lessons.length > 0 && (
-        <div className="card" style={{ padding: 0 }}>
-          {lessons
+        <div className="card lesson-list" style={{ '--tile': meta.color }}>
+          {[...lessons]
             .sort((a, b) => (a.sequenceOrder ?? 0) - (b.sequenceOrder ?? 0))
-            .map((l) => (
-              <Link to={`/lessons/${l.id}`} className="lesson-row" key={l.id}>
-                <div>
-                  <div className="lesson-title">{l.title}</div>
-                  <div className="lesson-meta">{l.summary}</div>
-                </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                  {l.progressStatus === 'COMPLETED' && <span className="badge badge-completed">Done</span>}
-                  <span className={`badge ${DIFF_BADGE[l.difficulty] || ''}`}>{l.difficulty}</span>
-                  <span className="mono lesson-meta">+{l.baseXpReward} XP</span>
-                </div>
-              </Link>
-            ))}
+            .map((l, i) => {
+              const level = levelIndex(l.difficulty);
+              return (
+                <Link to={`/lessons/${l.id}`} className="lesson-row" key={l.id}>
+                  <span className="lesson-step" aria-hidden="true">{i + 1}</span>
+                  <div className="lesson-main">
+                    <div className="lesson-title">{l.title}</div>
+                    <div className="lesson-meta">{l.summary}</div>
+                  </div>
+                  <div className="lesson-side">
+                    {l.progressStatus === 'COMPLETED' && <span className="badge badge-completed">Done</span>}
+                    <span className="badge">
+                      <span className="level-dots" aria-hidden="true">
+                        {LEVELS.map((_, d) => <i key={d} className={d <= level ? 'on' : ''} />)}
+                      </span>
+                      {LEVELS[level].label}
+                    </span>
+                    <span className="mono lesson-meta">+{l.baseXpReward} XP</span>
+                  </div>
+                </Link>
+              );
+            })}
         </div>
       )}
-    </div>
+    </main>
   );
 }

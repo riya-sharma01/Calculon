@@ -5,6 +5,7 @@ import { useAuth } from '../context/AuthContext';
 import VisualizationPanel from '../components/visualizations/VisualizationPanel';
 import Confetti from '../components/Confetti';
 import Mascot from '../components/Mascot';
+import { getDomainMeta } from '../domainMeta';
 
 export default function LessonPage() {
   const { lessonId } = useParams();
@@ -85,16 +86,18 @@ export default function LessonPage() {
       </Link>
 
       <div className="page-header" style={{ marginTop: 10 }}>
-        <span className="mono lesson-meta">{lesson.domainName}</span>
+        <span className="chip" style={{ '--tint': getDomainMeta(lesson.domainName).tint }}>{lesson.domainName}</span>
         <h1 className="display" style={{ marginTop: 4 }}>{lesson.title}</h1>
         <p>{lesson.summary}</p>
       </div>
 
       <VisualizationPanel domainName={lesson.domainName} />
 
-      <div className="card" style={{ marginBottom: 28, lineHeight: 1.7 }}>
-        {lesson.content}
-      </div>
+      {lesson.content && (
+        <div className="card" style={{ marginBottom: 28, lineHeight: 1.7 }}>
+          {lesson.content}
+        </div>
+      )}
 
       {completion ? (
         <div className="card center" style={{ position: 'relative', overflow: 'visible' }}>
@@ -133,10 +136,17 @@ export default function LessonPage() {
         <p style={{ color: 'var(--chalk-dim)' }}>This lesson has no practice questions yet.</p>
       ) : (
         <div className="card">
-          <div className="lesson-meta mono" style={{ marginBottom: 10 }}>
-            Question {qIndex + 1} of {questions.length}
+          <div className="progress-track" style={{ marginBottom: 16 }}>
+            <div
+              className="progress-fill"
+              style={{ width: `${((qIndex + (result ? 1 : 0)) / questions.length) * 100}%` }}
+            />
           </div>
-          <h3 style={{ marginBottom: 18 }}>{question.prompt}</h3>
+          <div className="question-meta">
+            <span className="lesson-meta mono">Question {qIndex + 1} of {questions.length}</span>
+            {question.topic && <span className="topic-chip">{question.topic}</span>}
+          </div>
+          <h3 style={{ marginBottom: 18, lineHeight: 1.35 }}>{question.prompt}</h3>
 
           {question.type === 'MULTIPLE_CHOICE' ? (
             <div>

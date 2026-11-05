@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 import ProtectedRoute from './components/ProtectedRoute';
 
 import HomePage from './pages/HomePage';
@@ -33,6 +34,7 @@ export default function App() {
           }
         />
       </Routes>
+      <Footer />
     </AuthProvider>
   );
 }

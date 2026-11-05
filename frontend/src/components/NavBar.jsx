@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 
 export default function NavBar() {
@@ -13,9 +13,11 @@ export default function NavBar() {
         </Link>
 
         <nav className="nav-links">
-          <Link to="/domains">Domains</Link>
-          {isAuthenticated && <Link to="/dashboard">Dashboard</Link>}
-          <Link to="/leaderboard">Leaderboard</Link>
+          <NavLink to="/domains" className={({ isActive }) => (isActive ? 'active' : undefined)}>Domains</NavLink>
+          {isAuthenticated && (
+            <NavLink to="/dashboard" className={({ isActive }) => (isActive ? 'active' : undefined)}>Dashboard</NavLink>
+          )}
+          <NavLink to="/leaderboard" className={({ isActive }) => (isActive ? 'active' : undefined)}>Leaderboard</NavLink>
         </nav>
 
         <div className="nav-right">
