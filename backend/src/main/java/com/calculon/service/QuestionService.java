@@ -27,8 +27,11 @@ public class QuestionService {
             case MULTIPLE_CHOICE -> question.getOptions().stream()
                     .filter(QuestionOption::isCorrect)
                     .anyMatch(o -> o.getId().equals(request.selectedOptionId()));
+            // Plain text match first (cheap), then AnswerMatcher, which accepts equivalent forms such as
+            // 1/2 = 0.5, sqrt3 = √3, x^2+1 = 1+x^2, or an equation rearranged.
             case NUMERIC, EXPRESSION -> question.getCorrectAnswer() != null
-                    && normalize(question.getCorrectAnswer()).equals(normalize(request.freeResponse()));
+                    && (normalize(question.getCorrectAnswer()).equals(normalize(request.freeResponse()))
+                        || AnswerMatcher.matches(question.getCorrectAnswer(), request.freeResponse()));
         };
 
         Integer xpAwarded = null;

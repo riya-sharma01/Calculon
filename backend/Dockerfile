@@ -13,4 +13,5 @@ COPY --from=build /app/target/*.jar app.jar
 # Render tells the app its port via the PORT env var (application.properties reads it: server.port=${PORT:8080}).
 EXPOSE 8080
 # Cap the heap relative to the container's memory so a small Render instance isn't OOM-killed.
-ENTRYPOINT ["java", "-XX:MaxRAMPercentage=75", "-jar", "app.jar"]
+# TieredStopAtLevel=1 and SerialGC trade peak speed for a much faster start on the tiny free-tier CPU.
+ENTRYPOINT ["java", "-XX:MaxRAMPercentage=75", "-XX:TieredStopAtLevel=1", "-XX:+UseSerialGC", "-jar", "app.jar"]

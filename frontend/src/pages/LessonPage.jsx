@@ -7,10 +7,26 @@ import Confetti from '../components/Confetti';
 import Mascot from '../components/Mascot';
 import { getDomainMeta } from '../domainMeta';
 
+// localStorage can be missing or blocked (private windows), so every access is wrapped.
+function readSaved(key) {
+  try {
+    const raw = localStorage.getItem(key);
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+}
+function writeSaved(key, value) {
+  try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* ignore */ }
+}
+function clearSaved(key) {
+  try { localStorage.removeItem(key); } catch { /* ignore */ }
+}
+
 export default function LessonPage() {
   const { lessonId } = useParams();
   const navigate = useNavigate();
-  const { isAuthenticated, updateUserSummary } = useAuth();
+  const { user, isAuthenticated, updateUserSummary } = useAuth();
 
   const [lesson, setLesson] = useState(null);
   const [error, setError] = useState(null);
@@ -23,10 +39,60 @@ export default function LessonPage() {
   const [correctCount, setCorrectCount] = useState(0);
 
   const [completion, setCompletion] = useState(null); // LevelUpEvent once lesson finished
+  const [restored, setRestored] = useState(false); // true once any saved position has been loaded
+  const [resumed, setResumed] = useState(false); // true when we picked up where the student left off
+
+  // Where the student is in this lesson is kept in this browser, per account and lesson, so leaving the page,
+  // refreshing or closing the tab does not lose it. It is cleared when the lesson is finished.
+  const storageKey = user ? `calculon_lesson_${user.id}_${lessonId}` : null;
 
   useEffect(() => {
-    lessonsApi.detail(lessonId).then(setLesson).catch((err) => setError(err.message));
-  }, [lessonId]);
+    setRestored(false);
+    setResumed(false);
+    lessonsApi
+      .detail(lessonId)
+      .then((data) => {
+        setLesson(data);
+        const saved = storageKey ? readSaved(storageKey) : null;
+        const q = saved && data.questions ? data.questions[saved.qIndex] : null;
+        // Only trust the saved position if it still points at the same question.
+        if (saved && q && q.id === saved.questionId) {
+          setQIndex(saved.qIndex);
+          setCorrectCount(saved.correctCount || 0);
+          setResult(saved.result || null);
+          setSelectedOptionId(saved.selectedOptionId ?? null);
+          setFreeResponse(saved.freeResponse || '');
+          setResumed(saved.qIndex > 0 || !!saved.result);
+        }
+        setRestored(true);
+      })
+      .catch((err) => setError(err.message));
+  }, [lessonId, storageKey]);
+
+  // Save after every change (typing, picking an option, submitting, moving on).
+  useEffect(() => {
+    if (!restored || !lesson || !storageKey || completion) return;
+    const q = (lesson.questions || [])[qIndex];
+    if (!q) return;
+    writeSaved(storageKey, {
+      qIndex,
+      questionId: q.id,
+      correctCount,
+      result,
+      selectedOptionId,
+      freeResponse,
+    });
+  }, [restored, lesson, storageKey, completion, qIndex, correctCount, result, selectedOptionId, freeResponse]);
+
+  function startOver() {
+    if (storageKey) clearSaved(storageKey);
+    setQIndex(0);
+    setCorrectCount(0);
+    setResult(null);
+    setSelectedOptionId(null);
+    setFreeResponse('');
+    setResumed(false);
+  }
 
   if (error) return <div className="page container"><p className="error-text">{error}</p></div>;
   if (!lesson) return <div className="page container"><div className="spinner-text">Loading lesson…</div></div>;
@@ -65,6 +131,7 @@ export default function LessonPage() {
           level: dashboard.level,
           currentStreak: dashboard.currentStreak,
         });
+        if (storageKey) clearSaved(storageKey);
         setCompletion({ ...levelUpEvent, scorePercent });
       } catch (err) {
         setError(err.message);
@@ -142,6 +209,12 @@ export default function LessonPage() {
               style={{ width: `${((qIndex + (result ? 1 : 0)) / questions.length) * 100}%` }}
             />
           </div>
+          {resumed && (
+            <div className="resume-note">
+              <span>Picked up where you left off.</span>
+              <button type="button" className="btn btn-ghost btn-sm" onClick={startOver}>Start over</button>
+            </div>
+          )}
           <div className="question-meta">
             <span className="lesson-meta mono">Question {qIndex + 1} of {questions.length}</span>
             {question.topic && <span className="topic-chip">{question.topic}</span>}
