@@ -593,3 +593,5 @@ label {
   background: var(--tint, #ECE7FF); border-radius: 10px; padding: 8px 12px; margin-bottom: 14px;
   font-size: 0.9rem;
 }
+
+.badge-resume { background: #FFF1D6; color: #8A5A00; border-color: #F2C879; }

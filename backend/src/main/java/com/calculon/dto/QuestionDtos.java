@@ -26,6 +26,8 @@ public class QuestionDtos {
     public record AnswerResult(
             boolean correct,
             String correctAnswerExplanation,
-            Integer xpAwarded
+            Integer xpAwarded,
+            /** True when the answer is correct but XP was already earned on this question before. */
+            boolean alreadyEarned
     ) {}
 }

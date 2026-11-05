@@ -262,7 +262,13 @@ export default function LessonPage() {
 
           {result && (
             <div className={`feedback-box ${result.correct ? 'feedback-correct' : 'feedback-incorrect'}`}>
-              <strong>{result.correct ? `Correct! +${result.xpAwarded} XP` : 'Not quite.'}</strong>
+              <strong>
+                {!result.correct
+                  ? 'Not quite.'
+                  : result.xpAwarded > 0
+                  ? `Correct! +${result.xpAwarded} XP`
+                  : 'Correct! You already earned XP for this question, so no XP this time.'}
+              </strong>
               <div style={{ marginTop: 6 }}>{result.correctAnswerExplanation}</div>
             </div>
           )}

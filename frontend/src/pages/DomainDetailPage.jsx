@@ -1,10 +1,23 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { domainsApi, lessonsApi } from '../api/calculon';
+import { useAuth } from '../context/AuthContext';
 import { getDomainMeta, levelIndex, LEVELS } from '../domainMeta';
+
+// Question number a student stopped at in a lesson (saved by LessonPage), or null if they have not started.
+function savedQuestion(userId, lessonId) {
+  try {
+    const raw = localStorage.getItem(`calculon_lesson_${userId}_${lessonId}`);
+    const saved = raw ? JSON.parse(raw) : null;
+    return saved && Number.isInteger(saved.qIndex) ? saved.qIndex + 1 : null;
+  } catch {
+    return null;
+  }
+}
 
 export default function DomainDetailPage() {
   const { domainId } = useParams();
+  const { user } = useAuth();
   const [domain, setDomain] = useState(null);
   const [lessons, setLessons] = useState(null);
   const [error, setError] = useState(null);
@@ -52,6 +65,7 @@ export default function DomainDetailPage() {
             .sort((a, b) => (a.sequenceOrder ?? 0) - (b.sequenceOrder ?? 0))
             .map((l, i) => {
               const level = levelIndex(l.difficulty);
+              const resumeAt = user && l.progressStatus !== 'COMPLETED' ? savedQuestion(user.id, l.id) : null;
               return (
                 <Link to={`/lessons/${l.id}`} className="lesson-row" key={l.id}>
                   <span className="lesson-step" aria-hidden="true">{i + 1}</span>
@@ -61,6 +75,7 @@ export default function DomainDetailPage() {
                   </div>
                   <div className="lesson-side">
                     {l.progressStatus === 'COMPLETED' && <span className="badge badge-completed">Done</span>}
+                    {resumeAt && <span className="badge badge-resume">Continue · Question {resumeAt}</span>}
                     <span className="badge">
                       <span className="level-dots" aria-hidden="true">
                         {LEVELS.map((_, d) => <i key={d} className={d <= level ? 'on' : ''} />)}
