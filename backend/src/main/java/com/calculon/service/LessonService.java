@@ -9,6 +9,7 @@ import com.calculon.repository.LessonRepository;
 import com.calculon.repository.QuestionRepository;
 import com.calculon.repository.UserLessonProgressRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -28,6 +29,7 @@ public class LessonService {
         this.progressRepository = progressRepository;
     }
 
+    @Transactional(readOnly = true)
     public List<LessonDtos.LessonSummary> listByDomain(Long domainId, Long userId) {
         return lessonRepository.findByDomainIdOrderBySequenceOrderAsc(domainId).stream()
                 .map(lesson -> toSummary(lesson, userId))
@@ -54,6 +56,7 @@ public class LessonService {
     }
 
     /** Full lesson content plus its questions, with correct answers stripped for the client. */
+    @Transactional(readOnly = true)
     public LessonDtos.LessonDetail getDetail(Long lessonId) {
         Lesson lesson = lessonRepository.findById(lessonId)
                 .orElseThrow(() -> new IllegalArgumentException("Lesson not found"));
