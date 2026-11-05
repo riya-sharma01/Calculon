@@ -58,7 +58,7 @@ export default function LoginPage() {
           </div>
           {error && <div className="error-text">{error}</div>}
           <button className="btn btn-primary" type="submit" disabled={loading} style={{ width: '100%', marginTop: 8 }}>
-            {loading ? 'Logging in…' : 'Log in'}
+            {loading ? 'Logging in… the server may be waking up, up to a minute' : 'Log in'}
           </button>
         </form>
         <p className="center" style={{ marginTop: 18, fontSize: '0.88rem', color: 'var(--chalk-dim)' }}>

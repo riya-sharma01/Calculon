@@ -7,6 +7,9 @@ import App from './App';
 // ("transition is not a function"), even though `npm run dev` works fine.
 import 'd3-transition';
 import './styles/global.css';
+import { wakeBackend } from './api/client';
+
+wakeBackend();
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

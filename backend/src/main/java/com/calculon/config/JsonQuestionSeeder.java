@@ -21,7 +21,9 @@ import org.springframework.transaction.support.TransactionTemplate;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.HashSet;
 import java.util.Locale;
+import java.util.Set;
 
 /**
  * Loads every domain's question bank from classpath:questions/*.json into the database on boot.
@@ -75,10 +77,14 @@ public class JsonQuestionSeeder implements CommandLineRunner {
         int totalInserted = 0;
         int totalSkipped = 0;
 
+        // One query up front instead of one existsByExternalId() call per question (932 round trips to the
+        // remote database on every restart, which made cold starts much slower).
+        Set<String> knownIds = new HashSet<>(questionRepository.findAllExternalIds());
+
         for (Resource file : files) {
             try (InputStream in = file.getInputStream()) {
                 QuestionBankFile bank = objectMapper.readValue(in, QuestionBankFile.class);
-                int[] counts = transactionTemplate.execute(status -> loadBank(bank));
+                int[] counts = transactionTemplate.execute(status -> loadBank(bank, knownIds));
                 if (counts == null) {
                     counts = new int[]{0, 0};
                 }
@@ -95,7 +101,7 @@ public class JsonQuestionSeeder implements CommandLineRunner {
     }
 
     /** @return {insertedCount, skippedCount} */
-    private int[] loadBank(QuestionBankFile bank) {
+    private int[] loadBank(QuestionBankFile bank, Set<String> knownIds) {
         if (bank.getDomain() == null || bank.getLevels() == null) {
             log.warn("Skipping malformed question bank file (missing domain or levels).");
             return new int[]{0, 0};
@@ -124,7 +130,7 @@ public class JsonQuestionSeeder implements CommandLineRunner {
                     log.warn("Skipping a question with no id in domain '{}', level '{}'.", bank.getDomain(), levelBlock.getLevelName());
                     continue;
                 }
-                if (questionRepository.existsByExternalId(qb.getId())) {
+                if (!knownIds.add(qb.getId())) {
                     skipped++;
                     continue;
                 }

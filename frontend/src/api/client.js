@@ -60,4 +60,13 @@ export const api = {
   post: (path, body, opts) => request(path, { ...opts, method: 'POST', body }),
 };
 
+/**
+ * Fire-and-forget request that wakes the backend (Render's free tier sleeps when idle and takes up to
+ * a minute to start). Called as soon as the site loads so the server is already waking while the
+ * visitor reads the home page, before they reach the register or login form.
+ */
+export function wakeBackend() {
+  fetch(`${API_BASE_URL}/domains`).catch(() => { /* ignore: this is only a wake-up call */ });
+}
+
 export { ApiError };
