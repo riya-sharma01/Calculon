@@ -119,11 +119,18 @@ public class JsonQuestionSeeder implements CommandLineRunner {
 
         int inserted = 0;
         int skipped = 0;
+        int updated = 0;
 
         for (QuestionBankFile.LevelBlock levelBlock : bank.getLevels()) {
             Lesson lesson = findOrCreateLesson(domain, levelBlock);
 
             if (levelBlock.getQuestions() == null) continue;
+
+            // The lesson's existing questions, loaded once, so edits made in the JSON can be applied below.
+            java.util.Map<String, Question> existingInLesson = new java.util.HashMap<>();
+            for (Question existing : questionRepository.findByLessonIdWithOptions(lesson.getId())) {
+                if (existing.getExternalId() != null) existingInLesson.put(existing.getExternalId(), existing);
+            }
 
             for (QuestionBankFile.QuestionBlock qb : levelBlock.getQuestions()) {
                 if (qb.getId() == null) {
@@ -131,6 +138,12 @@ public class JsonQuestionSeeder implements CommandLineRunner {
                     continue;
                 }
                 if (!knownIds.add(qb.getId())) {
+                    // Already in the database. If the JSON text changed since it was loaded, bring it up to date.
+                    Question current = existingInLesson.get(qb.getId());
+                    if (current != null && refreshIfChanged(current, toQuestion(qb, lesson))) {
+                        questionRepository.save(current);
+                        updated++;
+                    }
                     skipped++;
                     continue;
                 }
@@ -138,8 +151,48 @@ public class JsonQuestionSeeder implements CommandLineRunner {
                 inserted++;
             }
         }
+        if (updated > 0) {
+            log.info("Question bank '{}': {} existing question(s) updated from the JSON.", bank.getDomain(), updated);
+        }
 
         return new int[]{inserted, skipped};
+    }
+
+    /**
+     * Copies wording, answer, explanation, XP and options from the JSON version onto the stored question when
+     * any of them differ. The id, lesson and user history are untouched, so editing a question in the JSON and
+     * redeploying fixes it on the live site without wiping anything.
+     * @return true if the stored question was changed
+     */
+    private boolean refreshIfChanged(Question stored, Question fresh) {
+        boolean sameOptions = stored.getOptions().size() == fresh.getOptions().size();
+        for (int i = 0; sameOptions && i < fresh.getOptions().size(); i++) {
+            QuestionOption a = stored.getOptions().get(i), b = fresh.getOptions().get(i);
+            sameOptions = java.util.Objects.equals(a.getText(), b.getText()) && a.isCorrect() == b.isCorrect();
+        }
+        boolean same = sameOptions
+                && java.util.Objects.equals(stored.getPrompt(), fresh.getPrompt())
+                && stored.getType() == fresh.getType()
+                && java.util.Objects.equals(stored.getTopic(), fresh.getTopic())
+                && java.util.Objects.equals(stored.getExplanation(), fresh.getExplanation())
+                && java.util.Objects.equals(stored.getCorrectAnswer(), fresh.getCorrectAnswer())
+                && java.util.Objects.equals(stored.getXpReward(), fresh.getXpReward());
+        if (same) return false;
+
+        stored.setPrompt(fresh.getPrompt());
+        stored.setType(fresh.getType());
+        stored.setTopic(fresh.getTopic());
+        stored.setExplanation(fresh.getExplanation());
+        stored.setCorrectAnswer(fresh.getCorrectAnswer());
+        stored.setXpReward(fresh.getXpReward());
+        if (!sameOptions) {
+            stored.getOptions().clear();
+            for (QuestionOption opt : fresh.getOptions()) {
+                opt.setQuestion(stored);
+                stored.getOptions().add(opt);
+            }
+        }
+        return true;
     }
 
     private Lesson findOrCreateLesson(MathDomain domain, QuestionBankFile.LevelBlock levelBlock) {

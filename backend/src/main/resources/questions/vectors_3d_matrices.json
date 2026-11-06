@@ -1059,7 +1059,7 @@
           "id": "vec2-i-01",
           "type": "NUMERIC",
           "topic": "Vector Algebra",
-          "prompt": "Show a=i+j+k, b=2i+3j+4k, c=3i+4j+5k are coplanar by finding their scalar triple product.",
+          "prompt": "The vectors a = i + j + k, b = 2i + 3j + 4k and c = 3i + 4j + 5k are coplanar exactly when their scalar triple product is zero. What is the scalar triple product [a b c]?",
           "answer": "0",
           "explanation": "The determinant of the three vectors as rows is 0, confirming coplanarity.",
           "xp": 16
@@ -1302,10 +1302,27 @@
         },
         {
           "id": "vec2-i-15",
-          "type": "EXPRESSION",
+          "type": "MULTIPLE_CHOICE",
           "topic": "Vector Algebra",
-          "prompt": "If |a+b|=|a-b|, what can be concluded about a and b? (one word)",
-          "answer": "perpendicular",
+          "prompt": "If |a + b| = |a − b|, what can be concluded about the vectors a and b?",
+          "options": [
+            {
+              "text": "They are parallel",
+              "correct": false
+            },
+            {
+              "text": "They are equal in magnitude",
+              "correct": false
+            },
+            {
+              "text": "They are perpendicular",
+              "correct": true
+            },
+            {
+              "text": "They are antiparallel",
+              "correct": false
+            }
+          ],
           "explanation": "Squaring both sides and simplifying gives a.b=0.",
           "xp": 14
         },
@@ -1407,10 +1424,27 @@
         },
         {
           "id": "vec2-i-21",
-          "type": "EXPRESSION",
+          "type": "MULTIPLE_CHOICE",
           "topic": "3D Geometry",
-          "prompt": "For what λ do the lines (x-1)/1=(y-2)/2=(z-3)/3 and (x-1)/2=(y-2)/3=(z-3)/λ intersect? (no spaces)",
-          "answer": "all real λ",
+          "prompt": "For which values of λ do the lines (x−1)/1 = (y−2)/2 = (z−3)/3 and (x−1)/2 = (y−2)/3 = (z−3)/λ intersect?",
+          "options": [
+            {
+              "text": "Only λ = 4",
+              "correct": false
+            },
+            {
+              "text": "No value of λ",
+              "correct": false
+            },
+            {
+              "text": "Only λ = 0",
+              "correct": false
+            },
+            {
+              "text": "Every real λ",
+              "correct": true
+            }
+          ],
           "explanation": "Both lines always contain the point (1,2,3) regardless of λ, so they always intersect.",
           "xp": 18
         },
@@ -1719,10 +1753,27 @@
         },
         {
           "id": "vec2-h-14",
-          "type": "EXPRESSION",
+          "type": "MULTIPLE_CHOICE",
           "topic": "Matrices",
-          "prompt": "Find the rank and nullity of [[1,2,3],[2,3,4],[3,4,5]]. (no spaces)",
-          "answer": "rank2,nullity1",
+          "prompt": "Find the rank and nullity of the matrix [[1,2,3],[2,3,4],[3,4,5]].",
+          "options": [
+            {
+              "text": "rank 3, nullity 0",
+              "correct": false
+            },
+            {
+              "text": "rank 1, nullity 2",
+              "correct": false
+            },
+            {
+              "text": "rank 2, nullity 2",
+              "correct": false
+            },
+            {
+              "text": "rank 2, nullity 1",
+              "correct": true
+            }
+          ],
           "explanation": "The determinant is 0, but a 2x2 minor is nonzero, giving rank 2 and nullity 1.",
           "xp": 18
         },
@@ -2059,28 +2110,79 @@
         },
         {
           "id": "vec2-a-17",
-          "type": "EXPRESSION",
+          "type": "MULTIPLE_CHOICE",
           "topic": "Matrices",
-          "prompt": "If A²=A and A is not diagonalizable, is this possible? (no spaces)",
-          "answer": "No such matrix",
+          "prompt": "Is there a matrix A with A² = A that is not diagonalizable?",
+          "options": [
+            {
+              "text": "Yes, [[1,1],[0,1]] is an example",
+              "correct": false
+            },
+            {
+              "text": "Yes, [[1,1],[0,0]] is an example",
+              "correct": false
+            },
+            {
+              "text": "No, such a matrix cannot exist",
+              "correct": true
+            },
+            {
+              "text": "Only when A is a 3×3 matrix",
+              "correct": false
+            }
+          ],
           "explanation": "The minimal polynomial of A divides x(x-1), which has distinct roots, so A is always diagonalizable.",
           "xp": 22
         },
         {
           "id": "vec2-a-18",
-          "type": "EXPRESSION",
+          "type": "MULTIPLE_CHOICE",
           "topic": "Matrices",
-          "prompt": "Find λ for infinitely many solutions of the earlier plane system (as posed). (no spaces)",
-          "answer": "No such λ",
-          "explanation": "The determinant vanishes at λ=3, but the resulting system is inconsistent there, so no value of λ gives infinitely many solutions.",
+          "prompt": "For the system x + y + z = 6, x + 2y + 3z = 10, x + 2y + λz = μ, for which values of λ and μ are there infinitely many solutions?",
+          "options": [
+            {
+              "text": "λ = 3 and μ ≠ 10",
+              "correct": false
+            },
+            {
+              "text": "λ ≠ 3 and any μ",
+              "correct": false
+            },
+            {
+              "text": "λ = 3 and μ = 6",
+              "correct": false
+            },
+            {
+              "text": "λ = 3 and μ = 10",
+              "correct": true
+            }
+          ],
+          "explanation": "Subtracting the second equation from the third gives (λ−3)z = μ−10. If λ ≠ 3 there is exactly one solution. If λ = 3 and μ ≠ 10 the system is inconsistent. Only λ = 3 and μ = 10 makes the third equation redundant, leaving infinitely many solutions.",
           "xp": 22
         },
         {
           "id": "vec2-a-19",
-          "type": "EXPRESSION",
+          "type": "MULTIPLE_CHOICE",
           "topic": "Vector Algebra",
-          "prompt": "If a×b=c and b×c=a, what can be concluded about a,b,c? (a few words)",
-          "answer": "mutually perpendicular unit vectors",
+          "prompt": "If a × b = c and b × c = a, what can be concluded about a, b and c?",
+          "options": [
+            {
+              "text": "They are parallel vectors",
+              "correct": false
+            },
+            {
+              "text": "They are coplanar with equal magnitudes",
+              "correct": false
+            },
+            {
+              "text": "They are equal vectors",
+              "correct": false
+            },
+            {
+              "text": "They are mutually perpendicular unit vectors",
+              "correct": true
+            }
+          ],
           "explanation": "Dotting each relation with the appropriate vector shows all pairwise dot products are 0, and the magnitudes work out to 1.",
           "xp": 24
         }

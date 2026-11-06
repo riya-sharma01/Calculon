@@ -522,13 +522,30 @@
      "xp": 20
     },
     {
-     "id": "prob2-i-07",
-     "type": "EXPRESSION",
-     "topic": "Probability",
-     "prompt": "If P(A)=0.7, P(B)=0.5, P(A\u222aB)=0.85, find P(A|B) and P(B|A). (no spaces)",
-     "answer": "P(A|B)=0.7,P(B|A)=0.5",
-     "explanation": "P(A\u2229B)=0.7+0.5-0.85=0.35. P(A|B)=0.35/0.5=0.7. P(B|A)=0.35/0.7=0.5.",
-     "xp": 18
+      "id": "prob2-i-07",
+      "type": "MULTIPLE_CHOICE",
+      "topic": "Probability",
+      "prompt": "If P(A) = 0.7, P(B) = 0.5 and P(A∪B) = 0.85, find P(A|B) and P(B|A).",
+      "options": [
+        {
+          "text": "P(A|B) = 0.5, P(B|A) = 0.7",
+          "correct": false
+        },
+        {
+          "text": "P(A|B) = 0.7, P(B|A) = 0.5",
+          "correct": true
+        },
+        {
+          "text": "P(A|B) = 0.35, P(B|A) = 0.35",
+          "correct": false
+        },
+        {
+          "text": "P(A|B) = 0.7, P(B|A) = 0.7",
+          "correct": false
+        }
+      ],
+      "explanation": "P(A∩B)=0.7+0.5-0.85=0.35. P(A|B)=0.35/0.5=0.7. P(B|A)=0.35/0.7=0.5.",
+      "xp": 18
     },
     {
      "id": "prob2-i-08",
@@ -576,13 +593,30 @@
      "xp": 18
     },
     {
-     "id": "prob2-i-13",
-     "type": "EXPRESSION",
-     "topic": "Statistics",
-     "prompt": "A binomial distribution has mean 4 and variance 2. Find n and p. (no spaces)",
-     "answer": "n=8,p=0.5",
-     "explanation": "q=variance/mean=0.5, so p=0.5; n=mean/p=4/0.5=8.",
-     "xp": 16
+      "id": "prob2-i-13",
+      "type": "MULTIPLE_CHOICE",
+      "topic": "Statistics",
+      "prompt": "A binomial distribution has mean 4 and variance 2. Find n and p.",
+      "options": [
+        {
+          "text": "n = 16, p = 0.25",
+          "correct": false
+        },
+        {
+          "text": "n = 4, p = 1",
+          "correct": false
+        },
+        {
+          "text": "n = 8, p = 0.5",
+          "correct": true
+        },
+        {
+          "text": "n = 6, p = 2/3",
+          "correct": false
+        }
+      ],
+      "explanation": "q=variance/mean=0.5, so p=0.5; n=mean/p=4/0.5=8.",
+      "xp": 16
     },
     {
      "id": "prob2-i-14",
@@ -603,13 +637,30 @@
      "xp": 16
     },
     {
-     "id": "prob2-i-16",
-     "type": "EXPRESSION",
-     "topic": "Statistics",
-     "prompt": "A random variable has P(X=0)=0.2,P(X=1)=0.3,P(X=2)=0.4,P(X=3)=0.1. Find the mean and variance. (no spaces)",
-     "answer": "mean=1.4,variance=0.84",
-     "explanation": "Mean=0(.2)+1(.3)+2(.4)+3(.1)=1.4. E(X\u00b2)=0.3+1.6+0.9=2.8. Variance=2.8-1.4\u00b2=0.84.",
-     "xp": 18
+      "id": "prob2-i-16",
+      "type": "MULTIPLE_CHOICE",
+      "topic": "Statistics",
+      "prompt": "A random variable has P(X=0)=0.2, P(X=1)=0.3, P(X=2)=0.4, P(X=3)=0.1. Find the mean and variance.",
+      "options": [
+        {
+          "text": "mean = 1.4, variance = 2.8",
+          "correct": false
+        },
+        {
+          "text": "mean = 1.5, variance = 0.84",
+          "correct": false
+        },
+        {
+          "text": "mean = 1.4, variance = 0.84",
+          "correct": true
+        },
+        {
+          "text": "mean = 1.4, variance = 0.96",
+          "correct": false
+        }
+      ],
+      "explanation": "Mean=0(.2)+1(.3)+2(.4)+3(.1)=1.4. E(X²)=0.3+1.6+0.9=2.8. Variance=2.8-1.4²=0.84.",
+      "xp": 18
     },
     {
      "id": "prob2-i-17",
@@ -1038,13 +1089,30 @@
      "xp": 18
     },
     {
-     "id": "prob2-a-08",
-     "type": "EXPRESSION",
-     "topic": "Statistics",
-     "prompt": "20 observations have mean 25, SD 5. If each is increased by 3, find the new mean and variance. (no spaces)",
-     "answer": "mean=28,variance=25",
-     "explanation": "Adding a constant shifts the mean but leaves variance unchanged.",
-     "xp": 14
+      "id": "prob2-a-08",
+      "type": "MULTIPLE_CHOICE",
+      "topic": "Statistics",
+      "prompt": "20 observations have mean 25 and standard deviation 5. If each observation is increased by 3, what are the new mean and variance?",
+      "options": [
+        {
+          "text": "mean = 28, variance = 28",
+          "correct": false
+        },
+        {
+          "text": "mean = 25, variance = 25",
+          "correct": false
+        },
+        {
+          "text": "mean = 28, variance = 64",
+          "correct": false
+        },
+        {
+          "text": "mean = 28, variance = 25",
+          "correct": true
+        }
+      ],
+      "explanation": "Adding a constant shifts the mean but leaves variance unchanged.",
+      "xp": 14
     },
     {
      "id": "prob2-a-09",
@@ -1155,13 +1223,30 @@
      "xp": 12
     },
     {
-     "id": "prob2-a-21",
-     "type": "EXPRESSION",
-     "topic": "Probability",
-     "prompt": "If P(A)=0.2, P(B)=0.3, P(A\u222aB)=0.44, find P(A\u2229B) and check independence. (no spaces)",
-     "answer": "0.06,independent",
-     "explanation": "0.44=0.2+0.3-P(A\u2229B) gives P(A\u2229B)=0.06=0.2*0.3, confirming independence.",
-     "xp": 18
+      "id": "prob2-a-21",
+      "type": "MULTIPLE_CHOICE",
+      "topic": "Probability",
+      "prompt": "If P(A) = 0.2, P(B) = 0.3 and P(A∪B) = 0.44, find P(A∩B) and decide whether A and B are independent.",
+      "options": [
+        {
+          "text": "P(A∩B) = 0.06, not independent",
+          "correct": false
+        },
+        {
+          "text": "P(A∩B) = 0.14, independent",
+          "correct": false
+        },
+        {
+          "text": "P(A∩B) = 0.06, independent",
+          "correct": true
+        },
+        {
+          "text": "P(A∩B) = 0.14, not independent",
+          "correct": false
+        }
+      ],
+      "explanation": "0.44=0.2+0.3-P(A∩B) gives P(A∩B)=0.06=0.2*0.3, confirming independence.",
+      "xp": 18
     },
     {
      "id": "prob2-a-22",

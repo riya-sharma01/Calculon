@@ -347,7 +347,7 @@
      "id": "alg3-f-ind-02",
      "type": "NUMERIC",
      "topic": "Mathematical Induction",
-     "prompt": "Using P(n): 1 + 2 + 3 + ... + n = n(n+1)/2, verify P(n) for n = 4. What is the sum 1+2+3+4?",
+     "prompt": "The statement P(n): 1 + 2 + 3 + ... + n = n(n+1)/2 is proved by induction. As a check, what is the sum 1 + 2 + 3 + 4 (the case n = 4)?",
      "answer": "10",
      "explanation": "1+2+3+4 = 10, and n(n+1)/2 = 4(5)/2 = 10, confirming the formula for n=4.",
      "xp": 5
@@ -1094,7 +1094,7 @@
      "id": "alg3-f-bt-13",
      "type": "NUMERIC",
      "topic": "Binomial Theorem",
-     "prompt": "Evaluate (1+1)^4 using the binomial theorem to verify 4C0+4C1+4C2+4C3+4C4.",
+     "prompt": "By the binomial theorem, (1+1)^4 = 4C0 + 4C1 + 4C2 + 4C3 + 4C4. What is the value of this sum?",
      "answer": "16",
      "explanation": "(1+1)^4 = 2^4 = 16, which equals the sum of all binomial coefficients.",
      "xp": 5
@@ -1451,7 +1451,7 @@
      "id": "alg3-s-ind-01",
      "type": "NUMERIC",
      "topic": "Mathematical Induction",
-     "prompt": "Using induction, 2^n > n for n\u22651. Verify by finding 2^5 - 5.",
+     "prompt": "The inequality 2^n > n for n ≥ 1 is proved by induction. As a check for n = 5, what is the value of 2^5 − 5?",
      "answer": "27",
      "explanation": "2^5-5=32-5=27>0, confirming 2^5>5.",
      "xp": 6
@@ -1486,7 +1486,7 @@
      "id": "alg3-s-ind-03",
      "type": "NUMERIC",
      "topic": "Mathematical Induction",
-     "prompt": "If P(n): 7^n - 1 is divisible by 6, verify for n=2 by computing 7\u00b2-1.",
+     "prompt": "The statement P(n): 7^n − 1 is divisible by 6 is proved by induction. As a check for n = 2, what is the value of 7² − 1?",
      "answer": "48",
      "explanation": "7\u00b2-1=49-1=48, and 48/6=8, confirming divisibility.",
      "xp": 6
@@ -2145,7 +2145,7 @@
      "id": "alg3-i-ind-01",
      "type": "NUMERIC",
      "topic": "Mathematical Induction",
-     "prompt": "Using induction, prove 1\u00b3+2\u00b3+...+n\u00b3=[n(n+1)/2]\u00b2. Verify for n=4 by computing the sum of cubes.",
+     "prompt": "The formula 1³ + 2³ + ... + n³ = [n(n+1)/2]² is proved by induction. As a check for n = 4, what is the sum 1³ + 2³ + 3³ + 4³?",
      "answer": "100",
      "explanation": "1\u00b3+2\u00b3+3\u00b3+4\u00b3=1+8+27+64=100, and [4(5)/2]\u00b2=10\u00b2=100.",
      "xp": 7
@@ -2180,7 +2180,7 @@
      "id": "alg3-i-ind-03",
      "type": "NUMERIC",
      "topic": "Mathematical Induction",
-     "prompt": "If P(n): n\u00b2 + n is always even, verify by computing 7\u00b2 + 7.",
+     "prompt": "The statement P(n): n² + n is always even is proved by induction. As a check, what is the value of 7² + 7?",
      "answer": "56",
      "explanation": "7\u00b2+7 = 49+7 = 56, which is even.",
      "xp": 7
@@ -2754,7 +2754,7 @@
      "id": "alg3-h-ind-01",
      "type": "NUMERIC",
      "topic": "Mathematical Induction",
-     "prompt": "Using induction, 11^n - 4^n is divisible by 7 for all n\u22651. Verify by computing (11\u00b3-4\u00b3) mod 7.",
+     "prompt": "The statement 11^n − 4^n is divisible by 7 for all n ≥ 1 is proved by induction. As a check for n = 3, what is the remainder when 11³ − 4³ is divided by 7?",
      "answer": "0",
      "explanation": "11\u00b3-4\u00b3 = 1331-64 = 1267 = 7\u00d7181, so 1267 mod 7 = 0, confirming divisibility.",
      "xp": 8
@@ -2789,16 +2789,16 @@
      "id": "alg3-h-ind-03",
      "type": "NUMERIC",
      "topic": "Mathematical Induction",
-     "prompt": "Verify P(n): 1/(1\u00b72)+1/(2\u00b73)+...+1/(n(n+1)) = n/(n+1) for n=5 by computing the sum of the first 5 terms as a fraction's numerator (sum = n/(n+1) in lowest terms).",
-     "answer": "5",
-     "explanation": "The formula gives sum = 5/6 for n=5, so the numerator in lowest terms is 5.",
+     "prompt": "The identity 1/(1·2) + 1/(2·3) + ... + 1/(n(n+1)) = n/(n+1) is proved by induction. As a check for n = 5, what is the sum of the first 5 terms? (enter a fraction)",
+     "answer": "5/6",
+     "explanation": "The formula gives n/(n+1) = 5/6 for n=5. Direct check: 1/2 + 1/6 + 1/12 + 1/20 + 1/30 = 5/6.",
      "xp": 8
     },
     {
      "id": "alg3-h-ind-04",
      "type": "NUMERIC",
      "topic": "Mathematical Induction",
-     "prompt": "If P(n): 2^(2n) - 1 is divisible by 3 for all n\u22651, verify for n=3 by computing 2^6 - 1.",
+     "prompt": "The statement P(n): 2^(2n) − 1 is divisible by 3 for all n ≥ 1 is proved by induction. As a check for n = 3, what is the value of 2^6 − 1?",
      "answer": "63",
      "explanation": "2^6-1 = 64-1 = 63 = 3\u00d721, confirming divisibility by 3.",
      "xp": 8
@@ -3294,7 +3294,7 @@
      "id": "alg3-a-ind-01",
      "type": "NUMERIC",
      "topic": "Mathematical Induction",
-     "prompt": "P(n): 7^(2n) - 48n - 1 is divisible by 2304. Verify for n=2 by computing 7^4 - 48(2) - 1, then checking divisibility by 2304 (give the quotient).",
+     "prompt": "The statement P(n): 7^(2n) − 48n − 1 is divisible by 2304 is proved by induction. As a check for n = 2, the value 7^4 − 48(2) − 1 is divisible by 2304. What is the quotient?",
      "answer": "1",
      "explanation": "7^4 - 96 - 1 = 2401 - 97 = 2304, and 2304/2304 = 1, confirming divisibility with quotient 1.",
      "xp": 10
@@ -3329,7 +3329,7 @@
      "id": "alg3-a-ind-03",
      "type": "NUMERIC",
      "topic": "Mathematical Induction",
-     "prompt": "If P(n): 3^(2n+2) - 8n - 9 is divisible by 64, verify for n=1 by computing the value and dividing by 64.",
+     "prompt": "The statement P(n): 3^(2n+2) − 8n − 9 is divisible by 64 is proved by induction. As a check for n = 1, the value of the expression is divisible by 64. What is the quotient?",
      "answer": "1",
      "explanation": "3^4 - 8 - 9 = 81-17 = 64, and 64/64 = 1, confirming divisibility with quotient 1.",
      "xp": 10

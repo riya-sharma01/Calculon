@@ -571,10 +571,27 @@
         },
         {
           "id": "trig-a-04",
-          "type": "EXPRESSION",
+          "type": "MULTIPLE_CHOICE",
           "topic": "Ratios & Identities",
-          "prompt": "If tanA=1/2 and tanB=1/3 (both acute), find tan(2A+B) and identify which quadrant the angle 2A+B lies in. (format: value,QuadrantX (roman-numeral-free, e.g. 5,QuadrantIII))",
-          "answer": "3,QuadrantI",
+          "prompt": "If tan A = 1/2 and tan B = 1/3 (both A and B acute), find tan(2A + B) and say which quadrant the angle 2A + B lies in.",
+          "options": [
+            {
+              "text": "tan(2A+B) = 3, Quadrant II",
+              "correct": false
+            },
+            {
+              "text": "tan(2A+B) = 1/3, Quadrant I",
+              "correct": false
+            },
+            {
+              "text": "tan(2A+B) = 3, Quadrant I",
+              "correct": true
+            },
+            {
+              "text": "tan(2A+B) = −3, Quadrant II",
+              "correct": false
+            }
+          ],
           "explanation": "tan(2A+B)=3, using tan2A=4/3 (double-angle on tanA=1/2) combined with tanB=1/3 via the addition formula. Numerically, A≈26.57° and B≈18.43°, so 2A+B≈71.57°, which lies in Quadrant I (0°-90°), not Quadrant II.",
           "xp": 22
         },
@@ -616,10 +633,27 @@
         },
         {
           "id": "trig-a-09",
-          "type": "EXPRESSION",
+          "type": "MULTIPLE_CHOICE",
           "topic": "Inverse Trigonometry",
-          "prompt": "For 0≤α≤π/2, simplify cot⁻¹(√cosα) − tan⁻¹(√cosα) in terms of α. (format: no spaces, use sqrt(cosalpha) and tan^-1(...))",
-          "answer": "pi/2-2tan^-1(sqrt(cosalpha))",
+          "prompt": "For 0 ≤ α ≤ π/2, simplify cot⁻¹(√cos α) − tan⁻¹(√cos α).",
+          "options": [
+            {
+              "text": "π/2 − tan⁻¹(√cos α)",
+              "correct": false
+            },
+            {
+              "text": "2 tan⁻¹(√cos α) − π/2",
+              "correct": false
+            },
+            {
+              "text": "π/2 − 2 tan⁻¹(√cos α)",
+              "correct": true
+            },
+            {
+              "text": "π/4 − tan⁻¹(√cos α)",
+              "correct": false
+            }
+          ],
           "explanation": "Using cot⁻¹Z=π/2-tan⁻¹Z with Z=√cosα: the expression becomes (π/2-tan⁻¹Z)-tan⁻¹Z = π/2-2tan⁻¹Z.",
           "xp": 24
         },

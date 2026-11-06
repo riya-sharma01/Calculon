@@ -932,7 +932,7 @@
           "id": "cg2-i-10",
           "type": "EXPRESSION",
           "topic": "Conic Sections",
-          "prompt": "For the ellipse x²+4y²=4, the tangent and normal at P meet the major axis at T,N. Show that OT·ON is the same for every eccentric angle θ, and state that constant value. (enter a single number)",
+          "prompt": "For the ellipse x²+4y²=4, the tangent and the normal at the point P with eccentric angle θ meet the major axis at T and N. The product OT·ON turns out to have the same value for every θ. What is that value? (enter a single number)",
           "answer": "4",
           "explanation": "T=(2secθ,0), N=(2cosθ,0). OT·ON=4secθcosθ=4 for every θ, since secθcosθ=1 always.",
           "xp": 18
@@ -965,10 +965,27 @@
         },
         {
           "id": "cg2-i-12",
-          "type": "EXPRESSION",
+          "type": "MULTIPLE_CHOICE",
           "topic": "Conic Sections",
-          "prompt": "A hyperbola x²/16-y²/9=1 has asymptotes y=±(3/4)x. Does the point (4,3) lie on this hyperbola? (a short phrase)",
-          "answer": "No — it lies on the asymptote itself",
+          "prompt": "A hyperbola x²/16 − y²/9 = 1 has asymptotes y = ±(3/4)x. Does the point (4, 3) lie on this hyperbola?",
+          "options": [
+            {
+              "text": "Yes, it satisfies the equation",
+              "correct": false
+            },
+            {
+              "text": "No, it lies on an asymptote",
+              "correct": true
+            },
+            {
+              "text": "No, it lies on the conjugate hyperbola",
+              "correct": false
+            },
+            {
+              "text": "No, it lies on a directrix",
+              "correct": false
+            }
+          ],
           "explanation": "Substituting (4,3): 16/16-9/9=1-1=0≠1. In fact (4,3) satisfies y=(3/4)x exactly, so it lies on the asymptote — a hyperbola can never pass through a point on its own asymptote.",
           "xp": 20
         },
