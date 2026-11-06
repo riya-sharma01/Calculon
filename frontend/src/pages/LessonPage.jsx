@@ -112,6 +112,13 @@ export default function LessonPage() {
       const res = await questionsApi.answer(question.id, selectedOptionId, freeResponse || undefined);
       setResult(res);
       if (res.correct) setCorrectCount((c) => c + 1);
+      if (res.xpAwarded > 0) {
+        // Refresh the XP, level and streak badges in the top bar right away instead of waiting for the lesson to finish.
+        progressApi
+          .dashboard()
+          .then((d) => updateUserSummary({ totalXp: d.totalXp, level: d.level, currentStreak: d.currentStreak }))
+          .catch(() => { /* the badges will catch up on the next page load */ });
+      }
     } catch (err) {
       setError(err.message);
     } finally {
