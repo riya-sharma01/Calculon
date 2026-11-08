@@ -7,6 +7,8 @@ import ProtectedRoute from './components/ProtectedRoute';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
+import ForgotPasswordPage from './pages/ForgotPasswordPage';
+import ResetPasswordPage from './pages/ResetPasswordPage';
 import DomainsPage from './pages/DomainsPage';
 import DomainDetailPage from './pages/DomainDetailPage';
 import LessonPage from './pages/LessonPage';
@@ -21,6 +23,8 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
+        <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+        <Route path="/reset-password" element={<ResetPasswordPage />} />
         <Route path="/domains" element={<DomainsPage />} />
         <Route path="/domains/:domainId" element={<DomainDetailPage />} />
         <Route path="/lessons/:lessonId" element={<LessonPage />} />

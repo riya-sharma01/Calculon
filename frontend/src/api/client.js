@@ -46,7 +46,7 @@ async function request(path, { method = 'GET', body, auth = true } = {}) {
   if (!res.ok) {
     let payload = null;
     try { payload = await res.json(); } catch { /* no body */ }
-    const message = payload?.message || `Request failed (${res.status})`;
+    const message = payload?.message || payload?.error || `Request failed (${res.status})`;
     throw new ApiError(message, res.status, payload);
   }
 

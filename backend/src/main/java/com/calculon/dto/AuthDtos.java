@@ -18,6 +18,17 @@ public class AuthDtos {
             @NotBlank String password
     ) {}
 
+    public record ForgotPasswordRequest(
+            @NotBlank @Email String email
+    ) {}
+
+    public record ResetPasswordRequest(
+            @NotBlank String token,
+            @NotBlank @Size(min = 8) String newPassword
+    ) {}
+
+    public record MessageResponse(String message) {}
+
     public record AuthResponse(
             String token,
             UserSummary user

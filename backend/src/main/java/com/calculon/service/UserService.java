@@ -41,6 +41,12 @@ public class UserService {
         return user;
     }
 
+    /** Sets a new password (stored as a BCrypt hash). Used by the password reset flow. */
+    public void changePassword(User user, String rawPassword) {
+        user.setPasswordHash(passwordEncoder.encode(rawPassword));
+        userRepository.save(user);
+    }
+
     public User getById(Long id) {
         return userRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("User not found"));

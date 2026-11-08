@@ -5,6 +5,10 @@ export const authApi = {
     api.post('/auth/register', { username, email, password, displayName }, { auth: false }),
   login: (usernameOrEmail, password) =>
     api.post('/auth/login', { usernameOrEmail, password }, { auth: false }),
+  forgotPassword: (email) =>
+    api.post('/auth/forgot-password', { email }, { auth: false }),
+  resetPassword: (token, newPassword) =>
+    api.post('/auth/reset-password', { token, newPassword }, { auth: false }),
 };
 
 export const domainsApi = {
